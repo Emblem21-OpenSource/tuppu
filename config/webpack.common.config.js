@@ -1,8 +1,8 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const getSections = require('./getSections')
 
 global.data = require('../src/data')
 
@@ -15,20 +15,11 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'assets': path.resolve(__dirname, '../src/assets'),
-      'articles': path.resolve(__dirname, '../src/articles')
+      'assets': path.resolve(__dirname, '../src/assets')
     }
   },
-  plugins: [
+  plugins: getSections().concat([
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/theme/index.html',
-      inject: true,
-      minify: {
-        removeComments: true,
-        collapseWhitespace: false
-      }
-    }),
     new MiniCssExtractPlugin({
       filename: 'style.css'
     }),
@@ -37,7 +28,7 @@ module.exports = {
       from: './src/assets/images',
       to: 'assets/images'
     }])
-  ],
+  ]),
   module: {
     rules: [
       {

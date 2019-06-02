@@ -4,19 +4,13 @@ const highlight = require('highlight.js')
 const renderer = new marked.Renderer()
 
 // Override function
-/*
-renderer.heading = function (text, level) {
-  var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-')
 
-  return `
-    <h${level}>
-      <a name="${escapedText}" class="anchor" href="#${escapedText}">
-        <span class="header-link"></span>
-      </a>
+renderer.heading = function (text, level) {
+  return `<h${level} class="post-title">
       ${text}
     </h${level}>`
 }
-
+/*
 renderer.code = function (code, infostring, escaped) {
   return ``
 }
@@ -48,11 +42,11 @@ renderer.listitem = function (text, task, checked) {
 renderer.checkbox = function (checked) {
   return ``
 }
-
+*/
 renderer.paragraph = function (text) {
-  return ``
+  return `<p>&emsp;${text}</p>`
 }
-
+/*
 renderer.table = function (header, body) {
   return ``
 }
