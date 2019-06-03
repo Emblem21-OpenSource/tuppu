@@ -5,8 +5,9 @@
       ${data.index.pinned}
       <div class="posts">
         <h1 class="content-subhead">Recent Posts</h1>
-        ${data.currentArticles}
+        ${data.currentArticles.shift()}
       </div>
+      ${require('./pagination.js')(data.pagination.shift())}
       ${require('./footer.html')}
     </div>
   </div>

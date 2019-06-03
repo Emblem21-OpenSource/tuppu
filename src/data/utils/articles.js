@@ -52,7 +52,7 @@ function extractArticles (directory) {
     const day = date.getDate().toString().padStart(2, '0')
     const linkName = entry.title.replace(/\s/g, '-')
     entry.slug = `${year}/${month}/${day}/${linkName}/`
-
+    entry.datetime = date
     entry.html = sectionHtml(entry)
 
     if (entry.pinned) {
@@ -64,7 +64,7 @@ function extractArticles (directory) {
   }
 
   result.all.sort((a, b) => {
-    return b.date - a.date
+    return b.datetime - a.datetime
   })
 
   return result

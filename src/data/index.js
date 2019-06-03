@@ -1,8 +1,8 @@
 module.exports = {
   index: require('./news'),
   articles: require('./articles'),
-  books: require('./books'),
-  code: require('./code'),
   podcasts: require('./podcasts'),
+  code: require('./code'),
+  books: require('./books'),
   training: require('./training')
 }

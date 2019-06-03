@@ -2,6 +2,8 @@ const path = require('path')
 const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const articlesPerPage = 3 // @TODO .env
+
 /**
  * [getHtmlPages description]
  * @return {[type]} [description]
@@ -12,31 +14,78 @@ function getHtmlPages (data) {
   const sections = fs.readdirSync(sectionPath)
   const result = []
 
-  const articlesPerPage = 3 // @TODO .env
+  global.data.currentArticles = []
+  global.data.currentSection = []
+  global.data.pagination = []
 
   for (const section of sections) {
     const sectionName = path.basename(section, '.html')
-    console.log('[sectionName]', sectionName)
+
     // Calculate number of pages for the section
     let pages = 0
     if (data[sectionName]) {
       pages = Math.ceil(data[sectionName].all.length / articlesPerPage) || 0
     }
 
-    // Prepare section name
-    global.data.currentSection = sectionName[0].toUpperCase() + sectionName.substr(1)
-    console.log('[currentSection]', global.data.currentSection)
+    if (pages === 0) {
+      // Dealing with a static template
+      result.push(new HtmlWebpackPlugin({
+        template: `src/theme/sections/${section}`,
+        inject: true,
+        minify: {
+          removeComments: true,
+          collapseWhitespace: false
+        },
+        filename: `${sectionName}.html`
+      }))
+      continue
+    }
+
+    // Prepare markdown section name
     for (var currentPage = 0; currentPage < pages; currentPage++) {
       // Select page range for section
-      console.log('::', currentPage * articlesPerPage, ((currentPage * articlesPerPage) + articlesPerPage))
-      global.data.currentArticles = data[sectionName].html.slice(
-        currentPage * articlesPerPage,
-        ((currentPage * articlesPerPage) + articlesPerPage) - 1
-      )
+      const start = currentPage * articlesPerPage
+      const end = ((currentPage * articlesPerPage) + articlesPerPage)
+
+      const currentArticles = data[sectionName].html.slice(start, end)
+
+      global.data.currentArticles.push(currentArticles)
+
+      if (sectionName !== 'index') {
+        global.data.currentSection.push(sectionName[0].toUpperCase() + sectionName.substr(1))
+      }
+
       const filename = currentPage === 0
         ? `${sectionName}.html`
-        : `${sectionName}/page/${(currentPage + 1)}/index.html`
-      console.log('>>', filename)
+        : sectionName === 'index'
+          ? `page/${(currentPage + 1)}/index.html`
+          : `${sectionName}/page/${(currentPage + 1)}/index.html`
+
+      const previous = currentPage === 1
+        ? `/${sectionName}.html`
+        : sectionName === 'index'
+          ? `/page/${(currentPage)}/index.html`
+          : `/${sectionName}/page/${(currentPage)}/index.html`
+
+      const next = sectionName === 'index'
+        ? `/page/${(currentPage + 2)}/index.html`
+        : `/${sectionName}/page/${(currentPage + 2)}/index.html`
+
+      let pagination = {
+        previous: `<a class="pure-button pure-button-primary" href="${previous}">Previous</a>`,
+        next: `<a class="pure-button pure-button-primary" href="${next}">Next</a>`
+      }
+
+      if (currentPage === 0 && currentArticles.length >= (articlesPerPage - 1)) {
+        pagination.previous = ''
+      }
+
+      if (currentPage >= (pages - 1)) {
+        pagination.next = ''
+      }
+
+      global.data.pagination.push(pagination)
+
       // Create plugin entry for the page
       result.push(new HtmlWebpackPlugin({
         template: `src/theme/sections/${section}`,
@@ -53,7 +102,7 @@ function getHtmlPages (data) {
   // Generate all individual articles
   for (const entry of data.articles.all) {
     global.data.currentEntry = entry
-    console.log('>>', entry.slug)
+
     result.push(new HtmlWebpackPlugin({
       template: `src/theme/html/article.html`,
       inject: true,

@@ -3,9 +3,10 @@
   <div class="content pure-u-1 pure-u-md-3-5">
     <div>
       <div class="posts">
-        <h1 class="content-subhead">${data.currentSection}</h1>
-        ${data.currentArticles}
+        <h1 class="content-subhead">${data.currentSection.shift()}</h1>
+        ${data.currentArticles.shift()}
       </div>
+      ${require('./pagination.js')(data.pagination.shift())}
       ${require('./footer.html')}
     </div>
   </div>

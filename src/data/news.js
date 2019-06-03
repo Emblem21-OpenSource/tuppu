@@ -11,7 +11,7 @@ const news = {
     podcasts.all,
     training.all
   ).sort((a, b) => {
-    return b.date - a.date
+    return b.datetime - a.datetime
   }),
   pinned: ''
 }
