@@ -2,10 +2,10 @@
   ${require('./sidebar.html')}
   <div class="content pure-u-1 pure-u-md-3-5">
     <div>
-      ${data.articles.pinned}
+      ${data.index.pinned}
       <div class="posts">
         <h1 class="content-subhead">Recent Posts</h1>
-        ${data.articles.news}
+        ${data.currentArticles}
       </div>
       ${require('./footer.html')}
     </div>

@@ -1,5 +1,8 @@
-const articles = require('./articles')
-
 module.exports = {
-  articles
+  index: require('./news'),
+  articles: require('./articles'),
+  books: require('./books'),
+  code: require('./code'),
+  podcasts: require('./podcasts'),
+  training: require('./training')
 }

@@ -1,13 +1,13 @@
 const extractArticles = require('./utils/articles')
 
-const articles = extractArticles('articles')
+const podcasts = extractArticles('podcasts')
 
 // Create html entries
-articles.html = articles.all
+podcasts.html = podcasts.all
   .map(entry => entry.html)
 
 // Create markdown entries
-articles.markdown = articles.all
+podcasts.markdown = podcasts.all
   .map(entry => entry.markdown)
 
-module.exports = articles
+module.exports = podcasts

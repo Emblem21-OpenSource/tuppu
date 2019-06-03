@@ -18,7 +18,7 @@ module.exports = {
       'assets': path.resolve(__dirname, '../src/assets')
     }
   },
-  plugins: getSections().concat([
+  plugins: getSections(global.data).concat([
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.css'
