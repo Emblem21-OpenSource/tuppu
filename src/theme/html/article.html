@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    ${require('../html/head.js')(data.currentEntry.title)}
+    ${require('../html/head.js')(data.currentEntry[0].title)}
   </head>
   <body>
     <div id="layout" class="pure-g">
@@ -9,7 +9,7 @@
       <div class="content pure-u-1 pure-u-md-3-5">
         <div>
           <div class="posts">
-            ${data.currentEntry.html}
+            ${data.currentEntry.shift().html}
           </div>
           ${require('./footer.html')}
         </div>

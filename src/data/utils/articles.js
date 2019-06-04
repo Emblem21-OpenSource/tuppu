@@ -46,11 +46,19 @@ function extractArticles (directory) {
       }
     }
 
+    if (entry.draft) {
+      continue
+    }
+
     const date = new Date(entry.date)
     const year = date.getFullYear()
     const month = date.getMonth().toString().padStart(2, '0')
     const day = date.getDate().toString().padStart(2, '0')
-    const linkName = entry.title.replace(/\s/g, '-')
+    const linkName = entry.title
+      .trim()
+      .replace(/[?.!,()'"{}[\]:<>/\\@#$%^&*]/g, '')
+      .replace(/[^a-zA-Z0-9_]/g, '-')
+      .replace(/--/g, '-')
     entry.slug = `${year}/${month}/${day}/${linkName}/`
     entry.datetime = date
     entry.html = sectionHtml(entry)

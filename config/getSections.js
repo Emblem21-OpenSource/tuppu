@@ -17,6 +17,7 @@ function getHtmlPages (data) {
   global.data.currentArticles = []
   global.data.currentSection = []
   global.data.pagination = []
+  global.data.currentEntry = []
 
   for (const section of sections) {
     const sectionName = path.basename(section, '.html')
@@ -101,7 +102,7 @@ function getHtmlPages (data) {
 
   // Generate all individual articles
   for (const entry of data.articles.all) {
-    global.data.currentEntry = entry
+    global.data.currentEntry.push(entry)
 
     result.push(new HtmlWebpackPlugin({
       template: `src/theme/html/article.html`,
