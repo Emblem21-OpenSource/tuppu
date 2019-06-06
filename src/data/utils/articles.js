@@ -22,6 +22,7 @@ function extractArticles (directory) {
       markdown: ''
     }
 
+    let index = 0
     for (const line of lines) {
       const stripped = line.trim()
 
@@ -37,13 +38,13 @@ function extractArticles (directory) {
         if (stripped === '---' && inFrontMatter === null) {
           inFrontMatter = true
         } else {
-          // Extract text
-          if (stripped) {
-            entry.html += marked(stripped)
-          }
-          entry.markdown += line
+          const remainingText = lines.slice(index).join('\n')
+          entry.html = marked(remainingText)
+          entry.markdown = remainingText
+          break
         }
       }
+      index += 1
     }
 
     if (entry.draft) {

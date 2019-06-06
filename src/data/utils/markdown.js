@@ -10,11 +10,36 @@ renderer.heading = function (text, level) {
       ${text}
     </h${level}>`
 }
-/*
-renderer.code = function (code, infostring, escaped) {
-  return ``
-}
 
+renderer.code = function (code, infostring, escaped) {
+  const lines = code.split('\n')
+  let lineNumbers = ''
+  let lineContent = ''
+  let i = 1
+
+  for (const line of lines) {
+    lineNumbers += `<div class="line">${i}</div>`
+    lineContent += `<div class="line">${line.replace(/</g, '˂')} </div>`
+    i += 1
+  }
+
+  return `<code>
+      <div class="pure-g rounded">
+        <div class="pure-u-1-8">
+          <pre class="lineNumbers">
+            ${lineNumbers}
+          </pre>
+        </div>
+        <div class="pure-u-7-8">
+          <pre class="code">
+            ${lineContent}
+          </pre>
+        </div>
+      </div>
+    </code>
+  </pre>`
+}
+/*
 renderer.blockquote = function (quote) {
   return ``
 }
@@ -66,11 +91,13 @@ renderer.strong = function (text) {
 renderer.em = function (text) {
   return ``
 }
-
+*/
 renderer.codespan = function (code) {
-  return ``
+  return `<p>
+    <code>${code}</code>
+  </p>`
 }
-
+/*
 renderer.br = function () {
   return ``
 }
@@ -82,11 +109,11 @@ renderer.del = function (text) {
 renderer.link = function (href, title, text) {
   return ``
 }
-
+*/
 renderer.image = function (href, title, text) {
-  return ``
+  return `<img class="pure-img-responsive" src="${href}" alt="${title} - ${text}"/>`
 }
-
+/*
 renderer.text = function (text) {
   return ``
 }

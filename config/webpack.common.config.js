@@ -26,7 +26,7 @@ module.exports = {
     require('autoprefixer'),
     new CopyWebpackPlugin([{
       from: './src/assets/images',
-      to: 'assets/images'
+      to: 'images'
     }])
   ]),
   module: {
@@ -57,7 +57,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images'
+              outputPath: 'images'
             }
           }
         ]

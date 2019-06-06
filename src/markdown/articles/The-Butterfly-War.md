@@ -42,12 +42,9 @@ This theory required me to convince /pol/ to be black feminists to amplify the s
 
 As I stated before, I documented the entire experiment.  In broad daylight.  I suffered a few DDoSes and reputation poison attacks for it.  Here were the results:
 
-* [The Theory of Fracturing Monocultures](http://cultstate.com/2013/08/14/the-theory-of-fracturing-
-monocultures/)
-* [The Experiments in Fracturing Monocultures](http://cultstate.com/2014/10/25/the-experiments-in-
-fracturing-monocultures/)
-* [The Psychology of Modern American Monocultures](http://cultstate.com/2015/01/31/the-psychology-of-modern-
-american-monocultures/)
+* [The Theory of Fracturing Monocultures](http://cultstate.com/2013/08/14/the-theory-of-fracturing-monocultures/)
+* [The Experiments in Fracturing Monocultures](http://cultstate.com/2014/10/25/the-experiments-in-fracturing-monocultures/)
+* [The Psychology of Modern American Monocultures](http://cultstate.com/2015/01/31/the-psychology-of-modern-american-monocultures/)
 
 The conclusion was astounding: *White feminists were so afraid of Civil Rights wing patterns, they feared retaliating against black feminist rage.*  (The hashtag was legit, btw.  White feminists cry about pixels.  Black feminists can't feed their kids.  I don't feel bad for what I did.)
 

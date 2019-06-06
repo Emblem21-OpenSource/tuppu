@@ -48,7 +48,7 @@ function getHtmlPages (data) {
       const start = currentPage * articlesPerPage
       const end = ((currentPage * articlesPerPage) + articlesPerPage)
 
-      const currentArticles = data[sectionName].html.slice(start, end)
+      const currentArticles = data[sectionName].html.slice(start, end).join('')
 
       global.data.currentArticles.push(currentArticles)
 
@@ -101,7 +101,7 @@ function getHtmlPages (data) {
   }
 
   // Generate all individual articles
-  for (const entry of data.articles.all) {
+  for (const entry of data.index.all) {
     global.data.currentEntry.push(entry)
 
     result.push(new HtmlWebpackPlugin({

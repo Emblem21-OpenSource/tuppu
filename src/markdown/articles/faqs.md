@@ -2,6 +2,7 @@
 title: FAQs
 id: 5
 date: 2017-08-14 03:00:00
+draft: true
 ---
 
 #### <font color="#e35a10">Who are you?</font>
