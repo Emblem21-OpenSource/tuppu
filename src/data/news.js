@@ -21,12 +21,12 @@ const pinned = news.all.find(entry => entry.pinned)
 
 // Create html entries
 news.html = news.all
-  .filter(entry => entry !== pinned)
+  .filter(entry => entry !== pinned && !entry.index)
   .map(entry => entry.html)
 
 // Create markdown entries
 news.markdown = news.all
-  .filter(entry => entry !== pinned)
+  .filter(entry => entry !== pinned && !entry.index)
   .map(entry => entry.markdown)
 
 // Removed the pinned tweet

@@ -24,6 +24,7 @@ function getHtmlPages (data) {
 
     // Calculate number of pages for the section
     let pages = 0
+
     if (data[sectionName]) {
       pages = Math.ceil(data[sectionName].all.length / articlesPerPage) || 0
     }

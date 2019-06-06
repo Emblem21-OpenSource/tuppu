@@ -9,6 +9,8 @@ function extractArticles (directory) {
     pinned: ''
   }
 
+  let indexEntry
+
   const markdownPath = path.resolve(__dirname, `../../markdown/${directory}`)
   const markdowns = fs.readdirSync(markdownPath)
 
@@ -53,7 +55,7 @@ function extractArticles (directory) {
 
     const date = new Date(entry.date)
     const year = date.getFullYear()
-    const month = date.getMonth().toString().padStart(2, '0')
+    const month = (date.getMonth() + 1).toString().padStart(2, '0')
     const day = date.getDate().toString().padStart(2, '0')
     const linkName = entry.title
       .trim()
@@ -69,12 +71,21 @@ function extractArticles (directory) {
     }
 
     // Preparing final article data
-    result.all.push(entry)
+    if (entry.index) {
+      indexEntry = entry
+    } else {
+      result.all.push(entry)
+    }
   }
 
   result.all.sort((a, b) => {
     return b.datetime - a.datetime
   })
+
+  if (indexEntry) {
+    // Add index to the beginning if it exists
+    result.all.unshift(indexEntry)
+  }
 
   return result
 }

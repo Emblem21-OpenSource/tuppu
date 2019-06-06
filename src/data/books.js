@@ -2,7 +2,7 @@ const extractArticles = require('./utils/articles')
 
 const books = extractArticles('books')
 
-// Create html entries
+// Create HTML entries
 books.html = books.all
   .map(entry => entry.html)
 
