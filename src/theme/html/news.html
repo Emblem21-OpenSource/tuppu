@@ -5,10 +5,10 @@
       ${data.index.pinned}
       <div class="posts">
         <h1 class="content-subhead">Recent Posts</h1>
-        ${data.currentArticles.shift()}
+        ${getBuildData('currentArticles')}
       </div>
-      ${require('./pagination.js')(data.pagination.shift())}
+      ${require('./pagination.js')(getBuildData('pagination'))}
       ${require('./footer.html')}
     </div>
-  </div>
-</div>
+  </div>${clearBuildData('currentArticles')}
+</div>${clearBuildData('pagination')}

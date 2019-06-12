@@ -2,7 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const getSections = require('./getSections')
+const getContentTemplates = require('./templates/content')
 
 global.data = require('../src/data')
 
@@ -18,7 +18,7 @@ module.exports = {
       'assets': path.resolve(__dirname, '../src/assets')
     }
   },
-  plugins: getSections(global.data).concat([
+  plugins: getContentTemplates(global.data).concat([
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.css'

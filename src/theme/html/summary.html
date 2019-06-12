@@ -3,10 +3,10 @@
   <div class="content pure-u-1 pure-u-md-3-5">
     <div>
       <div class="summaries">
-        ${data.currentSummary.shift()}
+        ${getBuildData('currentSummary')}
       </div>
-      ${require('./pagination.js')(data.pagination.shift())}
+      ${require('./pagination.js')(getBuildData('pagination'))}
       ${require('./footer.html')}
     </div>
-  </div>
-</div>
+  </div>${clearBuildData('currentSummary')}
+</div>${clearBuildData('pagination')}

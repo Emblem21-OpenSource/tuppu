@@ -19,7 +19,7 @@ The smoking gun is in and now we have a few people putting the pieces together. 
 
 Here's the screenshot for posterity:
 
-![The Butteryfly War Begins](/images/butterfly-post.png)](/images/butterfly-post.png)
+![The Butteryfly War Begins](/images/butterfly-post.png)
 
 Because of the legal precedents set by [redlining](https://en.wikipedia.org/wiki/Redlining), a case could be made that Facebook intentionally created an environment where the civil rights of blacks were violated due to their increased exposed to predatory ads or being intentionally denied ads, specifically of financial products that could lead to disparate impact suits.  If this is true, [the impact Silicon Valley has on politics would be in serious trouble](http://archive.is/MljLy) as civil rights violations typically result in  federal government involvement.  If conducted intelligently, this type of play could result in significant Republican wins in the California 2018 primaries and beyond.
 

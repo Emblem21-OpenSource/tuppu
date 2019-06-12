@@ -225,3 +225,36 @@ pre {
   overflow: hidden;
   border-right: #444 1px solid;
 }
+
+blockquote {
+    border-radius: 3px;
+    position: relative;  /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+}
+/* -- create the quotation marks -- */
+blockquote:before,
+blockquote:after{
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 13px;
+    color: #E8E8E8;
+    font-size: 130px;
+    font-weight: bold;
+}
+blockquote:before{
+    content: "“";
+    margin-right: 10px;
+    right: 100%;
+}
+blockquote:after{
+    content: "”";
+    margin-left: -13px;
+    left: 100%;  
+}
