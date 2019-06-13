@@ -6,7 +6,6 @@
 
 # TODO
 
-* Summary's queuing order is out of order
 * CSS clean up
 * Spelling cleanup
 * fleshing out documents

@@ -3,7 +3,6 @@ title: The Tyrant's Muse
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/3/2018
-draft: true
 ---
 
 Epidemiology is the fusion of statistical analysis and bio-metrics to infer the causality of health conditions within a population.  It covers many fields of focus, from epidemic transmission to obesity rates to clinical trials for new drugs.  The phrase imposes a context of human infection, however, epidemiological analysis also applies to [livestock](http://ex-epsilon.slu.se:8080/archive/00000036/01/Widgren.pdf) and, as of late, [malware](http://www.nature.com/articles/srep05659) and [memes](http://www.sri.com/work/projects/meme-epidemiology).

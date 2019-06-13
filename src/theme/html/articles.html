@@ -3,7 +3,9 @@
   <div class="content pure-u-1 pure-u-md-3-5">
     <div>
       <div class="posts">
-        <h1 class="content-subhead">${getBuildData('currentSection')}</h1>
+        <h1 class="content-subhead">
+          ${getBuildData('currentSection')}
+        </h1>
         ${getBuildData('currentArticles')}
       </div>
       ${require('./pagination.js')(getBuildData('pagination'))}

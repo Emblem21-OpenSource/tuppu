@@ -62,6 +62,7 @@ function extractArticles (directory) {
       .replace(/[?.!,()'"{}[\]:<>/\\@#$%^&*]/g, '')
       .replace(/[^a-zA-Z0-9_]/g, '-')
       .replace(/--/g, '-')
+
     entry.slug = `${year}/${month}/${day}/${linkName}/`
     entry.datetime = date
     entry.html = sectionHtml(entry)
