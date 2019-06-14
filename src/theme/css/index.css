@@ -126,7 +126,7 @@ h3 {
   color: #aaa;
   border-bottom: 1px solid #eee;
   padding: 0.4em 0;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 500;
   letter-spacing: 0.1em;
 }
@@ -257,4 +257,37 @@ blockquote:after{
     content: "”";
     margin-left: -13px;
     left: 100%;  
+}
+
+/* LIST #5 */
+.toc ol { 
+  font-size:20px;
+}
+.toc ol li {
+
+}
+
+.toc ol li div ol {
+  padding: 0px 0 0px 0px;
+  font-size: 14px;
+  list-style: none;
+  counter-reset: li;
+}
+.toc ol li div ol li {
+  color: #3b6581;
+  margin-left: 16px;
+}
+
+.toc ol li div ol li::before {
+  content: "(" counter(li);
+  counter-increment: li;
+  color: #181748;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: right;
+  font-weight: bold;
+  font-family: monospace;
+  direction: rtl;
 }

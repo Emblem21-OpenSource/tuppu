@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    ${require('../html/head.js')(getBuildData('currentEntry').title)}
+    ${require('../html/head.js')(
+      getBuildData('currentEntry').title,
+      getBuildData('currentEntry').description,
+      getBuildData('currentEntry').slug,
+      getBuildData('currentEntry').image
+    )}
   </head>
   <body>
     <div id="layout" class="pure-g">

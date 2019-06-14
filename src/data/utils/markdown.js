@@ -55,15 +55,19 @@ renderer.heading = function (text, level, raw, slugger) {
 renderer.hr = function () {
   return ``
 }
-
+*/
 renderer.list = function (body, ordered, start) {
-  return ``
+  if (ordered) {
+    return `<div class="toc"><ol>${body}</ol></div>`
+  } else {
+    return `<ul>${body}</ul>`
+  }
 }
 
 renderer.listitem = function (text, task, checked) {
-  return ``
+  return `<li>${text}</li>`
 }
-
+/*
 renderer.checkbox = function (checked) {
   return ``
 }

@@ -2,6 +2,7 @@
 title: Gnostic Warfare
 date: 2018-06-02 14:50:09
 author: Patrick Ryan
+description: The future of AI Conflict
 contact: mailto:patrick.ryan@emblem21.com
 ---
 

@@ -6,6 +6,7 @@
 
 # TODO
 
-* CSS clean up
+* https://search.google.com/test/mobile-friendly
+* https://backlinko.com/actionable-seo-tips
 * Spelling cleanup
 * fleshing out documents
