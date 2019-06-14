@@ -10,7 +10,6 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'app.[chunkhash].js',
-    path: path.resolve(__dirname, '../dist'),
     publicPath: '/'
   },
   resolve: {
@@ -18,7 +17,7 @@ module.exports = {
       'assets': path.resolve(__dirname, '../src/assets')
     }
   },
-  plugins: getContentTemplates(global.data).concat([
+  plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.css'
@@ -28,7 +27,7 @@ module.exports = {
       from: './src/assets/images',
       to: 'images'
     }])
-  ]),
+  ].concat(getContentTemplates(global.data)),
   module: {
     rules: [
       {
