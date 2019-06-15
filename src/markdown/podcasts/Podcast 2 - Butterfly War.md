@@ -17,8 +17,7 @@ This is the second podcast.
 
 ### Credits
 
-* Intellectual Explorers Club
-  * [Website](https://www.intellectualexplorers.club/)
+* [Intellectual Explorers Club](https://www.intellectualexplorers.club/)
   * [Facebook Group](https://www.facebook.com/groups/2091683897735109/)
 * [Peter Limberg](https://twitter.com/peternlimberg)
 

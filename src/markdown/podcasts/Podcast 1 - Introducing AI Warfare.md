@@ -22,8 +22,7 @@ This is the first podcast.
 
 ### Credits
 
-* Knowledge Without College
-  * [Website](https://knowledgewithoutcollege.com/)
+* [Knowledge Without College](https://knowledgewithoutcollege.com/)
   * [Twitter](https://twitter.com/KWCPod)
   * [Instagram](https://www.instagram.com/knowledgewithoutcollegepodcast/)
 * [Patrick Butler](https://twitter.com/patrickbutler00)

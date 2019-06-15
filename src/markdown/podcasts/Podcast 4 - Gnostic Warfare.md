@@ -12,7 +12,7 @@ This is the fourth podcast.
 
 ### Credits
 
-* Simulation
+* [The Simulation Series](https://www.simulationseries.com/)
   * [Facebook](https://www.facebook.com/simulationseries)
   * [YouTube](https://www.youtube.com/channel/UC6JhS4GvWf3AJfOTfkrse2w)
   * [iTunes](https://podcasts.apple.com/us/podcast/simulation/id1160455505)

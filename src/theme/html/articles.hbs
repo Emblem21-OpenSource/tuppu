@@ -1,0 +1,15 @@
+<div id="layout" class="pure-g">
+  {{> sidebar }}
+  <div class="content pure-u-1 pure-u-md-3-5">
+    <div>
+      <div class="posts">
+        <h1 class="content-subhead">
+          {{{head.title}}}
+        </h1>
+        {{{articles}}}
+      </div>
+      {{{pagination.previous}}} {{{pagination.next}}}
+      {{> footer }}
+    </div>
+  </div>
+</div>

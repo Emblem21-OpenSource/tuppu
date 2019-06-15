@@ -1,6 +1,3 @@
-const {
-  setBuildData
-} = require('../buildData')
 const getPagination = require('./pagination')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -10,27 +7,32 @@ module.exports = function getPageTemplate (pages, currentPage, articlesPerPage, 
 
   const currentArticles = sectionHtml.slice(start, end).join('')
 
-  setBuildData('currentArticles', currentArticles)
-
-  if (sectionName !== 'index') {
-    setBuildData('currentSection', sectionName[0].toUpperCase() + sectionName.substr(1))
-  }
-
   const {
     filename,
     pagination
   } = getPagination(sectionName, pages, articlesPerPage, currentPage, currentArticles)
 
-  setBuildData('pagination', pagination)
+  if (sectionName !== 'index') {
+    sectionName = sectionName[0].toUpperCase() + sectionName.substr(1)
+  }
 
   // Create plugin entry for the page
   return new HtmlWebpackPlugin({
-    template: `src/theme/sections/${section}`,
     inject: true,
     minify: {
       removeComments: true,
       collapseWhitespace: false
     },
-    filename
+    filename,
+    template: `src/theme/sections/${section}`,
+    templateParameters: {
+      pagination,
+      articles: currentArticles,
+      head: {
+        title: sectionName,
+        description: 'You are more than your identity',
+        image: 'open_graph.jpg'
+      }
+    }
   })
 }

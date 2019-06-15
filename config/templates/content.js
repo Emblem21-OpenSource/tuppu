@@ -1,7 +1,4 @@
-const {
-  setBuildData
-} = require('../buildData')
-const getHtmlTemplate = require('./html')
+const getStaticTemplate = require('./static')
 const getArticleTemplate = require('./article')
 const getPageTemplate = require('./page')
 const getApiTemplate = require('./api')
@@ -22,13 +19,8 @@ function getContentTemplates (data) {
   const apis = fs.readdirSync(apiPath)
   const result = []
 
-  setBuildData('currentArticles', [])
-  setBuildData('currentSection', [])
-  setBuildData('pagination', [])
-  setBuildData('currentEntry', [])
-
   for (const section of sections) {
-    const sectionName = path.basename(section, '.html')
+    const sectionName = path.basename(section, '.hbs')
 
     // Calculate number of pages for the section
     let pages = 0
@@ -39,7 +31,7 @@ function getContentTemplates (data) {
 
     if (pages === 0) {
       // Dealing with a static template
-      result.push(getHtmlTemplate(section, sectionName))
+      result.push(getStaticTemplate(section, sectionName))
       continue
     }
 
@@ -51,7 +43,6 @@ function getContentTemplates (data) {
 
   // Generate all individual articles
   for (const entry of data.index.all) {
-    // setBuildData('currentEntry', entry)
     result.push(getArticleTemplate(entry))
   }
 

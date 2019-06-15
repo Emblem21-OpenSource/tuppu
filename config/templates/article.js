@@ -10,11 +10,12 @@ module.exports = function getArticleTemplate (entry) {
     filename: entry.slug,
     template: `src/theme/html/article.hbs`,
     templateParameters: {
-      entry: Object.assign({
+      entry,
+      head: {
         title: entry.title || 'CultState',
         description: entry.description || 'You are more than your identity',
         image: entry.image || 'open_graph.jpg'
-      }, entry)
+      }
     }
   })
 }

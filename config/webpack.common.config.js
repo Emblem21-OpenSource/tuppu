@@ -32,6 +32,10 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: './src/assets/images',
       to: 'images'
+    }]),
+    new CopyWebpackPlugin([{
+      from: './src/assets/icons',
+      to: 'icons'
     }])
   ].concat(getContentTemplates(global.data)),
   module: {
