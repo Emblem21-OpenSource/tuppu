@@ -51,8 +51,8 @@ function getContentTemplates (data) {
 
   // Generate all individual articles
   for (const entry of data.index.all) {
-    setBuildData('currentEntry', entry)
-    result.push(getArticleTemplate(entry.slug))
+    // setBuildData('currentEntry', entry)
+    result.push(getArticleTemplate(entry))
   }
 
   // Generate API
