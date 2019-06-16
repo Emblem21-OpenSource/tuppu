@@ -100,27 +100,6 @@ h3 {
   text-decoration: none;
 }
 
-@media (min-width: 48em) {
-  .sidebar {
-    background-position: -10em;
-    min-width: 225px;
-  }
-
-  .brand-title {
-    font-size: 1.5em;
-    text-transform: uppercase;
-  }
-  .brand-tagline {
-    font-size: 1em;
-    font-weight: 300;
-    color: rgb(176, 202, 219);
-  }
-
-  .nav-item {
-    display: grid;
-  }
-}
-
 .content-subhead {
   text-transform: uppercase;
   color: #aaa;
@@ -179,6 +158,16 @@ h3 {
 }
 
 @media (min-width: 48em) {
+  .brand-title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  .brand-tagline {
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+  }
+
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;
@@ -190,6 +179,8 @@ h3 {
   }
 
   .sidebar {
+    background-position: -10em;
+    min-width: 225px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -197,6 +188,17 @@ h3 {
 
   .footer {
     text-align: center;
+  }
+
+  .nav-item {
+    display: grid;
+  }
+}
+
+@media (min-height: 0em) and (max-height: 38em) {
+  .nav-item {
+    display: inline;
+    font-size: 11px;
   }
 }
 
