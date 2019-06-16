@@ -14,6 +14,8 @@ module.exports = function getPageTemplate (pages, currentPage, articlesPerPage, 
 
   if (sectionName !== 'index') {
     sectionName = sectionName[0].toUpperCase() + sectionName.substr(1)
+  } else {
+    sectionName = 'You are more than your identity'
   }
 
   // Create plugin entry for the page

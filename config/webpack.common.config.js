@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const getContentTemplates = require('./templates/content')
+const getContentTemplates = require('./templates')
 
 global.data = require('../src/data')
 
@@ -11,11 +11,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'app.[chunkhash].js',
-    publicPath: '/'
+    publicPath: ''
   },
   resolve: {
     alias: {
-      'assets': path.resolve(__dirname, '../src/assets')
+      'assets': path.resolve(__dirname, '../src/assets'),
+      'root': path.resolve(__dirname, '../')
     }
   },
   plugins: [
