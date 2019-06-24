@@ -82,6 +82,10 @@ module.exports = {
       }, {
         test: /\.hbs$/,
         loader: 'handlebars-loader'
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        loader: 'url-loader'
       }
     ]
   }
