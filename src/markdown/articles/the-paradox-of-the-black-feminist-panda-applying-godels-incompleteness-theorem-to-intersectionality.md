@@ -5,15 +5,17 @@ contact: mailto:patrick.ryan@emblem21.com
 date: 2015-02-21 21:59:24
 ---
 
-[![The Paradox of the Black Feminist Panda](/images/The-Paradox-of-the-Black-Feminist-Panda.png)](/images/The-Paradox-of-the-Black-Feminist-Panda.png)lntersectionality is the admission that self-identiﬁed identities are fundamentally incapable of describing the totality of oppression.   This means that self-identiﬁed identities are Godelian sets: they are incomplete but consistent theories that can never encapsulate their own inversions.
+[![The Paradox of the Black Feminist Panda](/images/The-Paradox-of-the-Black-Feminist-Panda.png)](/images/The-Paradox-of-the-Black-Feminist-Panda.png)
 
-lntersectionality only deﬁnes inversions by relation, which is to say the framework intersectionality provides to measure identity inversions can only be described by what has been previously self-identiﬁed. Thus, no inversions can even exist within intersectionality unless at least three identities have been established.
+--> Intersectionality is the admission that self-identiﬁed identities are fundamentally incapable of describing the totality of oppression.   This means that self-identiﬁed identities are Godelian sets: they are incomplete but consistent theories that can never encapsulate their own inversions.
 
-For example, the feminist and the panda identities intersect in a place that the black identity can no longer predict or describe oppression.  (Additionally, if identity 1 and 2 intersect, the non-intersecting regions are not treated as inversions of one another. They are treated as their own identity.)  This is a problem for intersectionality because subjective inversions can be equally described as a union between two identity sets.  (In this case, it is a union of feminist and panda identities)  This implicit interchangeability of function means that a unioned set is both an inversion (Something non-unioned identities can never understand) and an identity at the same exact time.  This means that identities and their inversions can be experienced by the same person in parallel.
+--> lntersectionality only deﬁnes inversions by relation, which is to say the framework intersectionality provides to measure identity inversions can only be described by what has been previously self-identiﬁed. Thus, no inversions can even exist within intersectionality unless at least three identities have been established.
 
-Once we introduce an extraneous identity that has no intersections, we discover that the subjective inversion requirement is inaccurate.  Alter all, the black identity can never predict or describe oppression the way this extraneous identity can, which qualifies this extraneous identity as an inversion of the black identity.  This is also true for the panda and the feminist identity.  This means the extraneous identity is part of an identity (remember, inversions = identities) while being its own inversion at the same time.
+--> For example, the feminist and the panda identities intersect in a place that the black identity can no longer predict or describe oppression.  (Additionally, if identity 1 and 2 intersect, the non-intersecting regions are not treated as inversions of one another. They are treated as their own identity.)  This is a problem for intersectionality because subjective inversions can be equally described as a union between two identity sets.  (In this case, it is a union of feminist and panda identities)  This implicit interchangeability of function means that a unioned set is both an inversion (Something non-unioned identities can never understand) and an identity at the same exact time.  This means that identities and their inversions can be experienced by the same person in parallel.
 
-Therefore, in the strive for completeness, intersectionality renders itself inconsistent.
+--> Once we introduce an extraneous identity that has no intersections, we discover that the subjective inversion requirement is inaccurate.  Alter all, the black identity can never predict or describe oppression the way this extraneous identity can, which qualifies this extraneous identity as an inversion of the black identity.  This is also true for the panda and the feminist identity.  This means the extraneous identity is part of an identity (remember, inversions = identities) while being its own inversion at the same time.
+
+--> Therefore, in the strive for completeness, intersectionality renders itself inconsistent.
 <!--DOCTY-->
 
 **Proof:**

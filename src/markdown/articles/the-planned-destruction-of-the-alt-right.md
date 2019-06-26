@@ -5,7 +5,7 @@ contact: mailto:patrick.ryan@emblem21.com
 date: 2016-08-26 23:58:19
 ---
 
-An interesting log I've stumbled upon:
+--> An interesting log I've stumbled upon:
 
 ```
 1: Remember months ago I mentioned that the alt right and 8chan and the like were 

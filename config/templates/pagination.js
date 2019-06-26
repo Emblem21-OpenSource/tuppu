@@ -16,8 +16,8 @@ module.exports = function getPagination (sectionName, pages, articlesPerPage, cu
     : `/${sectionName}/page/${(currentPage + 2)}/index.html`
 
   let pagination = {
-    previous: `<a class="pure-button pure-button-primary" href="${previous}">Previous</a>`,
-    next: `<a class="pure-button pure-button-primary" href="${next}">Next</a>`
+    previous: `<a class="pure-button button-navigation" href="${previous}">Previous</a>`,
+    next: `<a class="pure-button button-navigation" href="${next}">Next</a>`
   }
 
   if (currentPage === 0 && currentArticles.length >= (articlesPerPage - 1)) {

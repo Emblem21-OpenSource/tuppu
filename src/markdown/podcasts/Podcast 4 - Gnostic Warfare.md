@@ -4,11 +4,13 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/10/2019
 ---
-This is the fourth podcast.
+--> This is the fourth podcast.
 
-* [Facebook](https://www.facebook.com/simulationseries/videos/444207459734304)
-* [YouTube](https://www.youtube.com/watch?v=V4PnkaJVxBg)
-* [Discussion](https://8ch.net/gnosticwarfare/res/605.html)
+### Listen
+
+<> [Facebook](https://www.facebook.com/simulationseries/videos/444207459734304)
+<> [YouTube](https://www.youtube.com/watch?v=V4PnkaJVxBg)
+<> [Discussion](https://8ch.net/gnosticwarfare/res/605.html)
 
 ### Credits
 

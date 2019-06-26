@@ -5,9 +5,9 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 ---
 
-[The Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/) described the concept of **cyber phrenology** and detailed how make automated censorship platforms target unintended targets.  
+--> [The Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/) described the concept of **cyber phrenology** and detailed how make automated censorship platforms target unintended targets.  
 
-Here's the most comprehensive timeline of contributing factors for the idea:
+--> Here's the most comprehensive timeline of contributing factors for the idea:
 
 * **2003-2012**: I engaged in extensie research and experimentation for the ideas within my book, "*The Empath*".  The story is about an AI platform that consumes huge amounts of Internet activity to understands and predict human emotions.  These predictions are then used to influence and control powerful economic and political institutions while hiding its influence as genuine human activity.  There's an entire crazy story behind my efforts to write this book that I will release that at a later date.
 * **Aug 23rd, 2012**: NodeJS contributors and GitHub employees [colluded to intimidate and silence me because](https://archive.fo/rykjh) I complained about male engineers acting strangely around female engineers.  They tried to get me fired from my job and attempted to blacklist me from the tech field entirely at a time when my now adopted daughter lived in dire and extreme poverty.
@@ -38,9 +38,9 @@ Here's the most comprehensive timeline of contributing factors for the idea:
 * **Apr 4th, 2018**: [Google employees protested the Maven project, a effort between the Department of Defense and Google to make autonomous drones.](https://archive.fo/39Lw0)
 * **Mar 25th, 2018** [I made an unpredictable move and released a hip-hop song that contained clues about the Silicon Valley actors who went after me.](https://soundcloud.com/12dcode/underbelly)
 
-When I initially chronicled these events, I had done so via an [impromptu AMA on 8chan that has been active for almost four months](https://archive.fo/8a3G9). The community's response yieled an extremely unexpected outcome.  The curiousity, interplay, and revelations were genuine enough to make me start organizing my efforts in a more formal and accessible way.  Ever since I started [The Abusive Oracle](https://abusiveoracle.blogspot.com/), I've left hidden and complicated clues everywhere to protect myself and to send signals to certain types of personalities.  After everything that has been going on, I beleive the world just might finally be ready to tackle [the problem of the new emotion](https://archive.fo/o8fVE#selection-235.0-235.29) and what it means for national security, domestic affairs, economic arrangements, and human destiny.
+--> When I initially chronicled these events, I had done so via an [impromptu AMA on 8chan that has been active for almost four months](https://archive.fo/8a3G9). The community's response yieled an extremely unexpected outcome.  The curiousity, interplay, and revelations were genuine enough to make me start organizing my efforts in a more formal and accessible way.  Ever since I started [The Abusive Oracle](https://abusiveoracle.blogspot.com/), I've left hidden and complicated clues everywhere to protect myself and to send signals to certain types of personalities.  After everything that has been going on, I beleive the world just might finally be ready to tackle [the problem of the new emotion](https://archive.fo/o8fVE#selection-235.0-235.29) and what it means for national security, domestic affairs, economic arrangements, and human destiny.
 
-If all goes as planed, next week will bring this act of the story to an end.  To verify my involvement in that upcoming event, this SHA-512 was generated based on a sentence involving the names and actions of the event that will take place.  I injected a newline after every 32 characters to improve readability on mobile devices:
+--> If all goes as planed, next week will bring this act of the story to an end.  To verify my involvement in that upcoming event, this SHA-512 was generated based on a sentence involving the names and actions of the event that will take place.  I injected a newline after every 32 characters to improve readability on mobile devices:
 
 ```
 4e80da482f38dbe5cea52278b9f921d2
@@ -49,8 +49,8 @@ d346eb6e6acd472a64613a1e2a4e3936
 6ab591925ceb6a20d63ec36b4d431ec8
 ```
 
-By Friday of next week, I will release the sentence used to generate the hash above.  I used the following command on a Debian-flavor of Linux:
+--> By Friday of next week, I will release the sentence used to generate the hash above.  I used the following command on a Debian-flavor of Linux:
 
 `echo "<my hidden message to reveal next friday" | sha512sum`
 
-**UPDATE**: I had begun writing this on Janurary 10th, 2018 and the date mispublished.  I've since updated the date and URL to reflect the date the article was actaully released.  (Thanks [@eli_schiff](https://twitter.com/eli_schiff/status/982721629821292545))
+--> **UPDATE**: I had begun writing this on Janurary 10th, 2018 and the date mispublished.  I've since updated the date and URL to reflect the date the article was actaully released.  (Thanks [@eli_schiff](https://twitter.com/eli_schiff/status/982721629821292545))

@@ -25,7 +25,7 @@ renderer.code = function (code, infostring, escaped) {
 
   return `<code>
       <div class="pure-g rounded">
-        <div class="pure-u-1-8">
+        <div class="pure-u-1-8 lineNumberContainer">
           <pre class="lineNumbers">
             ${lineNumbers}
           </pre>
@@ -72,8 +72,32 @@ renderer.checkbox = function (checked) {
   return ``
 }
 */
+const tabRegex = /--&gt; /g
 renderer.paragraph = function (text) {
-  return `<p>&emsp;${text}</p>`
+  if (text.indexOf('&lt;&gt; ') === 0) {
+    // Dealing with a table
+    const cells = text.substr(9)
+      .trim()
+      .split('<br>&lt;&gt; ')
+      .map(item => item.replace('href="', 'class="pure-button" href="'))
+    const spacing = 3
+
+    let result = ''
+
+    for (var i = 0; i < cells.length;) {
+      result += `<tr>
+        <td>${cells[i] || ''}</td>
+        <td>${cells[i + 1] || ''}</td>
+        <td>${cells[i + 2] || ''}</td>
+      </tr>`
+      i += spacing
+    }
+
+    return `<table class="tableOptions"><thead /><tbody>${result}</tbody></table>`
+  } else {
+    console.log('>>>', text)
+    return `<p>${text.replace(tabRegex, '&emsp;')}</p>`
+  }
 }
 /*
 renderer.table = function (header, body) {
@@ -97,16 +121,14 @@ renderer.em = function (text) {
 }
 */
 renderer.codespan = function (code) {
-  return `<p>
-    <code>${code}</code>
-  </p>`
+  return `<code class="code-one-line">${code}</code>`
 }
 /*
 renderer.br = function () {
   return ``
 }
 
-renderer.del = function (text) {
+renderer.del = function (text) { 
   return ``
 }
 

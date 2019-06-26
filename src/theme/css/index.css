@@ -16,12 +16,13 @@ body {
   font-size: 1em;
   line-height: 1.75;
   letter-spacing: -.5px;
-  background: #f7f8fc;
+  background: #252523;
 }
 
 a {
   text-decoration: none;
-  color: rgb(61, 146, 201);
+  font-weight: bold;
+  color: #d47a2b;
 }
 a:hover,
 a:focus {
@@ -61,9 +62,9 @@ h3 {
   min-width: 125px;
   padding: 15px;
   background: #000000;
-  opacity: 0.9; 
-  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 90);
-  filter: alpha(opacity= 90);
+  opacity: 0.95; 
+  -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  filter: alpha(opacity=95);
 }
 
 .blackbox-contents h1, .blackbox-contents h2, .blackbox-contents nav {
@@ -95,7 +96,7 @@ h3 {
 }
 .nav-item a {
   background: transparent;
-  border: 2px solid rgb(176, 202, 219);
+  border: 2px solid #4f6371;
   color: #fff;
   margin-top: 1em;
   letter-spacing: 0.05em;
@@ -123,7 +124,10 @@ h3 {
 }
 
 .post {
-  padding-bottom: 2em;
+  background-color: #1d1d1a;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .post-avatar {
@@ -139,7 +143,7 @@ h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 6px;
-  color: #707070;
+  color: #bdbbab;
   font-weight: normal;
 }
 
@@ -147,9 +151,10 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: normal; 
   line-height: 155%;
-  color: #000000;
+  color: #d6d6d4;
   font-size: 90%;
   margin: 0;
+  font-style: italic;
 }
 
 .post-images {
@@ -201,6 +206,7 @@ h3 {
     position: fixed;
     top: 0;
     bottom: 0;
+    max-width: 200px;
   }
 
   .footer {
@@ -222,6 +228,7 @@ h3 {
 code, pre, samp {
   font-family: source code pro,Consolas,monospace;
   font-size: inherit;
+  background-color: #000;
 }
 
 pre {
@@ -238,6 +245,15 @@ pre {
   padding-left: 10px;
 }
 
+.code-one-line {
+  padding: 1em;
+  color: #fff;
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
 .lineNumbers {
   color: #888;
   padding-left: 10px;
@@ -246,35 +262,35 @@ pre {
 }
 
 blockquote {
-    border-radius: 3px;
+    border-radius: 13px;
     position: relative;  /*  <--- */
     font-style: italic;
     text-align: center;
-    padding: 1rem 1.2rem;
+    padding: 0.1rem 0.6rem;
     width: 80%;  /* create space for the quotes */
-    color: #4a4a4a;
+    font-size: 18px;
     margin: 1rem auto 2rem;
-    color: #4a4a4a;
-    background: #E8E8E8;
+    background: #323c46;
 }
 /* -- create the quotation marks -- */
 blockquote:before,
 blockquote:after{
     position: absolute;
     /* -- inside the relative position of blockquote -- */
+    margin-top: 19px;
     top: 13px;
-    color: #E8E8E8;
+    color: #323c46;
     font-size: 130px;
     font-weight: bold;
 }
 blockquote:before{
     content: "“";
-    margin-right: 10px;
+    margin-right: 20px;
     right: 100%;
 }
 blockquote:after{
     content: "”";
-    margin-left: -13px;
+    margin-left: -15px;
     left: 100%;  
 }
 
@@ -323,6 +339,54 @@ blockquote:after{
   line-height: 1.5em;
   font-family: "Playfair Display", serif;
   font-size: 1.5em;
-  color: #222;
+  color: #caa654;
+  margin-top: 0px;
   margin-bottom: 0.2em;
+}
+
+a.pure-button-primary {
+  background-color: #172452
+}
+
+.lineNumberContainer {
+  max-width: 4em;
+}
+
+table.tableOptions {
+  max-width: 450px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+table.tableOptions td, table.tableOptions th {
+  border: 0px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.tableOptions tbody td {
+  font-size: 13px;
+}
+table.tableOptions tfoot td {
+  font-size: 14px;
+}
+table.tableOptions tfoot .links {
+  text-align: right;
+}
+table.tableOptions tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+table.tableOptions tbody tr td a.pure-button {
+  min-width: 100%;
+}
+
+strong {
+  color: #b7b6ab;
+}
+
+.button-navigation {
+  background-color: #4f6371;
 }
