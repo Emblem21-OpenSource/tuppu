@@ -3,6 +3,7 @@ title: The Butterfly War Begins
 date: 2017-12-13 23:07:34
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
+parents: null
 ---
 
 --> In the [Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/), I detail how Silicon Valley uses cyber phrenology to violate civil rights legislation.

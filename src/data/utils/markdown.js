@@ -95,7 +95,6 @@ renderer.paragraph = function (text) {
 
     return `<table class="tableOptions"><thead /><tbody>${result}</tbody></table>`
   } else {
-    console.log('>>>', text)
     return `<p>${text.replace(tabRegex, '&emsp;')}</p>`
   }
 }

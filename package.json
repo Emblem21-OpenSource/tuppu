@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build:dev": "cross-env NODE_ENV=development webpack --mode development --display=minimal",
     "build:prod": "cross-env NODE_ENV=production webpack --mode production",
-    "start": "nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0"
+    "start": "nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0",
+    "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
@@ -46,5 +47,6 @@
     "webpack-dev-server": "^3.4.1",
     "webpack-merge": "^4.2.1",
     "write-json-webpack-plugin": "^1.1.0"
-  }
+  },
+  "dependencies": {}
 }

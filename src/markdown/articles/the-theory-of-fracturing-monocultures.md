@@ -3,6 +3,7 @@ title: The Theory of Fracturing Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2013-08-14 09:56:34
+parents: null
 ---
 
 **Preface**

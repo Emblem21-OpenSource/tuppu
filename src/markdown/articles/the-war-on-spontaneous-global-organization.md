@@ -3,6 +3,7 @@ title: The War On Spontaneous Global Organization
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-01-23 12:49:07
+parents: null
 ---
 
 --> The Internet has allowed anyone to partake in the massive coordination of human effort that has been historically reserved for Pharaohs... and the Pharaohs are upset that their monopoly on human effort has competition.  This impulse to engage in "_spontaneous global organization_" is the most promising aspect of the Internet, however, various channels that frequently nurture such organization have been under attack.  Here is a list of fronts within the Pharaoh's war against spontaneous global organization:
@@ -10,7 +11,7 @@ date: 2016-01-23 12:49:07
 *   [The Code of Conduct battles](https://archive.is/Z4p9F) in open source have injected unneeded political polarization/dialectical confrontation among key communities of internet infrastructure, primarily, [Linux communities](https://archive.is/6oJva).  Open source has been the first and most influential examples of spontaneous global organization in the modern world.
 *   [The Gawker infiltration of 4chan](https://archive.is/JSxKN), a culture that had produced the Anonymous brand (Which was hijacked by state actors after [Chanology](https://en.wikipedia.org/wiki/Project_Chanology)) resulted in [the purging of 25,000 comments from /r/gaming for violating the payola of pop untouchables](https://www.reddit.com/r/gaming/comments/2dz0gs/totalbiscuit_discusses_the_state_of_games/).  The Anonymous brand showed the world that people across multiple identity categories (racial, gender, national, religious, etc.) can come together without a leader or a plan to affect cultural affairs en masse.
 *   [The bogus rape charges](https://archive.is/WFz5M) against Julian Assange to suppress Wikileaks.  Wikileaks showed that like-minded individuals can utilize the Internet to convince the politically disillusioned to leak information from their powerful positions.
-*   The NSA's silent usage of zero day exploits, especially [heartbleed](https://archive.is/lBetf) and [Juniper backdoors](https://archive.is/btH83).  SSL has been a staple in secure communications that spontaneous global organization requires, prompting both [American ](https://archive.is/PMiHL)and [British](https://archive.is/yfNxX) governments to demand its regulation.
+*   The NSA's silent usage of zero day exploits, especially [heartbleed](https://archive.is/lBetf) and [Juniper backdoors](https://archive.is/btH83).  SSL has been a staple in secure communications that spontaneous global organization requires, prompting both [American](https://archive.is/PMiHL)and [British](https://archive.is/yfNxX) governments to demand its regulation.
 *   [The highly coordinated and prolonged culture war against the gaming community](https://archive.is/EgUGR).  Gamers from all over the world reflexively eliminate identity lines and spontaneously organize to solve challenges within a gaming world.
 *   [The Federal Reserve cannot regulate BitCoin](https://archive.is/V0A0S), and so, [the Group of 30 believes BitCoin to be evil](https://archive.is/bEwbh).  BitCoin has demonstrated that it might be possible to do away with the clearing houses and the trust problems associated with central banking through a clever usage of spontaneous global organization.
 

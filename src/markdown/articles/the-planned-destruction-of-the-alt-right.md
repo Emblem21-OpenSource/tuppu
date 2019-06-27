@@ -3,13 +3,14 @@ title: The Planned Destruction of the Alt-Right
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-08-26 23:58:19
+parents: null
 ---
 
 --> An interesting log I've stumbled upon:
 
 ```
 1: Remember months ago I mentioned that the alt right and 8chan and the like were 
-   pawns to be sacrified?
+   pawns to be sacrificed?
 2: Yes.
 1: The time has come
 2: I'm listening.
@@ -19,7 +20,7 @@ date: 2016-08-26 23:58:19
 1: I've been assisting with major efforts on the CTR campaign
 2: lol. of course you have.
 1: Primarily honeypot setups
-2: For what side?.
+2: For what side?
 1: My side of course
 2: ROFL. go on.
 1: Now that the GamerGate logs have been released, the evidence is mounting up 
@@ -33,14 +34,14 @@ date: 2016-08-26 23:58:19
 1: We now have to talk about the meta.  I've told you about Huntington, yes?  
    Samuel P. Huntington?
 2: Remind me again real quick.
-1: Marx says all conflict stems from the poor vs. the rich.  Huntingon says all 
+1: Marx says all conflict stems from the poor vs. the rich.  Huntington says all 
    conflict stems from people getting buttblasted and bringing in friends to help
 2: Yes, ok.
 1: Marx proposes an inevitable resolution of conflict, Huntington proposes 
    infinite escalation.  From my early arguments online to the fracturing of 
    4chan to GamerGate to 8chan, I've watched this infinite escalation happen.  
    It's always the same ideological actors, rebranding themselves under a new 
-   crusdaer banner.  So I've worked hard to setup a trap.
+   crusader banner.  So I've worked hard to setup a trap.
 2: I assume you're alluding to something about perpetuating rise/fall conflicts.
 1: GamerGate did one thing very well.  It created the tools and setup the outlets 
    in which the loyal flock can retreat to.  Those retreat centers became 
@@ -50,7 +51,7 @@ date: 2016-08-26 23:58:19
    physically meet up in places and trade stories.  That's not how it works 
    anymore.
 2: "As people avoiding partisan extremism physically meet up in places and 
-   trade stories"  Like, bar folk?.
+   trade stories"  Like, bar folk?
 1: Yep.  Or refugees.  Or local communities.  America has a long history of 
    running to the middle.
 2: Ok.
@@ -60,7 +61,7 @@ date: 2016-08-26 23:58:19
    there... And you create an echo chamber of things you like.
 2: Right.
 1: The middle has fragmented into individuals.  Unreachable individuals.  
-   Totally innoculated from the partisans.  Which means there is no way to 
+   Totally inoculated from the partisans.  Which means there is no way to 
    rally that middle to attack enemy partisans.  This is how the right lost 
    in the 1950s.  They let the socialists rally the common emotional ground 
    (with the help of highly consolidated mass media) with the unaligned to 
@@ -71,18 +72,18 @@ date: 2016-08-26 23:58:19
 2: Ok, so it's repeating.
 1: Not just repeating but scaling.  They didn't physically exterminate the 
    right.  They still exist.  So they have to add more and more power and 
-   urgency to their mass media narrative.  This is done to stave off diminshing 
+   urgency to their mass media narrative.  This is done to stave off diminishing 
    returns of the true believer.  But the paradox is that the number of true 
    enemies has dwindled to nothingness.
 2: Ok.
-1: The mass media engine is so hystyerical about saving itself that it is 
-   exterting tremendous amounts of energy to attack like 4 racist people in 
-   Georgia.  This is just diminshing returns.  The DNC has worked overtime to 
+1: The mass media engine is so hysterical about saving itself that it is 
+   exerting tremendous amounts of energy to attack like 4 racist people in 
+   Georgia.  This is just diminishing returns.  The DNC has worked overtime to 
    include more minorities to scale to.  Gays, muslims, etc.  Just to have new 
    contexts to repeat their success.  But it hasn't been working so well.
-2: Why?.
+2: Why?
 1: Numbers and cultural libertarianism.
-2: Too small?.
+2: Too small?
 1: Numbers of minorities are fine.  Historically similar to other points in 
    leftist cultural victory.  Blacks were ~14% during Civil Rights.  Homosexuals 
    are 10%.  It's not about the number of the minority anymore.  It's about the 
@@ -106,7 +107,7 @@ date: 2016-08-26 23:58:19
    fishing with dynamite man.  So, with that, here's the play based on all of 
    this, the play I wanted years ago as you know.
 2: I'm listening.
-1: When the DNC hits the point where they start to detect diminshing returns to 
+1: When the DNC hits the point where they start to detect diminishing returns to 
    the narrative. they have always escalated.  They prefer soft power plausible 
    deniability escalation, but when that is exhausted, they will not shy away 
    from hard power escalation.  Given the *chans creation of GamerGate, the heavy 
@@ -121,11 +122,11 @@ date: 2016-08-26 23:58:19
 2: Ok, so we're not talking about the unaligned anymore..
 1: They can't reach the non-partisans anymore.  This whole effort boils down to 
    the theories of one person: His name is Cass Sunstein.
-2: What's the role?.
+2: What's the role?
 1: Architect.
-2: Of?.
+2: Of?
 1: His book is called " Democracy and the Problem of Free Speech".
-2: A model?.
+2: A model?
 1: A summary: “Sunstein co-authored a 2008 paper with Adrian Vermeule, titled 
    “Conspiracy Theories,” dealing with the risks and possible government responses 
    to false conspiracy theories resulting from “cascades” of faulty information 
@@ -183,7 +184,7 @@ date: 2016-08-26 23:58:19
    or costs status among their peers.
 2: Ok..
 1: Thus, their hyper obsession with virtue signalling.
-2: And in reference to true believers?.
+2: And in reference to true believers?
 1: The right sees social capital as something VERY different.  The don't see it as 
    a gamble.  The left sees social capital as a gambling chip whose payout trends 
    towards profit upon proper cultural synchronization.  The right sees social 
@@ -209,15 +210,15 @@ date: 2016-08-26 23:58:19
    through force, my life is of no value, and I will die.
 2: LOL.
 1: Which means, they have a built-in martyr complex.  Not the attention seeking 
-   martyrs like from the 1960s and 1990s, but a willingless towards total 
+   martyrs like from the 1960s and 1990s, but a willingness towards total 
    self-sacrifice once deprived of all social capital.  
 2: So... you can't have social capital in an echo chamber?  People's entire 
    inner circles are echo chambers though and they're just fine with it.
 1: You can, but it's no different than printing your own currency.  Social 
    capital in an echo chamber just inflates endlessly to the point of absolute 
-   valuelessness, but it keeps the partisans are intoxicated.
+   worthlessness, but it keeps the partisans are intoxicated.
 2: So then social capital isn't needed..
-1: So, to summerize everything:
+1: So, to summarize everything:
  - The Left won the culture war in the 1960s
  - The Left uses mass media narratives to suppress the Right because outright 
   genocide is still frowned upon
@@ -239,7 +240,7 @@ date: 2016-08-26 23:58:19
    8chan will be aggressively targeted. After Hillary's speech, the mass media 
    engines are already lining up.  CTR is flooding the place with Poe's Law.  
    Posts like "HEY BROTHERS I KILLED A BLACK BABY!" then suddenly, mass media 
-   reports on it. There will be lots and lots of attempst to try and steer 8chan 
+   reports on it. There will be lots and lots of attempts to try and steer 8chan 
    into nothing more than a dirt-tier skinhead community.  CTR already have the 
    pipeline setup.  They will create the post.  Then their agents will bump it.  
    Then they'll leak it to their contacts in mass media.  And thus, the DNC gets 
@@ -251,21 +252,21 @@ date: 2016-08-26 23:58:19
 1: The left has already established their echo chambers.  Echo chambers that 
    cannot reach the unaligned.  It will fail miserably.
 2: Have you found a cost efficient way to reach the unaligned? what's the game 
-   plan here?.
+   plan here?
 1: Yes. and I'll get to that in a moment.  Meanwhile, my team will honeypot the 
    ever living fuck out of CTR.  We're been building up a network of fake leftist 
    influencers that appear sympathetic.
-2: Honeypots for what purpose?.
+2: Honeypots for what purpose?
 1: Exposing logs, emails, chats, and transactions between CTR, Clinton, and the 
    DNC. But that's nothing but standard op reqs.  Once the DNC sees how little 
-   impact this massive effort has, they will take whatever false concensus their 
+   impact this massive effort has, they will take whatever false consensus their 
    media outlets have forged and run with that to pass sweeping laws to ban 
    "hate communities" and "conspiracy theorists".
 2: Sunsteins 1 & 2.
 1: Then the arrests happen.  Then the botched arrests resulting in incapacitation 
-   and execution happen.  The FBI has been seeding CP int he chans for years.
+   and execution happen.  The FBI has been seeding CP in the chans for years.
 2: LOL.
-1: They did that to establish and pressure informants and mods.  yhey have quite 
+1: They did that to establish and pressure informants and mods.  They have quite 
    the circus already lined up to roll out in front of the cameras to show just 
    how bad 8chan is and just how needed these news laws are.
 2: Right..
@@ -279,7 +280,7 @@ date: 2016-08-26 23:58:19
    unaligned will finally be brought into it.. but not as supporters.... as 
    potential terrorists.  The alt-right and the chans will be mass detained and 
    the world will cheer, which will setup a cycle of greater and greater 
-   detainments.  Mrs. Clinton has already made mention of going after those 
+   detainment.  Mrs. Clinton has already made mention of going after those 
    engaging in wrongthink.  Meanwhile, her false echo chambers will shouw: "We 
    stopped hate! YAaaaay!"  This will result in more and more innocent people 
    being targeted by these draconian laws and no amount of mass media will work 
@@ -290,19 +291,19 @@ date: 2016-08-26 23:58:19
 2: I suppose they could support govt out of fear as well..
 1: Some, but American's don't fear government.  They fear loss of social capital 
    and most people have a rightest model of social capital.
-2: Social capital or die? isn't that kind of a human thing?.
-1: That's the natural intuitive model humans have all over the world. The anomoly 
+2: Social capital or die? isn't that kind of a human thing?
+1: That's the natural intuitive model humans have all over the world. The anomaly 
    is the leftist mode of social capital.  It usually requires generations of 
    urbanization to normalize that model and we're still two or three shy of full 
    Babylon.
-2: The leftist perspective isn't breeding?.
+2: The leftist perspective isn't breeding?
 1: They certainly do have a penchant for abortion, don't they?  My position is 
    this: If two people are arguing about the interior decoration theme of the room, 
    you can engage in debate and try and negotiate a diplomatic solution.. or you 
    can set the house on fire and watch them unify to put it out.  The sooner 
    centralized government is forced to be overtly tyrannical, the sooner we will 
    have the resources to undermine it.
-2: technological resources?.
+2: technological resources?
 1: Mass human involvement and participation.  It's a big reason I support Clinton.
 2: I get what you're saying but I think you believe something I don't..
 1: She's the primal force of 1960s entitlement special snowflake 
@@ -311,18 +312,18 @@ date: 2016-08-26 23:58:19
 2: It sounds like you're saying at the basis of human nature is still a desire 
    for social capital based on self-sufficiency .
 1: No.  The desire is unimportant.  The basis of human nature is discovering 
-   ways you as the individual can safely accumualte social capital and minimize 
-   risk of loss. Tthat basis is how the rightist model of social capital works.
+   ways you as the individual can safely accumulate social capital and minimize 
+   risk of loss. That basis is how the rightist model of social capital works.
 2: "most people have a Rightist model of social capital" <- what's the point of
-   that then?.
+   that then?
 1: It just happens to be that self-sufficient credos and ethos align with how 
    that discovery plays out on average
-2: And you think human involvement will just show up in opposition to tyranny?.
+2: And you think human involvement will just show up in opposition to tyranny?
 1: Nope
 2: Bottom line this for me then. I don't see where you're going..
 1: I believe human involvement will be forced to engage in acts that undermine 
    that tyranny.
-2: How is that possible?.
+2: How is that possible?
 1: Have you been looking into Venezuela recently?
 2: Not recently. I just know their recourses are falling apart and people are 
    trying to leave..
@@ -335,29 +336,29 @@ date: 2016-08-26 23:58:19
    supporters over opposition and the unaligned.  Care to guess how many people 
    have socialism in Venezuela now?
 2: Most.
-1: I would argue that these people, if given the oppotunity, would elect a populist 
+1: I would argue that these people, if given the opportunity, would elect a populist 
    to overtly overthrow that government. Even by violent means. No hand-wringing. 
    No arguing over moral righteousness.  No concerns over legacy and the right 
    side of history.
-2: Are they functional enough for that?.
+2: Are they functional enough for that?
 1: Create an ecosystem where populists compete for influence (which isn't hard 
    since the people who already support that populist have ALREADY sorted themselves 
    into echo chambers)  And poof, out comes the elements of a new regime :D
-2: So then we can watch this, like, watch this happen there?.
+2: So then we can watch this, like, watch this happen there?
 1: Yep.
-2: Timeframe?.
+2: Timeframe?
 1: Two to five years.
 2: Nice..
 1: Usually accelerated once foreign powers realize the situation and pour money 
    into it.
-2: What do they have to gain?.
+2: What do they have to gain?
 1: Puppet state, better trade terms, cheaper resources, less threatening military 
    neighbors, expansion of geopolitical sphere, etc.
 2: Ok..
 1: The Alt-right will burn.  And nothing will rise from it's ashes.
-2: You're explained this all before. just not in this amount of step-by-step 
+2: You've explained this all before. just not in this amount of step-by-step 
    detail..
-1: Sunstein will believe he's achieved victory, But little does he know he only 
+1: Sunstein will believe he's achieved victory, but little does he know he only 
    made the destruction of leftist social capital the policy of the establishment :D  
    Rightist social capital will flourish because of him.
 ```

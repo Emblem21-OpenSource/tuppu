@@ -3,6 +3,7 @@ title: The Experiments in Fracturing Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2014-10-25 17:35:43
+parents: null
 ---
 
 --> It's been over a year since [The Theory of Fracturing Monocultures](/2013/08/14/the-theory-of-fracturing-monocultures/) was published and during that year, the theory has been successfully tested.

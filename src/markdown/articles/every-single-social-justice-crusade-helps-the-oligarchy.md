@@ -3,6 +3,7 @@ title: Every Single Social Justice Crusade Helps The Oligarchy
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2013-09-10 04:36:16
+parents: null
 ---
 
 --> **Redistribution of wealth** means to confiscate the assets of the weakest of the upper class (who are not savvy enough to buy legal protections against or bypass government force) into the lower classes so that they can spend their new-found income stream on the elite who dominate price controls.

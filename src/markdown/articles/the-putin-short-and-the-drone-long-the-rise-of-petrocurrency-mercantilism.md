@@ -3,6 +3,7 @@ title: The Putin Short and the Drone Long: The Rise of Petrocurrency Mercantilis
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2014-09-09 16:00:44
+parents: null
 ---
 
 --> This is a concept I've been working on since 2012 because it is the only solution I can think of to the zero bound problem that kept Ben Bernanke awake for his entire career at the Federal Reserve.

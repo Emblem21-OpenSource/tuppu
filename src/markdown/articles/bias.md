@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-11-14 23:14:41
 draft: true
+parents: null
 ---
 
 --> To say "I am X" is to also say "I am !X".  This enforces the inability to associate with the opposite of X and limits the ability to adapt and survive. Therefore, to ensure a person's self-destruction, convince them that self-identification is an enshrined right.
@@ -16,7 +17,7 @@ draft: true
 
 --> At the end of this transformation, the ideals of the self are completely sacrificed to preserve X which finally allows for one's vessel to physically sacrifice itself ot preserve X.  I call this process "*Dialectic martyrdom*" and the religious associations of such a phrase explain the name for this blog.
 
---> As you might be able to tell, I herald from the Marxist school of thought.  While I have been known to have a vicious temperament at times, I am not one of the emotional junkies typically associated with this brand.  Many of my economic perspectives are influenced by Marxism, specifically, how Marx was able to use Gresham's Law to explain systemic flaws within the Britain's gold standard established by Isaac Netwon.  You would be surprised how many contemporary financial, trading, and monetary terms and concepts date back to Marx.  The emotional junkies were the byproduct of mustering a sufficient enough fanbase to kill enough people to squash any competing schools of thought.  The further we drift from European mercantilist configurations, the more Marxism takes on mythic and religious qualities... qualities that have been aggressively interfering with human development since the 1960s.
+--> As you might be able to tell, I herald from the Marxist school of thought.  While I have been known to have a vicious temperament at times, I am not one of the emotional junkies typically associated with this brand.  Many of my economic perspectives are influenced by Marxism, specifically, how Marx was able to use Gresham's Law to explain systemic flaws within the Britain's gold standard established by Isaac Newton.  You would be surprised how many contemporary financial, trading, and monetary terms and concepts date back to Marx.  The emotional junkies were the byproduct of mustering a sufficient enough fanbase to kill enough people to squash any competing schools of thought.  The further we drift from European mercantilist configurations, the more Marxism takes on mythic and religious qualities... qualities that have been aggressively interfering with human development since the 1960s.
 
 --> The 1990s in America was the golden age of exploring how best to blend mass media dominance with the theories of Gramsci, Marcuse, and Derrida.  You might have heard this process described as "*cultural Marxism*", which I have always found ironic since Marxism describes culture to be nothing more than a superficial bourgeois artifact of the superstructure.  The idea is simple and effective: *invert social norms, normalize taboos, reward minority cultures, and punish members of the majority culture.*  The most effective means of organizing human behavior to fulfill all of those goals is through *identity politics*... or: *"I am X, I am not the opposite of X, I am not X because there is only X."* 
 

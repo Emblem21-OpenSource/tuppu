@@ -3,6 +3,7 @@ title: The Shadow Emperor Hedge
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-06-15 19:46:57
+parents: null
 ---
 
 --> The [Council on Foreign Relations ](http://archive.is/kRCk#selection-1445.0-1447.18)and [Goldman Sachs](http://archive.is/mxaxg#selection-779.0-779.14) have made their support of Hilary Clinton very clear.  [Google's search engine is trying to keep such support a secret](http://archive.is/8UkCy).  Saudi Arabia's massive influence over oil markets and petrodollar stability, however, doesn't give them the power to be overt in such support:

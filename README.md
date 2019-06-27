@@ -1,3 +1,5 @@
+`npm install`
+
 `npm start` to develop.
 
 `npm run build:dev` to see how minimization works.
