@@ -3,7 +3,7 @@ title: Symbol Worship
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2014-04-12 06:03:51
-parents: null
+related: null
 ---
 
 --> The psychological phenomenon for seeing faces in clouds is called pareidolia. When prisoners are isolated in their cells, they come across a related event called the prisoner's cinema, which results in them extracting a social context from the lights and halos they see. The mind will force itself to see social data even when there is none. This is the bias that science desperately tries, and usually fails, to overcome.

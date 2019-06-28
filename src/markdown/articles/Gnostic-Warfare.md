@@ -4,7 +4,7 @@ date: 2018-06-02 14:50:09
 author: Patrick Ryan
 description: The future of AI Conflict
 contact: mailto:patrick.ryan@emblem21.com
-parents: null
+related: null
 ---
 
 --> Gnostic Warfare is a holistic analysis of attack vectors focused on compromising the common elements shared between multiple modes of cognition.  Psychological operations target human biases, but cognitive operations target shared traits between human, machine, animal, neural, and hybrid methodologies of cognitive, approximate cognition, and anti-cognition.  [Butterfly War](/2017/10/13/The-Butterfly-War/) is an example of a cognitive operation, Its battlespace is defined not only by the psychological and ideological biases of the human operators and owners of an AI platform, but also by the epistemological limitations of the AI platform itself.

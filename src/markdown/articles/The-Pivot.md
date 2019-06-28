@@ -3,7 +3,7 @@ title: The Pivot
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2017-04-30 11:23:00
-parents: null
+related: null
 ---
 --> I have not posted in some time because I wanted to watch the result of the election play out.  I wanted to see what the emotional addicts, the social justice warriors, and the rest of the irrationals would do when their “*Right Side of History*” cult was deprived of executive privilege.  I also wanted to see what the nationalists, [who have been long since been abandoned by the system of social and economic support]head.1), would do with their new found representation.  Finally, I wanted to see what the [entrenched powers would do to protect their cult state](#the-pivot-2).
 

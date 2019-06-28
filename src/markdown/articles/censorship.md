@@ -3,7 +3,7 @@ title: Censorship
 date: 2014-07-07 18:24:24
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-parents: null
+related: null
 ---
 
 --> Censorship is not a top-down reaction chasing down an idea after it has gained popularity. That's Fischer Price's "_My First Dictatorship_"; some fairy tale plebs tell their children if they do bad things.

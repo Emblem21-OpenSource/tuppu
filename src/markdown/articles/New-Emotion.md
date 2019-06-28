@@ -3,7 +3,7 @@ title: New Emotion
 date: 2018-04-07 13:51:34
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-parents: null
+related: null
 ---
 
 --> [The Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/) described the concept of **cyber phrenology** and detailed how make automated censorship platforms target unintended targets.  

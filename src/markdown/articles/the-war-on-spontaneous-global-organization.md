@@ -3,7 +3,7 @@ title: The War On Spontaneous Global Organization
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-01-23 12:49:07
-parents: null
+related: we-are-all-terrorists-now
 ---
 
 --> The Internet has allowed anyone to partake in the massive coordination of human effort that has been historically reserved for Pharaohs... and the Pharaohs are upset that their monopoly on human effort has competition.  This impulse to engage in "_spontaneous global organization_" is the most promising aspect of the Internet, however, various channels that frequently nurture such organization have been under attack.  Here is a list of fronts within the Pharaoh's war against spontaneous global organization:

@@ -3,7 +3,7 @@ title: Cyber War Cometh
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-10-17 22:25:00
-parents: null
+related: null
 ---
 
 --> [Assange dropped a few  precommitments.](http://archive.is/usn3y)

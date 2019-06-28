@@ -3,7 +3,7 @@ title: We Are All Terrorists Now
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-10-13 23:45:33
-parents: null
+related: null
 ---
 
 --> When the music industry was undermined by file distribution software, people who downloaded files were called terrorists.

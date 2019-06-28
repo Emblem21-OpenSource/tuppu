@@ -3,7 +3,7 @@ title: After sixty-five years, France finally admits the end of Continental Nati
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-11-14 23:14:41
-parents: null
+related: null
 ---
 
 --> Continental National Socialism is the organizational method that emerges from the confluence of Swiss banking influence, German export dominance, and the remnants of French and Dutch colonial power suckling off of British and American geopolitical activity.  This, of course, is not the widely held definition and for those who are not American, it's important to understand the American reactionary's love affair with what they perceive to be Continental National Socialism.

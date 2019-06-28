@@ -3,7 +3,7 @@ title: What Is A Cult State?
 date: 2018-07-30 13:15:07
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-parents: null
+related: null
 ---
 
 --> Three days after Barack Obama won his first term as President in 2008, [I created CultState.com](https://archive.fo/u5eqA#selection-1111.0-1111.10).  By that time, I had spent nearly a decade dealing with the hip-hop community in a variety of capacities. (mixer, producer, performer, programmer, etc.)  The black American community has long been a guinea pig for mass disenfranchisement experiments: destruction of self-contained communities in favor of ineffective integration, watering down their communal identity by lumping it in with cosmopolitan humanism, targeted assassination and intimidation of key talent and influencers, the intentional promotion and intentional sacrifice of Messianic figures, and the accelerated mass fragmentation we lovingly labeled "individualism".  The purpose behind these experiments wasn't just to counter the tremendous Soviet Russian agitation of yet another neglected demographic, but also how to successfully counter such collectivist agitation where ever it appears next.  This was all performed with the now antiquated instruments of social psychology and 1950s-era "cutting edge" developments in sociology.  The most successful means of stopping the viral effects of such planned agitation was to preemptively destroy each individual's capacity and instincts to engage in spontaneous organization.  It was as if Charles Darwin, Friedrich Nietzsche, and Ayn Rand decided to raise a community of children and then suddenly abandon them on the island in Lord of the Flies.

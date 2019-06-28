@@ -3,7 +3,7 @@ title: The Planned Destruction of the Alt-Right
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-08-26 23:58:19
-parents: null
+related: null
 ---
 
 --> An interesting log I've stumbled upon:
