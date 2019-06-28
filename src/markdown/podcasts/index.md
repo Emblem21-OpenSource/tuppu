@@ -5,8 +5,7 @@ contact: mailto:patrick.ryan@emblem21.com
 date: 6/6/2019
 index: true
 ---
-
-I occasionally get invited to think outloud during podcasts/streamcasts.  Here's the running collection of recorded works:
+I occasionally get invited to think out loud during podcasts/streamcasts.  Here's the running collection of recorded works:
 
 1. [Introducing AI Warfare](/2019/04/17/Podcast-1--Introducing-AI-Warfare/)
 1. [Butterfly War Primer](/2019/05/17/Podcast-2--Butterfly-War-Primer/)

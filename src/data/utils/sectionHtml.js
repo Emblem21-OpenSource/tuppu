@@ -14,15 +14,14 @@ function sectionHtml (entry) {
     </p>`
   }
 
-  return `
-  <header class="post-header">
-    <section class="post">
+  return `<section class="post">
+    <header class="post-header">
       ${header}
-      <div class="post-description">
-        ${entry.html}
-      </div>
-    </section>
-  </header>`
+    </header>
+    <div class="post-description">
+      ${entry.html}
+    </div>
+  </section>`
 }
 
 module.exports = sectionHtml
