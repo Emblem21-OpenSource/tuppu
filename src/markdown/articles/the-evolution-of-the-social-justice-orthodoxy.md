@@ -3,7 +3,8 @@ title: The Evolution of the Social Justice Orthodoxy
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2013-08-09 11:00:20
-related: null
+tags: social justice, history
+summary: The history of materialism's hidden impulse for collective guilt
 ---
 
 --> One should always know the history of any religion they believe they are a part of.

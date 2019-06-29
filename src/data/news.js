@@ -13,7 +13,8 @@ const news = {
   ).sort((a, b) => {
     return b.datetime - a.datetime
   }),
-  pinned: ''
+  pinned: '',
+  tags: articles.tags
 }
 
 // Article filters

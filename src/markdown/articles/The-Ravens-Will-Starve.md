@@ -3,7 +3,8 @@ title: The Ravens Will Starve
 date: 2017-12-05 00:11:13
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-related: null
+tags: power, geopolitics
+summary: Tricking praetorians to over-rely on their social media panopticons
 ---
 
 --> [My last post](http://cultstate.com/2017/10/13/The-Butterfly-War/) has created the desired effects.  [The intended first-order audience reacted correctly](https://archive.fo/XNuuN) and has began to experiment with cyber phrenology in a manner that will immensely destabilize the civil rights cornerstone of material humanism.  Many in the West will consider such experiments abhorrent, but they are no different than the cyber phrenology Silicon Valley has been doing for years.  It is fair to assume the intended second-order audiences (state actors, academics, and brand managers) who monitor the Chans will be incorporating the feasibility of the [Butterfly War's metadata insurgency](http://cultstate.com/2017/10/13/The-Butterfly-War/) into [their current metadata arsenal](http://icitech.org/wp-content/uploads/2017/07/ICIT-Brief-Metadata-The-Most-Powerful-Weapon-in-This-Cyberwar1.pdf).  For as long as Silicon Valley can [raise money](https://archive.fo/s7Qnw#selection-913.0-913.222) and [secure subsidies](https://archive.fo/4xaYR#selection-279.0-279.196), that kind of metadata insurgency will continue to metastasize until it completely consumes the crown jewel of Baby Boomer moral supremacy: *civil rights*.

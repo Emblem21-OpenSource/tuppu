@@ -429,3 +429,24 @@ strong {
 .next {
   float: right;
 }
+
+.relatedArticles h2 {
+  font-family: "Playfair Display", serif;
+  color: #979CA4;
+}
+
+.relatedArticle {
+  font-family: "Raleway", sans-serif;
+  line-height: 155%;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
+  color: #A7A29A;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.relatedDatetime {
+  font-size: 12px;
+}

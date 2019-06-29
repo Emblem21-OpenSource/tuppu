@@ -3,7 +3,8 @@ title: The Planned Destruction of the Alt-Right
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-08-26 23:58:19
-related: null
+tags: 2016 election, power, censorship
+summary: Chat logs of the planned destruction of the Alt-Right brand
 ---
 
 --> An interesting log I've stumbled upon:

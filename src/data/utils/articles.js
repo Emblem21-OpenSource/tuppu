@@ -2,10 +2,14 @@ const path = require('path')
 const fs = require('fs')
 const marked = require('./markdown')
 const sectionHtml = require('./sectionHtml')
+const moment = require('moment')
+
+moment.locale('en')
 
 function extractArticles (directory) {
   const result = {
     all: [],
+    tags: {},
     pinned: ''
   }
 
@@ -65,7 +69,20 @@ function extractArticles (directory) {
 
     entry.slug = `${year}/${month}/${day}/${linkName}/`
     entry.datetime = date
+    entry.readableDatetime = moment(entry.datetime).format('LLLL')
+    entry.shortDate = moment(entry.datetime).format('MM/DD/YYYY')
     entry.html = sectionHtml(entry)
+    entry.summary = entry.summary || 'TBD'
+
+    entry.tags = (entry.tags || '').split(',').map(item => {
+      // Add articles to the tag category
+      const tag = item.trim()
+      if (result.tags[tag] === undefined) {
+        result.tags[tag] = []
+      }
+      result.tags[tag].push(entry)
+      return tag
+    })
 
     if (entry.pinned) {
       result.pinned = true

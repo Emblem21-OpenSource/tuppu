@@ -3,7 +3,8 @@ title: Progressive Dependencies: Petrodollar and Exporting Inflation
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2013-08-31 12:17:47
-related: null
+tags: geopolitics, power
+summary: You can't spell social justice with "I Access Oil"
 ---
 
 --> As political materialism compels the United States to expand credit and domestic spending, the USD inflates.  This causes foreign nations to inflate their currency as well to lower the cost of their exports so Americans can continue purchasing exported goods with the now weaker USD. This process is a death spiral that saps wealth from America, first by destroying the purchasing power of the dollar, and again by driving the price of labor worldwide to even lower prices, allowing manufacturing (and now many services) to relocate abroad. This mechanism has been the primary cause of the tremendous wealth gains the rich have received since the 1970s.

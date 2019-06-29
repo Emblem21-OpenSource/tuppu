@@ -3,7 +3,8 @@ title: The Robodollar
 date: 2019-03-15 18:23:35
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-related: null
+tags: power, geopolitics, robotic nationalism
+summary: How the world order can survive in a post-Icarus world
 ---
 
 --> [As mentioned previously](http://cultstate.com/2018/07/30/What-Is-A-Cult-State/), I was going to provide insights into a methodology of world organization called **Robotic Nationalism**. Robotic Nationalism is the intended and final output of my company, Emblem 21.

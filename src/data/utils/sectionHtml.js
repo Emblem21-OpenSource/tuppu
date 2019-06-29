@@ -1,6 +1,3 @@
-const moment = require('moment')
-moment.locale('en')
-
 function sectionHtml (entry) {
   let header = ''
   if (!entry.index) {
@@ -10,7 +7,7 @@ function sectionHtml (entry) {
     <p class="post-meta">
       By <a class="post-author" href="${entry.contact}">
         ${entry.author}
-      </a> on <span class="post-date">${moment(entry.datetime).format('LLLL')}</span>
+      </a> on <span class="post-date">${entry.readableDatetime}</span>
     </p>`
   }
 

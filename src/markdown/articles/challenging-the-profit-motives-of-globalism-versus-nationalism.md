@@ -3,7 +3,8 @@ title: Challenging the profit motives of globalism versus nationalism
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2016-02-28 10:13:55
-related: null
+tags: geopolitics, history
+summary: When globalism fails, how can nationalism be used to balance the ledgers?
 ---
 
 --> This is not a popular topic.  In most Western countries, this is not even a legal topic. Regardless of moral and political positioning, this is an inevitable topic.

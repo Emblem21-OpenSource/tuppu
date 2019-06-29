@@ -3,7 +3,8 @@ title: New Emotion
 date: 2018-04-07 13:51:34
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-related: null
+tags: 2020 elections, social justice, ai warfare
+summary: The immediate fallout of the release of Butterfly War
 ---
 
 --> [The Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/) described the concept of **cyber phrenology** and detailed how make automated censorship platforms target unintended targets.  

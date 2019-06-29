@@ -3,7 +3,8 @@ title: I Ask Papacy
 date: 2019-05-16 22:10:31
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-related: null
+tags: security
+summary: I Ask Papacy
 ---
 
 congo diamond mines are no longer valuable due to artificial diamond creation

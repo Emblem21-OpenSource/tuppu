@@ -3,7 +3,8 @@ title: The Psychology of Modern American Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-01-31 21:20:35
-related: null
+tags: censorship
+summary: The data behind the experiments in fracturing monocultures
 ---
 
 --> [In previous posts](/2014/10/25/the-experiments-in-fracturing-monocultures/), I've discussed the organizational tactics embraced by the **imperial monoculture of pixel-based feminism**.  In this post, I will be discussing the _social psychology_ of its supplicants by briefly analyzing its demographics.

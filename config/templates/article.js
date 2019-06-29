@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = function getArticleTemplate (entry) {
+module.exports = function getArticleTemplate (entry, relatedArticles) {
   return new HtmlWebpackPlugin({
     inject: true,
     minify: {
@@ -11,6 +11,7 @@ module.exports = function getArticleTemplate (entry) {
     template: `src/theme/html/article.hbs`,
     templateParameters: {
       entry,
+      relatedArticles,
       head: {
         title: entry.title || 'CultState',
         description: entry.description || 'You are more than your identity',

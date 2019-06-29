@@ -43,7 +43,19 @@ function getContentTemplates (data) {
 
   // Generate all individual articles
   for (const entry of data.index.all) {
-    result.push(getArticleTemplate(entry))
+    let relatedArticles = []
+
+    Object.keys(data.index.tags).map(category => {
+      if (entry.tags.indexOf(category) > -1) {
+        relatedArticles = relatedArticles.concat(data.index.tags[category])
+      }
+    })
+
+    result.push(getArticleTemplate(entry, [
+      ...new Set(relatedArticles
+        .filter(item => item.slug !== entry.slug)
+        .sort((a, b) => b.datetime - a.datetime))
+    ]))
   }
 
   // Generate API

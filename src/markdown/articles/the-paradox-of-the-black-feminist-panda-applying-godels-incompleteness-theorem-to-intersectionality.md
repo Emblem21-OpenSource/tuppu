@@ -3,7 +3,8 @@ title: The Paradox of the Black Feminist Panda: Applying Godel's Incompleteness 
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-02-21 21:59:24
-related: null
+tags: social justice
+summary: Godel reveals the disingenuousness of intersectionality
 ---
 
 [![The Paradox of the Black Feminist Panda](/images/The-Paradox-of-the-Black-Feminist-Panda.png)](/images/The-Paradox-of-the-Black-Feminist-Panda.png)

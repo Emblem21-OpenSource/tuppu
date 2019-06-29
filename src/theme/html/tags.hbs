@@ -1,0 +1,18 @@
+<div class="relatedArticles">
+  <h2>Related Articles</h2>
+  {{#each relatedArticles}}
+    <div class="relatedArticle">
+      <div class="relatedHeader">
+        <span class="relatedLink">
+          <a href="/{{this.slug}}">{{this.title}}</a>
+        </span>
+        <span class="relatedDatetime">
+          ({{this.shortDate}})
+        </span>
+      </div>
+      <div class="relatedSummary">
+        {{this.summary}}
+      </div>
+    </div>
+  {{/each}}
+</div>

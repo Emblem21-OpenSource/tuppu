@@ -3,7 +3,8 @@ title: We Are All Terrorists Now
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-10-13 23:45:33
-related: null
+tags: censorship
+summary: If you don't die on command, you are a terrorist
 ---
 
 --> When the music industry was undermined by file distribution software, people who downloaded files were called terrorists.

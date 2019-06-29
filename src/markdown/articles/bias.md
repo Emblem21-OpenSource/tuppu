@@ -4,7 +4,8 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-11-14 23:14:41
 draft: true
-related: null
+tags: bias
+summary: What is a "cult state"?
 ---
 
 --> To say "I am X" is to also say "I am !X".  This enforces the inability to associate with the opposite of X and limits the ability to adapt and survive. Therefore, to ensure a person's self-destruction, convince them that self-identification is an enshrined right.
