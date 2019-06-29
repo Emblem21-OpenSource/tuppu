@@ -248,7 +248,9 @@ pre {
 }
 
 .code-one-line {
-  padding: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  overflow-x: inherit;
   color: #fff;
   border-radius: 1em;
   margin-top: 1em;
@@ -428,6 +430,10 @@ strong {
 
 .next {
   float: right;
+}
+
+.relatedArticles {
+  margin-bottom: 4em;
 }
 
 .relatedArticles h2 {
