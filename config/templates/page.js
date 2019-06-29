@@ -1,7 +1,7 @@
 const getPagination = require('./pagination')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = function getPageTemplate (pages, currentPage, articlesPerPage, section, sectionName, sectionHtml) {
+module.exports = function getPageTemplate (pages, relatedArticles, currentPage, articlesPerPage, section, sectionName, sectionHtml) {
   const start = currentPage * articlesPerPage
   const end = ((currentPage * articlesPerPage) + articlesPerPage)
 
@@ -14,8 +14,12 @@ module.exports = function getPageTemplate (pages, currentPage, articlesPerPage, 
 
   if (sectionName !== 'index') {
     sectionName = sectionName[0].toUpperCase() + sectionName.substr(1)
+    if (currentPage !== 0) {
+      relatedArticles = []
+    }
   } else {
     sectionName = 'You are more than your identity'
+    relatedArticles = []
   }
 
   // Create plugin entry for the page
@@ -30,6 +34,8 @@ module.exports = function getPageTemplate (pages, currentPage, articlesPerPage, 
     templateParameters: {
       pagination,
       articles: currentArticles,
+      relatedArticles,
+      showTagHeader: false,
       head: {
         title: sectionName,
         description: 'You are more than your identity',

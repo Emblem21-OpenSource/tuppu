@@ -3,8 +3,9 @@ title: Podcast 3 - Down With Tabula Rasa!
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/3/2019
+summary: We pick up exactly where we left off, talking about AI technology, robots starting religions, advanced intelligence and its roots, the predictive quality of modern laws, and much more. He shares his thoughts, as a military robotics expert, on how and where we should begin to influence the evolution of AI and where we need to be right now, in order to understand it.
 ---
---> This is the third podcast.
+--> We pick up exactly where we left off, talking about AI technology, robots starting religions, advanced intelligence and its roots, the predictive quality of modern laws, and much more. He shares his thoughts, as a military robotics expert, on how and where we should begin to influence the evolution of AI and where we need to be right now, in order to understand it.
 
 ### Listen
 

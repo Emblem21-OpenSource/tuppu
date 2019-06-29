@@ -3,8 +3,9 @@ title: Podcast 2 - Butterfly War Primer
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 5/17/2019
+summary: We explored the culture war, gamergate, butterfly war, gnostic warfare, clown world, QAnon, deepfakes, and more. Buckle up. Serious rabbit hole territory.
 ---
---> This is the second podcast.
+--> We explored the culture war, gamergate, butterfly war, gnostic warfare, clown world, QAnon, deepfakes, and more. Buckle up. Serious rabbit hole territory.
 
 ### Listen
 

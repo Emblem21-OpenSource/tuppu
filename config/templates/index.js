@@ -35,9 +35,11 @@ function getContentTemplates (data) {
       continue
     }
 
+    const articleDirectory = data[sectionName].all.filter(item => !item.index)
+
     // Prepare markdown section name
     for (var currentPage = 0; currentPage < pages; currentPage++) {
-      result.push(getPageTemplate(pages, currentPage, articlesPerPage, section, sectionName, data[sectionName].html))
+      result.push(getPageTemplate(pages, articleDirectory, currentPage, articlesPerPage, section, sectionName, data[sectionName].html))
     }
   }
 

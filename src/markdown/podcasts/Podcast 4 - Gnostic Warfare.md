@@ -3,13 +3,14 @@ title: Podcast 4 - Gnostic Warfare Primer
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/10/2019
+summary: Somehow I ended up on the same podcast Tim Draper and Andrew Yang ended up on.  I talk about the foundational biases of AI warfare and how to exploit them.  If Elon Musk is talking about the fear of AI, I'm talking about how to defeat AI.
 ---
---> This is the fourth podcast.
+--> Somehow I ended up on the same podcast Tim Draper and Andrew Yang ended up on.  I talk about the foundational biases of AI warfare and how to exploit them.  If Elon Musk is talking about the fear of AI, I'm talking about how to defeat AI.
 
 ### Listen
 
 <> [Facebook](https://www.facebook.com/simulationseries/videos/444207459734304)
-<> [YouTube](https://www.youtube.com/watch?v=V4PnkaJVxBg)
+<> [YouTube](https://youtu.be/V4PnkaJVxBg?t=86)
 <> [Discussion](https://8ch.net/gnosticwarfare/res/605.html)
 
 ### Credits

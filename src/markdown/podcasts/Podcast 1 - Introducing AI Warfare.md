@@ -4,8 +4,9 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 description: yep
 date: 4/17/2019
+summary: Ladies and gentlemen... my very first podcast ever. (Without voice changers and proxies)  2 hours long. I delve into the nature of AI warfare.  Listen and share.
 ---
---> This is the first podcast.
+--> Ladies and gentlemen... my very first podcast ever. (Without voice changers and proxies)  2 hours long. I delve into the nature of AI warfare.  Listen and share.
 
 ### Listen
 

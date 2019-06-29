@@ -11,6 +11,7 @@ module.exports = function getArticleTemplate (entry, relatedArticles) {
     template: `src/theme/html/article.hbs`,
     templateParameters: {
       entry,
+      showTagHeader: true,
       relatedArticles,
       head: {
         title: entry.title || 'CultState',
