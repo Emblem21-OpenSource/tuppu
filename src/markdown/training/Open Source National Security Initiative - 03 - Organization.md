@@ -4,7 +4,25 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/29/2019
 summary: TL;DR version of what the OSNSI hopes to achieve.
-tags: ai warfare, osint
+tags: osnsi
 draft: true
 ---
-test
+# Overview
+
+# Roles
+
+## Programmer
+
+## Investigator
+
+## Analyst
+
+## Enquirer
+
+# Communications
+
+# Data Distribution
+
+# Tooling
+
+# Security
