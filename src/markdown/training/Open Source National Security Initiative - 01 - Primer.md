@@ -9,13 +9,6 @@ draft: true
 ---
 --> [The events at Portland today involving Andy Ngo](https://twitter.com/Jimryan015/status/1145067852375851008) have made it abundantly clear that [city officials](https://www.washingtontimes.com/news/2018/oct/14/ted-wheeler-portland-mayor-stands-decision-allow-a/), [foreign money](https://archive.fo/QLZ0v), [police chiefs](https://archive.fo/JG4zc), [federal law officials](https://archive.fo/AMDyy), and [entrenched political families in the West Coast](https://archive.fo/7KviH) are pulling the strings for a widespread intimidation strategy in advance of the 2020 elections.  Anyone expecting militias, citizens, police, private contractors, journalists, moral figures, thought leaders, or any part of the American legal system to effectively counter the actions of these hopelessly brainwashed and violent mobs is not only a fool, but has intentionally lived a sheltered life where they actively avoid ever being targeted by such intimidation.  Many of us have spent years adapting to the round-the-clock watch by leftist media opportunists, federal panopticon surveillance, and Silicon Valley twerps who abuse their positions for Right Side of History points.  It's time to put that training to use and start implementing Gnostic Warfare tactics to target the AIs that power Antifa.
 
-## Strategy
-
-* Uncover facts about board members, investors, and their networks that provide guidance and support for major Silicon Valley players.
-* Uncover facts about the people working in or near major AI departments of  major Silicon Valley companies.
-* Analyze connections between people and AI products to determine if pro-Antifa AI exploits are being used.
-* If exploits are found, identify which node in the network the exploit originated from.
-
 ## What is Antifa?
 
 --> Antifa is not a "grass-roots" movement.  It's not a reaction against anti-fascism.  Antifa is the manifestion of Chris Hedges, the 2014 harbinger of the [professional revolutionist](https://archive.fo/Ll8sI).  Yes, Antifa has a storied history in Europe, but what happened between pre-WW2 and now?  Did Antifa motivations take a seventy year vacation just because the Americans and Russians forced Germany to surrender?  Of course not.  *Antifa* is not a philosophy... it is a tactic.
@@ -40,7 +33,7 @@ draft: true
 
 ## Why focus on AI over political battlegrounds or street demonstrations?
 
-The dream of every social justice princeling is to have an army of perfectly loyal machines ensuring reality complies to their moral framework.  Low maintenance, low energy costs, and low feedback is exactly the type of enforcement schedule that social justice advocates yearn for.  Therefore, social justice at peak efficiency requires gnostic constructs as enforcers, first as a [policy of nudging](https://en.wikipedia.org/wiki/Nudge_(book)), then as [social enforcers](https://archive.fo/t37SJ), then as physical goons.
+The dream of every social justice princeling is to have an army of perfectly loyal machines ensuring reality complies to their moral framework.  Low maintenance, low energy costs, and low feedback is exactly the type of enforcement schedule that social justice advocates yearn for.  Therefore, social justice at peak efficiency requires gnostic constructs as enforcers, first as a [policy of nudging](https://en.wikipedia.org/wiki/Nudge_(book)), then as [social enforcers](https://archive.fo/t37SJ), then as [physical goons](https://builtin.com/robotics/police-robot-law-enforcement).
 
 [AI security does not exist](https://archive.fo/OVl6B) and those working on it are mired in a [naive monoculture that can be fractured](/2013/08/14/the-theory-of-fracturing-monocultures/).  Every weakness in these princeling fantasies of total control starts with a human operator whose work is essential for the performance of various gnostic constructs.  Once the operator is discovered, they can be made to influence the results of a machine learning process, a data science policy, or a data lake query.  Antifa unknowingly relies on a large number of AI policies that amplify their legal and cultural infallibility.
 

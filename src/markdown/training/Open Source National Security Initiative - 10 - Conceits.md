@@ -1,5 +1,5 @@
 ---
-title: Open Source National Security Initiative - Primer
+title: Open Source National Security Initiative - Conceits
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/29/2019
