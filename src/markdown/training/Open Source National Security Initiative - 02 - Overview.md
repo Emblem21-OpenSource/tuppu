@@ -7,7 +7,7 @@ summary: Insights on the how and why of the OSNSI project.
 tags: osnsi
 draft: true
 ---
-# Overview
+# Strategic Overview
 
 * Demonstrate why now is the best possible time for Open Source National Security Initiative.
 * Provide context and motivation to identify and extract under-leveraged civilian intelligence assets.
@@ -32,18 +32,41 @@ draft: true
 
 ## Training Overview
 
-* 
-
-## Operational Overview 
-
-* 
+* Utilize reliable distribution platforms for training materials and instructive interactions.
+* Identify, gather, and distribute effective training material on the following domains for all expertise levels:
+** Programming
+** Developer Operations
+** Organization creation and maintenance
+** Investigative techniques
+** Data analysis
+** Communication discipline
+** Data security
+** Operational security
+** Open Source intelligence
+* Iteratively confirm efficacy of training for students.
+* Identify shortcomings in training material gathering, distribution, and retention against the production of intelligence assets.
 
 ## Organizational Overview 
 
-* 
+* Determine organizational partitioning and unit composition for a variety of ratios calculated from operational effectiveness, security surface defensibility, intelligence generation, discovery costs, conversion costs, training costs, and attrition rates.  (Discord, amazingly, has all of this data)
+* Test operational cohesion, fidelity, discipline, and resilience of organizational tiers against adversaries along the following timelines:
+** Reactionary (one day to a week)
+** Ideological (one week to two years)
+** Rival (Perpetual low-intensity opportunism)
+** Institutional timelines (Perpetual high-intensity opportunism)
+* Evaluate diminishing returns of unit management from operational capacity, inbound and outbound data flow, and meme flow. (Proxy for morale)
+* Identify tooling to easily evaluate unit performance.
+* Identify techniques to minimize onboarding difficulty.
+* Identify techniques to track and maximize recommendation behavior.
+* Identify and calculate costs for emergency scaling of unit composition.
+* Iterate organizational efficiency towards on-demand, low-cost, low-secrecy, high-communication pipelines and resources *AND DO SO WITH THE INTENTIONAL PURPOSE OF INCREASING ORGANIZATIONAL COMPLEXITY TO LEVELS NO SINGLE CENTRAL OFFICER CAN MANAGE* (This will make sense later when mosaic strategies start coming online)
 
 ## Technical Overview 
 
+* Identify ways and means to effective acquire and distribute compute resources for operational use.
+* Perform a political risk analysis of collaboration platforms.
+* Establish collective data accumulation strategies for unit operations.
+* Define protocols to allow institutional knowledge between units to quickly migrate between platforms willing to carry the costs for discovery. ("Data is an asset, compute is a liability" strategy)
 * 
 
 ## Leadership Overview
