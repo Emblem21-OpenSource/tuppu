@@ -4,6 +4,30 @@ const code = require('./code')
 const podcasts = require('./podcasts')
 const training = require('./training')
 
+/**
+ * [mergeTags description]
+ * @param  {[type]} tags [description]
+ * @return {[type]}      [description]
+ */
+function mergeTags (tagGroups) {
+  const result = {}
+
+  tagGroups.map(tagGroup => {
+    const tags = Object.keys(tagGroup)
+
+    tags.map(tag => {
+      if (tag) {
+        if (result[tag] === undefined) {
+          result[tag] = []
+        }
+        result[tag] = result[tag].concat(tagGroup[tag])
+      }
+    })
+  })
+
+  return result
+}
+
 const news = {
   all: articles.all.concat(
     books.all,
@@ -14,7 +38,13 @@ const news = {
     return b.datetime - a.datetime
   }),
   pinned: '',
-  tags: articles.tags
+  tags: mergeTags([
+    articles.tags,
+    books.tags,
+    code.tags,
+    podcasts.tags,
+    training.tags
+  ])
 }
 
 // Article filters

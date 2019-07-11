@@ -1,10 +1,10 @@
 ---
-title: Open Source National Security Initiative - Primer
+title: Gnostic Warfare - Primer
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
-date: 6/29/2019
-summary: What is the Open Source National Security Initiative?
-tags: osnsi
+date: 2019-06-29 04:36:16
+tags: gnostic warfare
+summary: A primer on how to fuse Open Source intelligence with Gnostic Warfare
 ---
 --> [The events at Portland today involving Andy Ngo](https://twitter.com/Jimryan015/status/1145067852375851008) have made it abundantly clear that [city officials](https://www.washingtontimes.com/news/2018/oct/14/ted-wheeler-portland-mayor-stands-decision-allow-a/), [foreign money](https://archive.fo/QLZ0v), [police chiefs](https://archive.fo/JG4zc), [federal law officials](https://archive.fo/AMDyy), and [entrenched political families in the West Coast](https://archive.fo/7KviH) are pulling the strings for a widespread intimidation strategy in advance of the 2020 elections.  Anyone expecting militias, citizens, police, private contractors, journalists, moral figures, thought leaders, or any part of the American legal system to effectively counter the actions of these hopelessly brainwashed and violent mobs is not only a fool, but has intentionally lived a sheltered life where they actively avoid ever being targeted by such intimidation.  Many of us have spent years adapting to the round-the-clock watch by leftist media opportunists, federal panopticon surveillance, and Silicon Valley twerps who abuse their positions for Right Side of History points.  It's time to put that training to use and start implementing Gnostic Warfare tactics to target the AIs that power Antifa.
 

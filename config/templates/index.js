@@ -43,15 +43,19 @@ function getContentTemplates (data) {
     }
   }
 
+  const allTags = Object.keys(data.index.tags)
+
   // Generate all individual articles
   for (const entry of data.index.all) {
     let relatedArticles = []
 
-    Object.keys(data.index.tags).map(category => {
+    allTags.map(category => {
       if (entry.tags.indexOf(category) > -1) {
         relatedArticles = relatedArticles.concat(data.index.tags[category])
       }
     })
+
+    console.log(entry.slug, entry.tags, relatedArticles.map(item => item.slug))
 
     result.push(getArticleTemplate(entry, [
       ...new Set(relatedArticles

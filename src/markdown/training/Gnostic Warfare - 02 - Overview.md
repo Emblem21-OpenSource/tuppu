@@ -1,10 +1,10 @@
 ---
-title: Open Source National Security Initiative - Overview
+title: Gnostic Warfare - Overview
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/29/2019
-summary: Insights on the how and why of the OSNSI project.
-tags: osnsi
+summary: A high-level summary of how to properly organize all of the elements of Gnostic Warfare
+tags: gnostic warfare
 ---
 # Strategic Overview
 
@@ -54,3 +54,10 @@ tags: osnsi
 * Establish collective data accumulation and analysis strategies.
 * Define protocols to allow institutional knowledge between units to quickly migrate between platforms willing to carry the costs for discovery. (*"Data is an asset, compute is a liability"* strategy)
 * Identify means of procuring and improving intelligence and communication tooling.
+
+## Resources
+* [Resources Overview](/2019/06/29/Gnostic-Warfare--Resources-Overview/)
+* [Investigator Training](/2019/06/29/Gnostic-Warfare--Investigator-Training/)
+* [Investigation Resources](/2019/06/29/Gnostic-Warfare--Investigation-Resources/)
+* [Analysis Resources](/2019/06/29/Gnostic-Warfare--Analysis-Resources/)
+* [Visualization Resources](/2019/06/29/Gnostic-Warfare--Visualization-Resources/)
