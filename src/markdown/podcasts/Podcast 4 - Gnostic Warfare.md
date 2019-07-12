@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/10/2019
 summary: Somehow I ended up on the same podcast Tim Draper and Andrew Yang ended up on.  I talk about the foundational biases of AI warfare and how to exploit them.  If Elon Musk is talking about the fear of AI, I'm talking about how to defeat AI.
+tags: podcast, ai warfare
 ---
 --> Somehow I ended up on the same podcast Tim Draper and Andrew Yang ended up on.  I talk about the foundational biases of AI warfare and how to exploit them.  If Elon Musk is talking about the fear of AI, I'm talking about how to defeat AI.
 

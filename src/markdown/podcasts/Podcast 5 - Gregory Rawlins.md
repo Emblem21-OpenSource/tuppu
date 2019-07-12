@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/16/2019
 summary: Podcast #5 with a long-time friend and intellectual mentor William Turnbow. We discuss our man crush on Professor Gregory Rawlins, Marxism, Credit Seeking, Eternity, and Mythical Time.
+tags: podcast, marxism
 ---
 --> Podcast #5 with a long-time friend and intellectual mentor William Turnbow. We discuss our man crush on Professor Gregory Rawlins, Marxism, Credit Seeking, Eternity, and Mythical Time.
 

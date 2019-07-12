@@ -1,10 +1,10 @@
 ---
-title: The Empath
+title: The Empath - Primer
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/29/2019
 summary: The book that started it all.
-tags: ai warfare
+tags: ai warfare, the empath
 ---
 
 --> By 2005, [Operation Enduring Freedom](https://en.wikipedia.org/wiki/Operation_Enduring_Freedom) was well on its way to become today's Forever Wars.  Democrats of all stripes celebrated the entire affair as a chance to resurrect the 1960s and, had it not been for the internet, it would have worked.  The pre-social media internet responded to the war as a landscape of scattered tribes and sociopathic personalities all believing themselves to be the one true anti-war prophet, charged with the holiest of tasks: [*restore peak Boomer culture and love the world, man*](https://www.youtube.com/watch?v=WpYeekQkAdc).  The internet allowed for trite conflict,  spats, and brand territoriality, which successfully prevented any serious domestic opposition to the War on Terror.  But how was that possible?  Isn't anti-war politics full of vibrant youth who are always right about everything and can resolve their disagreements for the greater good at all times?  How could such pure idealism be so easily dismantled?

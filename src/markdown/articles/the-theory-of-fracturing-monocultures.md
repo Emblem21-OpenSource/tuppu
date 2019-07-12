@@ -3,7 +3,7 @@ title: The Theory of Fracturing Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2013-08-14 09:56:34
-tags: censorship, social justice
+tags: censorship, social justice, gamergate
 summary: How to destroy the attention economy
 ---
 

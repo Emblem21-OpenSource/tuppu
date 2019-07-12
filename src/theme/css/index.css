@@ -16,7 +16,7 @@ body {
   font-size: 1em;
   line-height: 1.75;
   letter-spacing: -.5px;
-  background: #131514;
+  background: #2c2c33;
 }
 
 a {
@@ -112,11 +112,12 @@ h3 {
 .content-subhead {
   text-transform: uppercase;
   color: #aaa;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee99;
   padding: 0.4em 0;
   font-size: 100%;
   font-weight: 500;
   letter-spacing: 0.1em;
+  margin-bottom: 2em;
 }
 
 .content {
@@ -437,10 +438,15 @@ strong {
 }
 
 .relatedArticles {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  max-height: 25em;
+  overflow-y: scroll;
+  border: #979CA480 1px solid;
+  border-radius: 10px;
+  padding: 1em;
 }
 
-.relatedArticles h2 {
+.relatedArticlesHeader {
   font-family: "Playfair Display", serif;
   color: #979CA4;
 }

@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 6/3/2019
 summary: We pick up exactly where we left off, talking about AI technology, robots starting religions, advanced intelligence and its roots, the predictive quality of modern laws, and much more. He shares his thoughts, as a military robotics expert, on how and where we should begin to influence the evolution of AI and where we need to be right now, in order to understand it.
+tags: podcast, ai warfare, ai cults, sociology
 ---
 --> We pick up exactly where we left off, talking about AI technology, robots starting religions, advanced intelligence and its roots, the predictive quality of modern laws, and much more. He shares his thoughts, as a military robotics expert, on how and where we should begin to influence the evolution of AI and where we need to be right now, in order to understand it.
 
@@ -15,7 +16,7 @@ summary: We pick up exactly where we left off, talking about AI technology, robo
 <> [Castbox](https://castbox.fm/episode/KWC-036-Patrick-Ryan-Returns-id1193840-id160596916)
 <> [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8yYmFjZDVjL3BvZGNhc3QvcnNz&episode=ZGEyMmJkOWEtZWIyOS1kNzliLTc5NzUtOWJmMDA3MmU0YjBi)
 <> [Overcast](https://overcast.fm/+ML6cZXZmE)
-<> [CloudFront](https://anchor.fm/s/2bacd5c/podcast/play/3454638/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2019-5-4%2FKWC--036-Patrick-Ryan-Returns-9ad7fa23aa216.m4a)
+<> [Download](https://anchor.fm/s/2bacd5c/podcast/play/3454638/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2019-5-4%2FKWC--036-Patrick-Ryan-Returns-9ad7fa23aa216.m4a)
 <> [Radio Public](https://radiopublic.com/knowledge-without-college-6rOvoR/ep/s1!bd447)
 <> [Spotify](https://open.spotify.com/episode/1mGrplGji7PkzJRfxthwJr)
 <> [Stitcher](https://www.stitcher.com/podcast/anchor-podcasts/knowledge-without-college/e/61638479)

@@ -1,20 +1,22 @@
-<div class="relatedArticles">
-  {{#if showTagHeader }}
-  <h2>Related Articles</h2>
-  {{/if}}
-  {{#each relatedArticles}}
-    <div class="relatedArticle">
-      <div class="relatedHeader">
-        <span class="relatedLink">
-          <a href="/{{this.slug}}">{{this.title}}</a>
-        </span>
-        <span class="relatedDatetime">
-          ({{this.shortDate}})
-        </span>
+{{#if showTagHeader }}
+  <h2 class="relatedArticlesHeader">Related Articles</h2>
+{{/if}}
+{{#if relatedArticles }}
+  <div class="relatedArticles">
+    {{#each relatedArticles}}
+      <div class="relatedArticle">
+        <div class="relatedHeader">
+          <span class="relatedLink">
+            <a href="/{{this.slug}}">{{this.title}}</a>
+          </span>
+          <span class="relatedDatetime">
+            ({{this.shortDate}})
+          </span>
+        </div>
+        <div class="relatedSummary">
+          {{this.summary}}
+        </div>
       </div>
-      <div class="relatedSummary">
-        {{this.summary}}
-      </div>
-    </div>
-  {{/each}}
-</div>
+    {{/each}}
+  </div>
+{{/if}}

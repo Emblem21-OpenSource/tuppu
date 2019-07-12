@@ -3,7 +3,7 @@ title: The Experiments in Fracturing Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2014-10-25 17:35:43
-tags: censorship, social justice
+tags: censorship, social justice, gamergate
 summary: Revisiting the Tumblr and 4chan diagnostic equation
 ---
 

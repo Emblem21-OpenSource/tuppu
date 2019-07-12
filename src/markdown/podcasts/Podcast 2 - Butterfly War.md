@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 5/17/2019
 summary: We explored the culture war, gamergate, butterfly war, gnostic warfare, clown world, QAnon, deepfakes, and more. Buckle up. Serious rabbit hole territory.
+tags: podcast, gamergate, qanon, icarus
 ---
 --> We explored the culture war, gamergate, butterfly war, gnostic warfare, clown world, QAnon, deepfakes, and more. Buckle up. Serious rabbit hole territory.
 

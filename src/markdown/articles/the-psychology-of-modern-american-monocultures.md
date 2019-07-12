@@ -3,7 +3,7 @@ title: The Psychology of Modern American Monocultures
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 2015-01-31 21:20:35
-tags: censorship
+tags: censorship, gamergate
 summary: The data behind the experiments in fracturing monocultures
 ---
 
