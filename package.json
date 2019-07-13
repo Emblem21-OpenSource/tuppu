@@ -7,7 +7,8 @@
     "build:dev": "cross-env NODE_ENV=development webpack --mode development --display=minimal",
     "build:prod": "cross-env NODE_ENV=production webpack --mode production",
     "start": "nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0",
-    "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0"
+    "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0",
+    "deploy-staging": "./node_modules/.bin/surge dist cultstate.surge.sh"
   },
   "author": "",
   "license": "ISC",

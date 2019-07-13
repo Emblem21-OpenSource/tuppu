@@ -55,8 +55,6 @@ function getContentTemplates (data) {
       }
     })
 
-    console.log(entry.slug, entry.tags, relatedArticles.map(item => item.slug))
-
     result.push(getArticleTemplate(entry, [
       ...new Set(relatedArticles
         .filter(item => item.slug !== entry.slug)

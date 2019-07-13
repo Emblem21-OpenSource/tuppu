@@ -8,7 +8,7 @@ tags: gnostic warfare
 ---
 # Strategic Overview
 
-* Demonstrate why now is the best possible time for Open Source National Security Initiative.
+* Demonstrate why now is the best possible time for Gnostic Warfare.
 * Provide context and motivation to identify and extract under-leveraged civilian intelligence assets.
 * Provide a comprehensive technical, intelligence, security, and organizational training regime to maximize investigative and analytical performance.
 * Identify entry-level targets for assets to confirm the fidelity of the training regime.
@@ -25,7 +25,7 @@ tags: gnostic warfare
 * These interests drive aggressive immigration policies for cheap labor which is reducing opportunity for competent programmers and knowledge workers who don't conform to social justice advocacy.
 * Nationalist backlash from 2008 has driven corporations to back socialist enforcers in a desperate attempt to keep cheap labor flowing, resulting in nearly every single major Democratic presidential candidate for the 2020 United State presidential election campaign to openly advocate for some variant of basic income.  Basic income policies will ensure a rapid, "guilt-free" acceleration of knowledge worker displacement in favor of cheap (and often incompetent) knowledge workers.
 * Socialist enforcers will continue to receive corporate backing to ramp up the incarceration, imprisonment, legal intimidating, and social elimination of anyone who demonstrates a threat to cheap labor access.
-* These pressures, when combined, will create a massive pool of talent to pick from for the Open Source National Security Initiative.
+* These pressures, when combined, will create a massive pool of talent to pick from for Gnostic Warfare.
 * Additionally, geopolitical pressures that contribute to the raising of interest rates will significantly disrupt corporate profits, resulting in large scale layoffs of knowledge workers.
 * These displaced knowledge workers will possess valuable information regarding legacy systems and organizational habits of Big Tech.
 

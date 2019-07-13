@@ -7,7 +7,7 @@ module.exports = function getArticleTemplate (entry, relatedArticles) {
       removeComments: true,
       collapseWhitespace: false
     },
-    filename: entry.slug,
+    filename: `${entry.slug}/index.html`,
     template: `src/theme/html/article.hbs`,
     templateParameters: {
       entry,
