@@ -1,21 +1,38 @@
-<div id="layout" class="pure-g">
-  {{> sidebar }}
-  <div class="content pure-u-1 pure-u-md-3-5">
-    <div>
-      <div class="posts">
-        <h1 class="content-subhead">Contact</h1>
-        <header class="post-header">
-          <h2 class="post-title">
-            Everything You Need to Know About Grunt
-          </h2>
-        </header>
-        <div class="post-description">
-          <p class="post-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+      {{> sidebar }}
+      <div class="content pure-u-1 pure-u-md-3-5">
+        <div>
+          <div class="posts">
+            <section class="post">
+              <header class="post-header">
+                <h2 class="post-title">
+                <a href="/2019/11/14/Bias/">Contact</a>
+              </h2>
+              </header>
+              <div class="post-description">
+                <ul>
+                  <li>
+                    <a href="https://www.twitter.com/emblem21ceo">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="https://8ch.net/gnosticwarfare">8chan</a>
+                  </li>
+                  <li>
+                    <a href="mailto:patrick.ryan@emblem21.com">Email</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          {{> footer }}
         </div>
       </div>
-      {{> footer }}
     </div>
-  </div>
-</div>
+  </body>
+</html>
