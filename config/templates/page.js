@@ -1,6 +1,8 @@
 const getPagination = require('./pagination')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const getKeywords = require('../../src/data/utils/metaKeywords')
+const { addPath } = require('./sitemap')
+const moment = require('moment')
 
 module.exports = function getPageTemplate (pages, relatedArticles, currentPage, articlesPerPage, section, sectionName, sectionHtml) {
   const start = currentPage * articlesPerPage
@@ -22,6 +24,8 @@ module.exports = function getPageTemplate (pages, relatedArticles, currentPage, 
     sectionName = 'You are more than your identity'
     relatedArticles = []
   }
+
+  addPath(filename, moment().format('YYYY/MM/DD'))
 
   // Create plugin entry for the page
   return new HtmlWebpackPlugin({

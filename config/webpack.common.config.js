@@ -17,7 +17,8 @@ module.exports = {
     alias: {
       'assets': path.resolve(__dirname, '../src/assets'),
       'root': path.resolve(__dirname, '../')
-    }
+    },
+    extensions: [ '.tsx', '.ts', '.js' ]
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
@@ -37,6 +38,10 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: './src/assets/icons',
       to: 'icons'
+    }]),
+    new CopyWebpackPlugin([{
+      from: './src/robots.txt',
+      to: 'robots.txt'
     }])
   ].concat(getContentTemplates(global.data)),
   module: {
@@ -86,6 +91,11 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf)$/,
         loader: 'url-loader'
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
       }
     ]
   }
