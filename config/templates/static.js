@@ -14,7 +14,8 @@ module.exports = function getStaticTemplate (section, sectionName) {
     templateParameters: {
       head: {
         title,
-        description: title,
+        summary: 'You are more than your identity',
+        keywords: title,
         image: 'open_graph.jpg'
       }
     }

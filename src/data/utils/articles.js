@@ -72,7 +72,8 @@ function extractArticles (directory) {
     entry.readableDatetime = moment(entry.datetime).format('LLLL')
     entry.shortDate = moment(entry.datetime).format('MM/DD/YYYY')
     entry.html = sectionHtml(entry)
-    entry.summary = entry.summary || 'TBD'
+
+    entry.summary = entry.summary || 'CultState.com'
 
     entry.tags = (entry.tags || '').split(',').map(item => {
       // Add articles to the tag category

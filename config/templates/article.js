@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const getKeywords = require('../../src/data/utils/metaKeywords')
 
 module.exports = function getArticleTemplate (entry, relatedArticles) {
   return new HtmlWebpackPlugin({
@@ -15,7 +16,8 @@ module.exports = function getArticleTemplate (entry, relatedArticles) {
       relatedArticles,
       head: {
         title: entry.title || 'CultState',
-        description: entry.description || 'You are more than your identity',
+        summary: entry.summary || 'You are more than your identity',
+        keywords: getKeywords(entry.markdown),
         image: entry.image || 'open_graph.jpg'
       }
     }

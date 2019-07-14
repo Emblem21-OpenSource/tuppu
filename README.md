@@ -10,5 +10,6 @@
 
 * https://search.google.com/test/mobile-friendly
 * https://backlinko.com/actionable-seo-tips
+* HTML Microdata specifications
 * Spelling cleanup
 * fleshing out documents

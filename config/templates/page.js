@@ -1,5 +1,6 @@
 const getPagination = require('./pagination')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const getKeywords = require('../../src/data/utils/metaKeywords')
 
 module.exports = function getPageTemplate (pages, relatedArticles, currentPage, articlesPerPage, section, sectionName, sectionHtml) {
   const start = currentPage * articlesPerPage
@@ -38,7 +39,8 @@ module.exports = function getPageTemplate (pages, relatedArticles, currentPage, 
       showTagHeader: false,
       head: {
         title: sectionName,
-        description: 'You are more than your identity',
+        summary: 'You are more than your identity',
+        keywords: getKeywords(currentArticles),
         image: 'open_graph.jpg'
       }
     }

@@ -6,7 +6,7 @@ date: 6/29/2019
 summary: A high-level summary of how to properly organize all of the elements of Gnostic Warfare
 tags: gnostic warfare
 ---
-# Strategic Overview
+## Strategic Overview
 
 * Demonstrate why now is the best possible time for Gnostic Warfare.
 * Provide context and motivation to identify and extract under-leveraged civilian intelligence assets.
@@ -36,7 +36,7 @@ tags: gnostic warfare
 * Iteratively confirm efficacy of training for students.
 * Identify shortcomings in training material gathering, distribution, and retention against the production of intelligence assets.
 
-## Organizational Overview 
+# Organizational Overview 
 
 * Determine organizational partitioning and unit composition for a variety of ratios calculated from operational effectiveness, security surface defensibility, intelligence generation, discovery costs, conversion costs, training costs, and attrition rates.  (Discord, amazingly, has all of this data)
 * Test operational cohesion, fidelity, discipline, and resilience of organizational tiers against adversaries along the following timelines: **Reactionary (one day to a week), ideological (one week to two years), rival (perpetual low-intensity opportunism), and institutional timelines (Perpetual high-intensity opportunism)**
@@ -56,6 +56,7 @@ tags: gnostic warfare
 * Identify means of procuring and improving intelligence and communication tooling.
 
 ## Resources
+
 * [Resources Overview](/2019/06/29/Gnostic-Warfare--Resources-Overview/)
 * [Investigator Training](/2019/06/29/Gnostic-Warfare--Investigator-Training/)
 * [Investigation Resources](/2019/06/29/Gnostic-Warfare--Investigation-Resources/)
