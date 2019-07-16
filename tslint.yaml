@@ -1,0 +1,42 @@
+defaultSeverity: "error"
+extends:
+  - "tslint:recommended"
+  - "tslint-eslint-rules"
+  - "tslint-config-prettier"
+jsRules: {}
+rules:
+  await-promise: true
+  ban-comma-operator: true
+  curly: true
+  indent: [ true, spaces, 2 ]
+  interface-name: [ false ]
+  interface-over-type-literal: false
+  member-access: [ true, no-public ]
+  no-consecutive-blank-lines: false
+  no-console: true
+  no-floating-promises: true
+  no-implicit-dependencies: [ true, dev ]
+  no-irregular-whitespace: true
+  no-magic-numbers: false
+  no-multi-spaces: true
+  no-parameter-reassignment: true
+  no-unused-expression: [ true, "allow-fast-null-checks" ]
+  ordered-imports:
+    - true
+    - import-sources-order: "any"
+      named-imports-order: "any"
+      grouped-imports: true
+  object-literal-shorthand: false
+  object-literal-sort-keys: false
+  object-curly-spacing: [ true, "always" ]
+  one-line: [ true, "check-open-brace", "check-whitespace" ]
+  one-variable-per-declaration: false
+  quotemark: [ true, "single", "jsx-double", "avoid-escape", "avoid-template" ]
+  semicolon: [ true, "never" ]
+  trailing-comma: false
+  variable-name: [ true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case" ]
+  whitespace: [ true, "check-branch", "check-decl", "check-operator", "check-module", "check-separator", "check-rest-spread", "check-type", "check-typecast", "check-type-operator", "check-preblock" ]
+rulesDirectory: []
+linterOptions:
+  exclude:
+    - "node_modules/**/*"

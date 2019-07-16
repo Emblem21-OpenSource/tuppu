@@ -4,7 +4,7 @@ const getPageTemplate = require('./page')
 const getApiTemplate = require('./api')
 const path = require('path')
 const fs = require('fs')
-const { addPath, getPlugin } = require('./sitemap')
+const { getPlugin } = require('./sitemap')
 
 const articlesPerPage = 3 // @TODO .env
 
