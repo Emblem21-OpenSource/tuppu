@@ -18,13 +18,13 @@ export interface MarkdownRawMetadata {
   image: string
 }
 
+
 export class Markdown extends Content {
   /**
    * [populateContent description]
    */
   private populateContent(lines: string[]): void {
     const remainingText = lines.join('\n')
-    this.htmlBody = marked(remainingText)
     this.markdown = remainingText
   }
 
@@ -94,6 +94,13 @@ export class Markdown extends Content {
     this.populateIsIndex(metadata.index === "true")
     this.populateIsDraft(metadata.draft === "true")
     this.populateIsPinned(metadata.pinned === "true")
-    this.populateHtml(new HtmlOutput(metadata.title, metadata.datetime, metadata.summary, metadata.tags, metadata.image))
+    const htmlBody = marked(this.markdown)
+    this.populateHtml(new HtmlOutput(
+      metadata.title,
+      this.datetime as Date,
+      metadata.summary,
+      metadata.image,
+      htmlBody
+    ))
   }
 }

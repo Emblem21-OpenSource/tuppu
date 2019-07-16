@@ -9,39 +9,34 @@ const stripRegex = /[^A-Za-z-]+/g
 
 const ignoreWords = ['quot', 'emsp', 'http', 'https', '--', '-', 'fo', 'archive', 'not', 'means', 'com', 'will', 'when', 'one', 'png', 'jpg', 'jpeg']
 
-interface KeywordCandiate {
+interface KeywordCandidate {
   word: string
   count: number
 }
 
 export class HtmlOutput {
-  private _title: string
-  private _summary: string
-  private _keywords: string
-  private _image: string
-  private _slugName: string
-  private _slugUrl: string
+  public title: string
+  public summary: string
+  public keywords: string
+  public image: string
+  public slugName: string
+  public slugUrl: string
+  public body: string
 
-  get title() { return this._title }
-  get summary() { return this._summary }
-  get keywords() { return this._keywords }
-  get image() { return this._image }
-  get slugName() { return this._slugName }
-  get slugUrl() { return this._slugUrl }
-
-  constructor(title: string, datetime: string, summary: string, keywords: string, image: string) {
-    this._title = title = 'CultState'
-    this._summary = summary || 'You are more than your identity'
-    this._keywords = this.getKeywords(keywords || '')
-    this._image = image || 'open_graph.jpg'
+  constructor(title: string, datetime: Date, summary: string, image: string, body: string) {
+    this.title = title = 'CultState'
+    this.summary = summary || 'You are more than your identity'
+    this.image = image || 'open_graph.jpg'
+    this.body = body || ''
+    this.keywords = this.getKeywords(this.body)
     
-    this._slugName = title
+    this.slugName = title
       .trim()
       .replace(badChars, '')
       .replace(nonHumanChars, '-')
       .replace(doubleDash, '-')
     
-    this._slugUrl = `${moment(datetime).format('YYYY/MM/DD')}/${this._slugName}/`
+    this.slugUrl = `${moment(datetime).format('YYYY/MM/DD')}/${this.slugName}/`
   }
 
   /**
@@ -49,7 +44,7 @@ export class HtmlOutput {
    * @param content 
    */
   private getKeywords (content: string) {
-    const candidates: KeywordCandiate[] = []
+    const candidates: KeywordCandidate[] = []
   
     stopword.removeStopwords(
       striptags(content)
@@ -79,14 +74,3 @@ export class HtmlOutput {
       .join(', ')
   }
 }
-
-
-
-
-
-
-
-
-
-
-module.exports = getKeywords

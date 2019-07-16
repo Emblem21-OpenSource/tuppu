@@ -9,6 +9,7 @@ export class Content {
   public filename: string = ''
   public data: string = ''
   public title: string | null = null
+  public summary: string | null = null
   public markdown: string | null = null
   public htmlBody: string | null = null
   public datetime: Date | null = null
@@ -52,6 +53,14 @@ export class Content {
     this.datetime = new Date(date)
     this.readableDatetime = moment(this.datetime).format('LLLL')
     this.shortDate = moment(this.datetime).format('MM/DD/YYYY')
+  }
+
+  /**
+   * 
+   * @param summary 
+   */
+  protected populateSummary(summary: string): void {
+    this.summary = summary
   }
 
   /**

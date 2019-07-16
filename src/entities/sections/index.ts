@@ -25,7 +25,7 @@ export abstract class Section<ContentType extends Content> {
   directory: SectionDirectoryEntry[] = []
   html: HtmlOutput | null = null
 
-  constructor (name: string, datetime: string, summary: string, keywords: string, image: string, templatePath: string, perPage: number = 3, collection: Collection<ContentType>) {
+  constructor (name: string, datetime: Date, summary: string, keywords: string, image: string, templatePath: string, perPage: number = 3, collection: Collection<ContentType>) {
     this.name = name
     this.templatePath = templatePath
     this.baseName = path.basename(this.templatePath as string, '.hbs')
@@ -42,9 +42,11 @@ export abstract class Section<ContentType extends Content> {
     }
 
     this.collection.forEach(item => {
+      const html = item.html as HtmlOutput
+
       this.directory.push({
         name: item.title as string,
-        link: item.slugUrl as string,
+        link: html.slugUrl as string,
         summary: item.summary as string,
         date: item.readableDatetime as string
       })

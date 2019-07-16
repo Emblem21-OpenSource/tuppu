@@ -8,10 +8,10 @@ export class Html extends Content {
   public populate () {
     this.populateHtml(new HtmlOutput(
       this.title as string,
-      this.datetime as string,
+      this.datetime as Date,
       this.summary as string,
-      this.tags as string,
-      this.image as string
+      this.image as string,
+      ''
     ))
   }
 }
