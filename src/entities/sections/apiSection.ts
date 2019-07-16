@@ -1,11 +1,12 @@
 /**
  * A file appears!
  */
-import { Section } from '.';
-import { Json } from '../content/json';
+import { Json } from '../content/json'
+
+import { Section } from '.'
 
 export class ApiSection extends Section<Json> {
-  public populate (): void {
-    
+  populate (): void {
+    // @TODO
   }
 }

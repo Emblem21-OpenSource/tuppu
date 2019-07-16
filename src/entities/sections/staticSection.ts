@@ -1,11 +1,12 @@
 /**
  * A file appears!
  */
-import { Section } from '.';
-import { Html } from '../content/html';
+import { Html } from '../content/html'
+
+import { Section } from '.'
 
 export class StaticSection extends Section<Html> {
-  public populate (): void {
+  populate (): void {
     // @TODO static template
   }
 }

@@ -1,11 +1,12 @@
 /**
  * A file appears!
  */
-import { Section } from '.';
-import { Markdown } from '../content/markdown';
+import { Markdown } from '../content/markdown'
+
+import { Section } from '.'
 
 export class ArticleSection extends Section<Markdown> {
-  public populate (): void {
-    
+  populate (): void {
+    // @TODO
   }
 }

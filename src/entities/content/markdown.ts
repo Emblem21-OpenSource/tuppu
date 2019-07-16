@@ -37,9 +37,9 @@ export class Markdown extends Content {
     this.populateTitle(metadata.title)
     this.populateDate(metadata.datetime)
     this.populateTags(metadata.tags)
-    this.populateIsIndex(metadata.index === "true")
-    this.populateIsDraft(metadata.draft === "true")
-    this.populateIsPinned(metadata.pinned === "true")
+    this.populateIsIndex(metadata.index === 'true')
+    this.populateIsDraft(metadata.draft === 'true')
+    this.populateIsPinned(metadata.pinned === 'true')
     const htmlBody = marked(this.markdown)
     this.populateHtml(new HtmlOutput(
       metadata.title,

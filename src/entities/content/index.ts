@@ -58,7 +58,6 @@ export class Content {
 
   /**
    * 
-   * @param summary 
    */
   protected populateSummary(summary: string): void {
     this.summary = summary

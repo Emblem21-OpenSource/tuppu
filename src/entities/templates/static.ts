@@ -1,7 +1,9 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import { Template } from '.'
+
 import { StaticSection } from '../sections/staticSection'
 import { HtmlOutput } from '../htmlOutput'
+
+import { Template } from '.'
 
 interface StaticSettings {
   inject: boolean
@@ -36,7 +38,7 @@ export class StaticTemplate extends Template<StaticSettings> {
     super(settings)
   }
 
-  public generate (): StaticSettings {
+  generate (): StaticSettings {
     return new HtmlWebpackPlugin(this.settings)
   }
 }

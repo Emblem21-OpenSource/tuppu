@@ -2,16 +2,17 @@
  * A file appears!
  */
 import path from 'path'
-import { Collection } from '../collection';
-import { Page } from '../page';
-import { Content } from '../content';
-import { HtmlOutput } from '../htmlOutput';
+
+import { Collection } from '../collections'
+import { Page } from '../page'
+import { Content } from '../content'
+import { HtmlOutput } from '../htmlOutput'
 
 export interface SectionDirectoryEntry {
-  name: string;
-  link: string;
-  summary: string;
-  date: string;
+  name: string
+  link: string
+  summary: string
+  date: string
 }
 
 export abstract class Section<ContentType extends Content> {
@@ -20,8 +21,9 @@ export abstract class Section<ContentType extends Content> {
   baseName: string
   perPage: number
   pageCount: number = 0
+  pinned: Content[] = []
   collection: Collection<ContentType> | null = null
-  pages: Page<ContentType>[] = []
+  pages: Array<Page<ContentType>> = []
   directory: SectionDirectoryEntry[] = []
   html: HtmlOutput | null = null
 
@@ -34,7 +36,7 @@ export abstract class Section<ContentType extends Content> {
     this.pageCount = Math.ceil(this.collection.length / this.perPage) || 0
     this.html = new HtmlOutput(name, datetime, summary, keywords, image)
     
-    for (var currentPage = 0; currentPage < this.pageCount; currentPage++) {
+    for (let currentPage = 0; currentPage < this.pageCount; currentPage++) {
       const start: number = currentPage * this.perPage
       const end: number = ((currentPage * perPage) + perPage)
     
@@ -43,6 +45,9 @@ export abstract class Section<ContentType extends Content> {
 
     this.collection.forEach(item => {
       const html = item.html as HtmlOutput
+      if (item.isPinned) {
+        this.pinned.push(item)
+      }
 
       this.directory.push({
         name: item.title as string,

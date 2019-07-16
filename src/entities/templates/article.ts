@@ -1,7 +1,9 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import { Template } from '.'
+
 import { HtmlOutput } from '../htmlOutput'
-import { ArticleSection } from '../sections/articleSection';
+import { ArticleSection } from '../sections/articleSection'
+
+import { Template } from '.'
 
 interface ArticleSettings {
   inject: boolean
@@ -36,7 +38,7 @@ export class ArticleTemplate extends Template<ArticleSettings> {
     super(settings)
   }
 
-  public generate (): ArticleSettings {
+  generate (): ArticleSettings {
     return new HtmlWebpackPlugin(this.settings)
   }
 }
