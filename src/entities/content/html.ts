@@ -1,11 +1,12 @@
 /**
  * A file appears!
  */
+import { HtmlOutput } from '../htmlOutput'
+
 import { Content } from '.'
-import { HtmlOutput } from '../htmlOutput';
 
 export class Html extends Content {
-  public populate () {
+  populate () {
     this.populateHtml(new HtmlOutput(
       this.title as string,
       this.datetime as Date,

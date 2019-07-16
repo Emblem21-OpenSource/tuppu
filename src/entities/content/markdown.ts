@@ -1,9 +1,11 @@
 /**
  * A file appears!
  */
-import { Content } from '.'
 import marked from 'marked'
-import { HtmlOutput } from '../htmlOutput';
+
+import { HtmlOutput } from '../htmlOutput'
+
+import { Content } from '.'
 
 export interface MarkdownRawMetadata {
   markdown: string
@@ -20,6 +22,34 @@ export interface MarkdownRawMetadata {
 
 
 export class Markdown extends Content {
+  /**
+   * [populate description]
+   */
+  populate(raw: string): void {
+    if (this.data !== undefined) {
+      // The Markdown instance needs to be populated
+      this.load()
+    }
+
+    const lines: string[] = this.data.split('\n')
+    const metadata = this.extractMetadataFromMarkdown(lines)
+
+    this.populateTitle(metadata.title)
+    this.populateDate(metadata.datetime)
+    this.populateTags(metadata.tags)
+    this.populateIsIndex(metadata.index === "true")
+    this.populateIsDraft(metadata.draft === "true")
+    this.populateIsPinned(metadata.pinned === "true")
+    const htmlBody = marked(this.markdown)
+    this.populateHtml(new HtmlOutput(
+      metadata.title,
+      this.datetime as Date,
+      metadata.summary,
+      metadata.image,
+      htmlBody
+    ))
+  }
+
   /**
    * [populateContent description]
    */
@@ -45,7 +75,7 @@ export class Markdown extends Content {
       image: ''
     }
 
-    let inFrontMatter = false;
+    let inFrontMatter = false
     let index = 0
 
     for (const line of lines) {
@@ -74,33 +104,5 @@ export class Markdown extends Content {
     }
 
     return metadata
-  }
-
-  /**
-   * [populate description]
-   */
-  public populate(raw: string): void {
-    if (this.data !== undefined) {
-      // The Markdown instance needs to be populated
-      this.load()
-    }
-
-    const lines: string[] = this.data.split('\n')
-    const metadata = this.extractMetadataFromMarkdown(lines)
-
-    this.populateTitle(metadata.title)
-    this.populateDate(metadata.datetime)
-    this.populateTags(metadata.tags)
-    this.populateIsIndex(metadata.index === "true")
-    this.populateIsDraft(metadata.draft === "true")
-    this.populateIsPinned(metadata.pinned === "true")
-    const htmlBody = marked(this.markdown)
-    this.populateHtml(new HtmlOutput(
-      metadata.title,
-      this.datetime as Date,
-      metadata.summary,
-      metadata.image,
-      htmlBody
-    ))
   }
 }

@@ -2,35 +2,36 @@
  * A file appears!
  */
 import fs from 'fs'
-import moment = require('moment');
-import { HtmlOutput } from '../htmlOutput';
+import moment from 'moment'
+
+import { HtmlOutput } from '../htmlOutput'
 
 export class Content {
-  public filename: string = ''
-  public data: string = ''
-  public title: string | null = null
-  public summary: string | null = null
-  public markdown: string | null = null
-  public htmlBody: string | null = null
-  public datetime: Date | null = null
-  public readableDatetime: string | null = null
-  public shortDate: string | null = null
-  public isDraft: boolean | null = null
-  public isIndex: boolean | null = null
-  public isPinned: boolean | null = null
-  public image: string | null = null
-  public html: HtmlOutput | null = null
-  public tags: string[] | null = null
+  filename: string = ''
+  data: string = ''
+  title: string | null = null
+  summary: string | null = null
+  markdown: string | null = null
+  htmlBody: string | null = null
+  datetime: Date | null = null
+  readableDatetime: string | null = null
+  shortDate: string | null = null
+  isDraft: boolean | null = null
+  isIndex: boolean | null = null
+  isPinned: boolean | null = null
+  image: string | null = null
+  html: HtmlOutput | null = null
+  tags: string[] | null = null
 
   constructor(filename: string) {
     this.filename = filename
   }
 
-  public size(): number {
+   size(): number {
     return this.data.length
   }
 
-  public load(): string {
+   load(): string {
     this.data = fs.readFileSync(this.filename).toString()
     return this.data
   }
@@ -43,7 +44,7 @@ export class Content {
    * 
    */
   protected populateTitle(title: string): void {
-    this.title = title;
+    this.title = title
   }
 
   /**

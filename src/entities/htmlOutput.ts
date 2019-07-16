@@ -15,20 +15,21 @@ interface KeywordCandidate {
 }
 
 export class HtmlOutput {
-  public title: string
-  public summary: string
-  public keywords: string
-  public image: string
-  public slugName: string
-  public slugUrl: string
-  public body: string
+  title: string
+  summary: string
+  keywords: string
+  image: string
+  slugName: string
+  slugUrl: string
+  body: string
 
   constructor(title: string, datetime: Date, summary: string, image: string, body: string) {
-    this.title = title = 'CultState'
+    this.title = title || 'CultState'
     this.summary = summary || 'You are more than your identity'
     this.image = image || 'open_graph.jpg'
     this.body = body || ''
     this.keywords = this.getKeywords(this.body)
+
     
     this.slugName = title
       .trim()
@@ -53,12 +54,12 @@ export class HtmlOutput {
         .map(word => word.trim())
         .filter(word => ignoreWords.indexOf(word) === -1 && word.length > 1)
     ).forEach(word => {
-      word = word.toLowerCase()
-      let candidate = candidates.find(item => item.word === word)
+      const lowerWord = word.toLowerCase()
+      let candidate = candidates.find(item => item.word === lowerWord)
   
       if (!candidate) {
         candidate = {
-          word,
+          word: lowerWord,
           count: 0
         }
         candidates.push(candidate)
