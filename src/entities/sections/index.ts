@@ -22,26 +22,23 @@ export abstract class Section<ContentType extends Content> {
   perPage: number
   pageCount: number = 0
   pinned: Content[] = []
-  collection: Collection<ContentType> | null = null
+  collection: Collection<ContentType> = new Collection<ContentType>()
   pages: Array<Page<ContentType>> = []
   directory: SectionDirectoryEntry[] = []
   html: HtmlOutput | null = null
 
-  constructor (name: string, datetime: Date, summary: string, keywords: string, image: string, templatePath: string, perPage: number = 3, collection: Collection<ContentType>) {
+  constructor (name: string, templatePath: string, summary: string, keywords: string, image: string, datetime: Date, perPage: number = 3) {
     this.name = name
     this.templatePath = templatePath
     this.baseName = path.basename(this.templatePath as string, '.hbs')
     this.perPage = perPage
-    this.collection = collection
-    this.pageCount = Math.ceil(this.collection.length / this.perPage) || 0
     this.html = new HtmlOutput(name, datetime, summary, keywords, image)
-    
-    for (let currentPage = 0; currentPage < this.pageCount; currentPage++) {
-      const start: number = currentPage * this.perPage
-      const end: number = ((currentPage * perPage) + perPage)
-    
-      this.pages.push(new Page<ContentType>(currentPage, this.collection.slice(start, end)))
-    }
+  }
+
+  protected populate (contents: Array<ContentType>): void {
+    this.collection.populate(contents)
+
+    this.pageCount = Math.ceil(this.collection.length / this.perPage) || 0
 
     this.collection.forEach(item => {
       const html = item.html as HtmlOutput
@@ -56,7 +53,13 @@ export abstract class Section<ContentType extends Content> {
         date: item.readableDatetime as string
       })
     })
-  }
 
-  abstract populate (): void
+    for (let currentPage = 0; currentPage < this.pageCount; currentPage++) {
+      const start: number = currentPage * this.perPage
+      const end: number = ((currentPage * this.perPage) + this.perPage)
+    
+      this.pages.push(new Page<ContentType>(currentPage, this.collection.slice(start, end)))
+    }
+
+  }
 }

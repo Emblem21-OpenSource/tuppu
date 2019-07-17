@@ -20,7 +20,6 @@ export interface MarkdownRawMetadata {
   image: string
 }
 
-
 export class Markdown extends Content {
   /**
    * [populate description]

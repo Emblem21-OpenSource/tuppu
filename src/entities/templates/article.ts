@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 import { HtmlOutput } from '../htmlOutput'
 import { ArticleSection } from '../sections/articleSection'
+import { Markdown } from '../content/markdown'
 
 import { Template } from '.'
 
@@ -14,12 +15,15 @@ interface ArticleSettings {
   filename: string
   template: string
   templateParameters: {
+    article: Markdown
+    showTagHeader: true
+    relatedArticles: Markdown[]
     head: HtmlOutput
   }
 }
 
 export class ArticleTemplate extends Template<ArticleSettings> {
-  constructor (section: ArticleSection) {
+  constructor (section: ArticleSection, article: Markdown, relatedArticles: Markdown[] = []) {
     const html: HtmlOutput = section.html as HtmlOutput
 
     const settings: ArticleSettings = {
@@ -31,6 +35,9 @@ export class ArticleTemplate extends Template<ArticleSettings> {
       filename: `${html.title}.html`,
       template: `src/theme/sections/${html.slugName}.hbs`,
       templateParameters: {
+        article,
+        showTagHeader: true,
+        relatedArticles,
         head: html
       }
     }

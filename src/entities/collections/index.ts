@@ -1,11 +1,13 @@
 type iterator<T> = (item: T, index: number, array: T[]) => T
 
-interface CollectionExtractionFilter<ContentType> {
-  [key: string]: iterator<ContentType>
+type voidIterator<T> = (item: T, index: number, array: T[]) => void
+
+interface CollectionExtractionFilter<T> {
+  [key: string]: iterator<T>
 }
 
-interface CollectionExtractionResult<ContentType> {
-  [key: string]: ContentType[]
+interface CollectionExtractionResult<T> {
+  [key: string]: T[]
 }
 
 /**
@@ -16,6 +18,13 @@ export class Collection<ContentType> {
 
   get length (): number {
     return this.content.length
+  }
+
+  /**
+   * 
+   */
+  populate (content: Array<ContentType>): void {
+    this.content = this.content.concat(content);
   }
 
   /**
@@ -35,7 +44,7 @@ export class Collection<ContentType> {
   /**
    * [extract description]
    */
-  forEach (callback: iterator<ContentType>): void {
+  forEach (callback: voidIterator<ContentType>): void {
     this.content.forEach(callback)
   }
 
