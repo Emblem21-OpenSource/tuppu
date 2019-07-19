@@ -6,7 +6,10 @@ import moment from 'moment'
 
 import { HtmlOutput } from '../htmlOutput'
 
-export interface TemplateOutput {
+/**
+ * Used for Webpack Plugins
+ */
+export interface WebpackTemplate {
   title: string
   url: string
   summary: string
@@ -112,7 +115,7 @@ export class Content {
     this.image = image
   }
 
-  protected getContent (): TemplateOutput {
+  protected getContent (): WebpackTemplate {
     const html = this.html as HtmlOutput
     const datetime = this.datetime as Date
 

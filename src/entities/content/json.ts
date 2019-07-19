@@ -1,7 +1,7 @@
 /**
  * A file appears!
  */
-import { Content, TemplateOutput } from '.'
+import { Content, WebpackTemplate } from '.'
 
 export class Json extends Content {
     sourceContent: Content
@@ -11,7 +11,7 @@ export class Json extends Content {
       this.sourceContent = content
     }
 
-    getContent (): TemplateOutput {
+    getContent (): WebpackTemplate {
       const templateOutput = super.getContent()
       templateOutput.body = '' // @TODO
       const { title, summary, body, image, url, datetime, isDraft, isIndex, isPinned, tags } = templateOutput
