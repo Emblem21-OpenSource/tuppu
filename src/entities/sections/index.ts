@@ -17,8 +17,8 @@ export interface SectionDirectoryEntry {
 
 export abstract class Section<ContentType extends Content> {
   name: string
-  templatePath: string
-  baseName: string
+  templatePath: string | undefined
+  baseName: string | null = null
   perPage: number
   pageCount: number = 0
   pinned: Content[] = []
@@ -27,16 +27,23 @@ export abstract class Section<ContentType extends Content> {
   directory: SectionDirectoryEntry[] = []
   html: HtmlOutput | null = null
 
-  constructor (name: string, templatePath: string, summary: string, keywords: string, image: string, datetime: Date, perPage: number = 3) {
+  constructor (name: string, datetime: Date, perPage: number = 3, templatePath?: string, summary?: string, keywords?: string, image?: string) {
     this.name = name
     this.templatePath = templatePath
-    this.baseName = path.basename(this.templatePath as string, '.hbs')
+
+    if(this.templatePath) {
+      this.baseName = path.basename(this.templatePath as string, '.hbs')
+
+      if (summary && keywords) {
+        this.html = new HtmlOutput(datetime, name, summary, keywords, image)
+      }
+    }
+
     this.perPage = perPage
-    this.html = new HtmlOutput(name, datetime, summary, keywords, image)
   }
 
-  protected populate (contents: Array<ContentType>): void {
-    this.collection.populate(contents)
+  protected populate (collection: Collection<ContentType>): void {
+    this.collection = collection
 
     this.pageCount = Math.ceil(this.collection.length / this.perPage) || 0
 

@@ -19,25 +19,26 @@ export class HtmlOutput {
   summary: string
   keywords: string
   image: string
-  slugName: string
-  slugUrl: string
   body: string
+  slugName: string | undefined
+  slugUrl: string | undefined
 
-  constructor(title: string, datetime: Date, summary: string, image: string, body: string) {
+  constructor(datetime: Date, title?: string, summary?: string, image?: string, body?: string) {
     this.title = title || 'CultState'
     this.summary = summary || 'You are more than your identity'
     this.image = image || 'open_graph.jpg'
     this.body = body || ''
     this.keywords = this.getKeywords(this.body)
 
-    
-    this.slugName = title
-      .trim()
-      .replace(badChars, '')
-      .replace(nonHumanChars, '-')
-      .replace(doubleDash, '-')
-    
-    this.slugUrl = `${moment(datetime).format('YYYY/MM/DD')}/${this.slugName}/`
+    if (title) {
+      this.slugName = title
+        .trim()
+        .replace(badChars, '')
+        .replace(nonHumanChars, '-')
+        .replace(doubleDash, '-')
+
+        this.slugUrl = `${moment(datetime).format('YYYY/MM/DD')}/${this.slugName}/`
+    }
   }
 
   /**
