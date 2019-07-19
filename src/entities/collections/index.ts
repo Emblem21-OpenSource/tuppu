@@ -7,16 +7,16 @@ interface CollectionExtractionFilter<T> {
 }
 
 interface CollectionExtractionPages<T> {
-  [key: string]: Array<Array<T>>
+  [key: string]: T[][]
 }
 
 interface CollectionExtractionList<T> {
-  [key: string]: Array<T>
+  [key: string]: T[]
 }
 
 interface CollectionExtraction<T> {
   pages: CollectionExtractionPages<T>,
-  list: CollectionExtractionList<T>
+  lists: CollectionExtractionList<T>
 }
 
 
@@ -33,8 +33,8 @@ export class Collection<ContentType> {
   /**
    * 
    */
-  populate (content: Array<ContentType>): void {
-    this.content = this.content.concat(content);
+  populate (content: ContentType[]): void {
+    this.content = this.content.concat(content)
   }
 
   /**
@@ -68,6 +68,15 @@ export class Collection<ContentType> {
   /**
    * [extract description]
    */
+  transform (callback: iterator<ContentType>): ContentType[] {
+    this.content = this.content.map(callback)
+    return this.content
+  }
+
+
+  /**
+   * [extract description]
+   */
   filter (callback: iterator<ContentType>): ContentType[] {
     return this.content.filter(callback)
   }
@@ -96,7 +105,7 @@ export class Collection<ContentType> {
     const result : CollectionExtractionPages<ContentType> = {}
 
     Object.keys(lists).forEach(key => {
-      const pages: Array<Array<ContentType>> = []
+      const pages: ContentType[][] = []
 
       const pageCount = Math.ceil(result[key].length / perPage) || 0
 
@@ -114,12 +123,12 @@ export class Collection<ContentType> {
   /**
    * 
    */
-  extract (filter: CollectionExtractionFilter<ContentType>, transform: CollectionExtractionFilter<ContentType>, perPage: number): CollectionExtraction {
+  extract (filter: CollectionExtractionFilter<ContentType>, transform: CollectionExtractionFilter<ContentType>, perPage: number): CollectionExtraction<ContentType> {
     const lists = this.extractLists(filter, transform)
 
     return {
       pages: this.extractPages(lists, perPage),
-      lists,
+      lists
     }
   }
 }

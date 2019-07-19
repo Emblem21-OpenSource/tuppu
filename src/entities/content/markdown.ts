@@ -32,6 +32,14 @@ export class Markdown extends Content {
 
     const lines: string[] = this.data.split('\n')
     const metadata = this.extractMetadataFromMarkdown(lines)
+    const htmlBody = marked(this.markdown)
+    this.populateHtml(new HtmlOutput(
+      this.datetime as Date,
+      metadata.title,
+      metadata.summary,
+      metadata.image,
+      htmlBody
+    ))
 
     this.populateTitle(metadata.title)
     this.populateDate(metadata.datetime)
@@ -39,14 +47,6 @@ export class Markdown extends Content {
     this.populateIsIndex(metadata.index === 'true')
     this.populateIsDraft(metadata.draft === 'true')
     this.populateIsPinned(metadata.pinned === 'true')
-    const htmlBody = marked(this.markdown)
-    this.populateHtml(new HtmlOutput(
-      metadata.title,
-      this.datetime as Date,
-      metadata.summary,
-      metadata.image,
-      htmlBody
-    ))
   }
 
   /**

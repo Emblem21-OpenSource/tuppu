@@ -6,13 +6,27 @@ import moment from 'moment'
 
 import { HtmlOutput } from '../htmlOutput'
 
+export interface TemplateOutput {
+  title: string
+  url: string
+  summary: string
+  image: string
+  body: string
+  datetime: string
+  readableDatetime?: string
+  shortDate?: string
+  isDraft: boolean
+  isIndex: boolean
+  isPinned: boolean
+  tags: string[]
+}
+
 export class Content {
   filename: string = ''
   data: string = ''
   title: string | null = null
   summary: string | null = null
   markdown: string | null = null
-  htmlBody: string | null = null
   datetime: Date | null = null
   readableDatetime: string | null = null
   shortDate: string | null = null
@@ -97,4 +111,24 @@ export class Content {
   protected populateImage(image: string) {
     this.image = image
   }
+
+  protected getContent (): TemplateOutput {
+    const html = this.html as HtmlOutput
+    const datetime = this.datetime as Date
+
+      return {
+        title: html.title as string,
+        summary: html.summary as string,
+        image: html.image as string,
+        url: html.slugUrl as string,
+        body: html.body as string,
+        datetime: datetime.toISOString(),
+        readableDatetime: this.readableDatetime as string,
+        shortDate: this.shortDate as string,
+        isDraft: this.isDraft as boolean,
+        isIndex: this.isIndex as boolean,
+        isPinned: this.isPinned as boolean,
+        tags: this.tags as string[]
+      }
+    }
 }

@@ -31,7 +31,7 @@ export abstract class Section<ContentType extends Content> {
     this.name = name
     this.templatePath = templatePath
 
-    if(this.templatePath) {
+    if (this.templatePath) {
       this.baseName = path.basename(this.templatePath as string, '.hbs')
 
       if (summary && keywords) {
@@ -42,12 +42,20 @@ export abstract class Section<ContentType extends Content> {
     this.perPage = perPage
   }
 
-  protected populate (collection: Collection<ContentType>): void {
-    this.collection = collection
+  /**
+   * [generateContent description]
+   */
+  protected abstract generateContent(collection?: Collection<Content>): Collection<Content>
+
+  /**
+   * [populate description]
+   */
+  protected populate (collectionOverride?: Collection<Content>): Collection<Content> {
+    const collection = this.generateContent(collectionOverride)
 
     this.pageCount = Math.ceil(this.collection.length / this.perPage) || 0
 
-    this.collection.forEach(item => {
+    collection.forEach(item => {
       const html = item.html as HtmlOutput
       if (item.isPinned) {
         this.pinned.push(item)
@@ -59,6 +67,8 @@ export abstract class Section<ContentType extends Content> {
         summary: item.summary as string,
         date: item.readableDatetime as string
       })
+
+      this.collection.push(item as ContentType)
     })
 
     for (let currentPage = 0; currentPage < this.pageCount; currentPage++) {
@@ -67,6 +77,6 @@ export abstract class Section<ContentType extends Content> {
     
       this.pages.push(new Page<ContentType>(currentPage, this.collection.slice(start, end)))
     }
-
+    return collection
   }
 }
