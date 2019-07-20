@@ -1,77 +1,37 @@
 /**
  * A file appears!
  */
+import fs from 'fs'
 import marked from 'marked'
-
-import { HtmlOutput } from '../htmlOutput'
 
 import { Content } from '.'
 
-export interface MarkdownRawMetadata {
-  markdown: string
-  html: string
+export interface MarkdownMetadata {
   title: string
   datetime: string
   summary: string
-  tags: string
+  image: string
   draft: string
   index: string
   pinned: string
-  image: string
+  tags: string
+  body: string
 }
 
 export class Markdown extends Content {
-  /**
-   * [populate description]
-   */
-  populate(raw: string): void {
-    if (this.data !== undefined) {
-      // The Markdown instance needs to be populated
-      this.load()
-    }
+  constructor(sourcePath: string) {
+    const lines = fs.readFileSync(sourcePath).toString().split('\n')
 
-    const lines: string[] = this.data.split('\n')
-    const metadata = this.extractMetadataFromMarkdown(lines)
-    const htmlBody = marked(this.markdown)
-    this.populateHtml(new HtmlOutput(
-      this.datetime as Date,
-      metadata.title,
-      metadata.summary,
-      metadata.image,
-      htmlBody
-    ))
-
-    this.populateTitle(metadata.title)
-    this.populateDate(metadata.datetime)
-    this.populateTags(metadata.tags)
-    this.populateIsIndex(metadata.index === 'true')
-    this.populateIsDraft(metadata.draft === 'true')
-    this.populateIsPinned(metadata.pinned === 'true')
-  }
-
-  /**
-   * [populateContent description]
-   */
-  private populateContent(lines: string[]): void {
-    const remainingText = lines.join('\n')
-    this.markdown = remainingText
-  }
-
-  /**
-   * [extractMetadataFromMarkdown description]
-   */
-  private extractMetadataFromMarkdown(lines: string[]): MarkdownRawMetadata {
-    const metadata: MarkdownRawMetadata = {
-      markdown: '',
-      html: '',
+    const metadata: MarkdownMetadata = {
       title: '',
       datetime: '',
       summary: '',
-      tags: '',
+      image: '',
       draft: '',
       index: '',
       pinned: '',
-      image: ''
+      tags: '',    
+      body: ''
     }
 
     let inFrontMatter = false
@@ -95,13 +55,28 @@ export class Markdown extends Content {
         if (stripped === '---' && inFrontMatter === null) {
           inFrontMatter = true
         } else {
-          this.populateContent(lines.slice(index))
+          metadata.body = lines.slice(index).join('\n')
           break
         }
       }
       index += 1
     }
 
-    return metadata
+    super(
+      metadata.title,
+      sourcePath,
+      new Date(metadata.datetime),
+      metadata.summary,
+      metadata.image,
+      metadata.draft === 'true',
+      metadata.index === 'true',
+      metadata.pinned === 'true',
+      metadata.tags
+     )
+
+    this.body.markdown = metadata.body
+    this.body.html = marked(this.body.markdown)
+    this.body.text = this.stripAndExplodeContent(this.body.markdown).join('\n')
+    this.populateFrequentWords(this.body.text) 
   }
 }

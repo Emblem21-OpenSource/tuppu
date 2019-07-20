@@ -3,135 +3,125 @@
  */
 import fs from 'fs'
 import moment from 'moment'
+import stopword from 'stopword'
+import striptags from 'striptags'
 
-import { HtmlOutput } from '../htmlOutput'
+import { JsonContent } from './json'
 
-/**
- * Used for Webpack Plugins
- */
-export interface WebpackTemplate {
+interface ContentBody {
+  html: string | undefined
+  markdown: string | undefined
+  text: string | undefined,
+  json: JsonContent | undefined
+}
+
+interface KeywordCandidate {
+  word: string
+  count: number
+}
+
+const badChars = /[?.!,()''{}[\]:<>/\\@#$%^&*]/g
+const nonHumanChars = /[^a-zA-Z0-9_]/g
+const doubleDash = /--/g
+const stripRegex = /[^A-Za-z-]+/g
+
+const ignoreWords = ['quot', 'emsp', 'http', 'https', '--', '-', 'fo', 'archive', 'not', 'means', 'com', 'will', 'when', 'one', 'png', 'jpg', 'jpeg']
+
+export class Content {
+  sourcePath: string
+  sourceData: string | undefined
   title: string
+  slugTitle: string
   url: string
   summary: string
   image: string
-  body: string
+  body: ContentBody = {
+    html: undefined,
+    markdown: undefined,
+    text: undefined,
+    json: undefined
+  }
+  date: Date
   datetime: string
-  readableDatetime?: string
-  shortDate?: string
+  readableDatetime: string
+  shortDate: string
   isDraft: boolean
   isIndex: boolean
   isPinned: boolean
-  tags: string[]
-}
+  frequentWords: string | undefined
+  tags: string[] = []
 
-export class Content {
-  filename: string = ''
-  data: string = ''
-  title: string | null = null
-  summary: string | null = null
-  markdown: string | null = null
-  datetime: Date | null = null
-  readableDatetime: string | null = null
-  shortDate: string | null = null
-  isDraft: boolean | null = null
-  isIndex: boolean | null = null
-  isPinned: boolean | null = null
-  image: string | null = null
-  html: HtmlOutput | null = null
-  tags: string[] | null = null
-
-  constructor(filename: string) {
-    this.filename = filename
-  }
-
-   size(): number {
-    return this.data.length
-  }
-
-   load(): string {
-    this.data = fs.readFileSync(this.filename).toString()
-    return this.data
-  }
-
-  protected populateHtml (html: HtmlOutput) {
-    this.html = html
-  }
-
-  /**
-   * 
-   */
-  protected populateTitle(title: string): void {
+  constructor(title: string, sourcePath: string, date: Date, summary: string, image: string, isDraft: boolean, isIndex: boolean, isPinned: boolean, tags: string | string[]) {
+    this.sourcePath = sourcePath
     this.title = title
-  }
-
-  /**
-   * [populateDate description]
-   */
-  protected populateDate(date: string): void {
-    this.datetime = new Date(date)
+    this.date = date
+    this.datetime = date.toISOString()
     this.readableDatetime = moment(this.datetime).format('LLLL')
     this.shortDate = moment(this.datetime).format('MM/DD/YYYY')
-  }
-
-  /**
-   * 
-   */
-  protected populateSummary(summary: string): void {
-    this.summary = summary
-  }
-
-  /**
-   * 
-   */
-  protected populateTags(tags: string) {
-    return tags.split(',').map(item => item.trim())
-  }
-
-  /**
-   * [populateIsDraft description]
-   */
-  protected populateIsDraft(isDraft: boolean = false) {
+    this.summary = summary || 'You are more than your identity'
+    this.image = image || 'open_graph.jpg'
     this.isDraft = isDraft
-  }
-
-  /**
-   * [populateIsIndex description]
-   */
-  protected populateIsIndex(isIndex: boolean = false) {
     this.isIndex = isIndex
-  }
-
-  /**
-   * [populateIsPinned description]
-   */
-  protected populateIsPinned(isPinned: boolean = false) {
     this.isPinned = isPinned
+
+    this.slugTitle = title
+      .trim()
+      .replace(badChars, '')
+      .replace(nonHumanChars, '-')
+      .replace(doubleDash, '-')
+
+    this.url = `${moment(this.datetime).format('YYYY/MM/DD')}/${this.slugTitle}/`
+
+    if (typeof tags === 'string') {
+      this.tags = tags.split(',').map(item => item.trim())
+    } else {
+      this.tags = tags.map(item => item.trim())
+    }
   }
 
   /**
-   * [populateImage description]
+   * [loadFromFile description]
    */
-  protected populateImage(image: string) {
-    this.image = image
+  loadFromFile(): string {
+    this.sourceData = fs.readFileSync(this.sourcePath).toString()
+
+    return this.sourceData
   }
 
-  protected getContent (): WebpackTemplate {
-    const html = this.html as HtmlOutput
-    const datetime = this.datetime as Date
+  protected populateFrequentWords(body: string) {
+   this.frequentWords = this.getKeywords(body) 
+  }
 
-      return {
-        title: html.title as string,
-        summary: html.summary as string,
-        image: html.image as string,
-        url: html.slugUrl as string,
-        body: html.body as string,
-        datetime: datetime.toISOString(),
-        readableDatetime: this.readableDatetime as string,
-        shortDate: this.shortDate as string,
-        isDraft: this.isDraft as boolean,
-        isIndex: this.isIndex as boolean,
-        isPinned: this.isPinned as boolean,
-        tags: this.tags as string[]
+  protected stripAndExplodeContent (content: string): string[] {
+    return striptags(content)
+      .replace(stripRegex, ' ')
+      .split(' ')
+      .map(word => word.trim())
+      .filter(word => ignoreWords.indexOf(word) === -1 && word.length > 1)
+  }
+
+  private getKeywords (content: string) {
+    const candidates: KeywordCandidate[] = []
+  
+    stopword.removeStopwords(this.stripAndExplodeContent(content)).forEach(word => {
+      const lowerWord = word.toLowerCase()
+      let candidate = candidates.find(item => item.word === lowerWord)
+  
+      if (!candidate) {
+        candidate = {
+          word: lowerWord,
+          count: 0
+        }
+        candidates.push(candidate)
       }
-    }
+  
+      candidate.count += 1
+    })
+  
+    return candidates
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 25) // @TODO make constant
+      .map(item => item.word)
+      .join(', ')
+  }
 }
