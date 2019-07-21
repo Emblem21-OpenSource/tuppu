@@ -3,6 +3,7 @@
  */
 import fs from 'fs'
 import marked from 'marked'
+import striptags from 'striptags'
 
 import { Content } from '.'
 
@@ -62,6 +63,14 @@ export class Markdown extends Content {
       index += 1
     }
 
+    const html = marked(metadata.body)
+    const text = striptags(html)
+    const body = {
+      html,
+      markdown: metadata.body,
+      text
+    }
+
     super(
       metadata.title,
       sourcePath,
@@ -71,12 +80,8 @@ export class Markdown extends Content {
       metadata.draft === 'true',
       metadata.index === 'true',
       metadata.pinned === 'true',
-      metadata.tags
-     )
-
-    this.body.markdown = metadata.body
-    this.body.html = marked(this.body.markdown)
-    this.body.text = this.stripAndExplodeContent(this.body.markdown).join('\n')
-    this.populateFrequentWords(this.body.text) 
+      metadata.tags,
+      body
+    )
   }
 }

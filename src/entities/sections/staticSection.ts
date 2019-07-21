@@ -1,31 +1,38 @@
-/**
- * A file appears!
- */
-import path from 'path'
-import fs from 'fs'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-import { Html } from '../content/html'
+import { HtmlParameters } from '../content/html'
 
 import { Section } from '.'
 
-export class StaticSection extends Section<Html> {
-  sourcePath: string
+interface StaticSettings {
+  inject: boolean
+  minify: {
+    removeComments: boolean,
+    collapseWhitespace: boolean
+  }
+  filename: string
+  template: string
+  templateParameters: HtmlParameters
+}
 
-  constructor (name: string, sourcePath: string, templatePath: string, summary: string, keywords: string, image: string, datetime: Date, perPage: number = 3) {
-    super(name, templatePath, summary, keywords, image, datetime, perPage)
-    this.sourcePath = sourcePath
+
+export class StaticSection extends Section {
+  constructor (title: string, date: Date, summary: string, image: string, perPage: number) {
+    super(title, date, summary, image, perPage)
   }
 
-  populate (): void {
-    const sectionPath = path.resolve(__dirname, this.sourcePath)
-    const sections = fs.readdirSync(sectionPath)
-    const collection: Array<Html> = []
-  
-    for (const section of sections) {
-      const entity = new Html(path.resolve(__dirname, section));
-      entity.populate()
-      collection.push(entity)
+  getWebpackPlugin(): any {
+    const settings: StaticSettings = {
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      },
+      filename: `${this.html.slugTitle}.html`,
+      template: `src/theme/sections/${this.html.slugTitle}.hbs`,
+      templateParameters: this.html
     }
-    super.populate(collection)
+    
+    return new HtmlWebpackPlugin(settings)
   }
 }

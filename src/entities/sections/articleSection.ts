@@ -1,32 +1,56 @@
 /**
  * A file appears!
  */
-import path from 'path'
-import fs from 'fs'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-import { Markdown } from '../content/markdown'
+import { HtmlParameters } from '../content/html'
+import { Content } from '../content'
+import { addSitemapPath } from '../content/sitemap'
 
 import { Section } from '.'
 
-export class ArticleSection extends Section<Markdown> {
-  sourcePath: string
-
-  constructor (name: string, sourcePath: string, templatePath: string, summary: string, keywords: string, image: string, datetime: Date, perPage: number = 3) {
-    super(name, templatePath, summary, keywords, image, datetime, perPage)
-    this.sourcePath = sourcePath
+interface ArticleSettings {
+  inject: boolean
+  minify: {
+    removeComments: boolean,
+    collapseWhitespace: boolean
   }
-
-  populate (): void {
-    const sectionPath = path.resolve(__dirname, this.sourcePath)
-    const sections = fs.readdirSync(sectionPath)
-    const collection: Array<Markdown> = []
-  
-    for (const section of sections) {
-      const contents: string = fs.readFileSync(section).toString()
-      const entity = new Markdown(path.resolve(__dirname, section));
-      entity.populate(contents)
-      collection.push(entity)
-    }
-    super.populate(collection)
+  filename: string
+  template: string
+  templateParameters: HtmlParameters & {
+    article: Content
+    showTagHeader: true
+    relatedArticles: Content[]
   }
 }
+
+export class ArticleSection extends Section {
+  constructor (title: string, date: Date, summary: string, image: string, perPage: number) {
+    super(title, date, summary, image, perPage)
+  }
+
+  getWebpackPlugin(article: Content, relatedArticles: Content[]): any {
+    const filename = `${this.html.url}index.html`
+
+    addSitemapPath(filename, article)
+
+    const settings: ArticleSettings = {
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false
+      },
+      filename,
+      template: 'src/theme/html/article.hbs',
+      templateParameters: {
+        ...this.html,
+        article,
+        showTagHeader: true,
+        relatedArticles
+      }
+    }
+    
+    return new HtmlWebpackPlugin(settings)
+  }
+}
+

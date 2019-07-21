@@ -61,7 +61,7 @@ export class Collection<ContentType> {
   /**
    * [extract description]
    */
-  map (callback: iterator<ContentType>): ContentType[] {
+  map (callback: iterator<ContentType>): any[] {
     return this.content.map(callback)
   }
 
