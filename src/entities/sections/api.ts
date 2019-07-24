@@ -3,7 +3,9 @@
  */
 import WriteJsonPlugin from 'write-json-webpack-plugin'
 
-import { Content, JsonContent, ContentBody } from '../content'
+import { Json } from '../content/json'
+import { Markdown } from '../content/markdown'
+import { ArticleBody } from '../content/article'
 import { addSitemapPath } from '../content/sitemap'
 
 import { Section } from '.'
@@ -20,16 +22,16 @@ export class ApiSection extends Section {
     super(title, date, summary, image, perPage)
   }
 
-  getWebpackPlugin(content: string | Content): any {
-    let json: JsonContent
+  getWebpackPlugin(content: string | Markdown): any {
+    let json: Json
     let filename: string
 
     if (typeof content === 'string') {
       json = require(`../../src/api/${content}`)
       filename = content
     } else {
-      const body = content.body as ContentBody
-      json = body.json as JsonContent
+      const body = content.article.body as ArticleBody
+      json = body.json as Json
       filename = `${content.html.slugTitle}.json`
     }
 

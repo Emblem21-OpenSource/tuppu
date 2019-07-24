@@ -1,6 +1,12 @@
+import { Markdown } from '../content/markdown'
+
 type iterator<T> = (item: T, index: number, array: T[]) => T
 
+type booleanIterator<T> = (item: T, index: number, array: T[]) => string | null | undefined | boolean
+
 type voidIterator<T> = (item: T, index: number, array: T[]) => void
+
+type sortIterator<T> = (a: T, b: T) => number
 
 interface CollectionExtractionFilter<T> {
   [key: string]: iterator<T>
@@ -23,11 +29,30 @@ interface CollectionExtraction<T> {
 /**
  * A file appears!
  */
-export class Collection<ContentType> {
+export class Collection<ContentType extends Markdown> {
   content: ContentType[] = []
 
   get length (): number {
     return this.content.length
+  }
+
+  /**
+   * [fromArray description]
+   */
+  fromArray(content: ContentType[]): Collection<ContentType> {
+    this.content = content
+    return this
+  }
+
+  /**
+   * [absorb description]
+   */
+  absorb (collections: Array<Collection<ContentType>>): Collection<ContentType> {
+    for (const collection of collections) {
+      this.content = this.content.concat(collection.content)
+    }
+
+    return this
   }
 
   /**
@@ -42,6 +67,20 @@ export class Collection<ContentType> {
    */
   push(item: ContentType): number {
     return this.content.push(item)
+  }
+
+  /**
+   * [sort description]
+   */
+  sort(callback: sortIterator<ContentType>): ContentType[] {
+    return this.content.sort(callback)
+  }
+
+  /**
+   * [internalSort description]
+   */
+  internalSort(callback: sortIterator<ContentType>): void {
+    this.content = this.content.sort(callback)
   }
 
   /**
@@ -77,7 +116,7 @@ export class Collection<ContentType> {
   /**
    * [extract description]
    */
-  filter (callback: iterator<ContentType>): ContentType[] {
+  filter (callback: booleanIterator<ContentType>): ContentType[] {
     return this.content.filter(callback)
   }
 

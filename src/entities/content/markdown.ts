@@ -5,35 +5,71 @@ import fs from 'fs'
 import marked from 'marked'
 import striptags from 'striptags'
 
-import { Content } from '.'
+import { Html } from './html'
+import { Article, ArticleBody } from './article'
+import { Json } from './json'
 
-export interface MarkdownMetadata {
-  title: string
-  datetime: string
-  summary: string
-  image: string
-  draft: string
-  index: string
-  pinned: string
-  tags: string
-  body: string
-}
+let nextId = 1
 
-export class Markdown extends Content {
-  constructor(sourcePath: string) {
-    const lines = fs.readFileSync(sourcePath).toString().split('\n')
+export class Markdown {
 
-    const metadata: MarkdownMetadata = {
-      title: '',
-      datetime: '',
-      summary: '',
-      image: '',
-      draft: '',
-      index: '',
-      pinned: '',
-      tags: '',    
-      body: ''
+  id: number
+  sourcePath: string
+  article: Article
+  html: Html
+
+  constructor(sourcePath: string, sectionName: string) {
+    this.sourcePath = sourcePath
+    this.article = this.load()
+    this.article.section = sectionName
+
+    const body = this.article.body as ArticleBody
+
+    this.html = new Html(
+      this.article.title as string,
+      this.article.date as Date, 
+      this.article.summary as string, 
+      this.article.image as string,
+      body.text as string
+    )
+
+    this.article.frequentWords = this.html.keywords.split(', ')
+
+    body.json = {
+      title: this.html.summary,
+      datetime: this.html.datetime,
+      summary: this.html.summary,
+      image: this.html.image,
+      isDraft: this.article.isDraft as boolean,
+      isIndex: this.article.isIndex as boolean,
+      isPinned: this.article.isPinned as boolean,
+      text: body.text as string,
+      url: this.html.url,
+      frequentWords: this.article.frequentWords,
+      tags: this.article.tags as string[]
     }
+
+    this.id = nextId
+    nextId += 1
+  }
+
+  /**
+   * [asJSON description]
+   */
+  asJSON (): Json {
+    const body = this.article.body as ArticleBody
+    return body.json as Json
+  }
+
+  /**
+   * [load description]
+   */
+  private load (): Article {
+    const result: Article = {
+      body: {}
+    }
+    const body = result.body as ArticleBody
+    const lines = fs.readFileSync(this.sourcePath).toString().split('\n')
 
     let inFrontMatter = false
     let index = 0
@@ -48,40 +84,43 @@ export class Markdown extends Content {
           // Extract FrontMatter from Markdown file
           const colonIndex = line.indexOf(':')
 
-          metadata[line.substr(0, colonIndex).trim()] = line
-            .substr(colonIndex + 1)
-            .trim()
+          let property: string = line.substr(0, colonIndex).trim()
+          let value: string | string[] | Date = line.substr(colonIndex + 1).trim()
+
+          switch (property) {
+            case 'draft':
+              property = 'isDraft'
+              break
+            case 'pinned':
+              property = 'isPinned'
+              break
+            case 'index':
+              property = 'isIndex'
+              break
+            case 'tags':
+              value = value.split(',').map(tag => tag.trim())
+              break
+            case 'date':
+              value = new Date(value)
+              break
+          }
+
+          result[property] = value
         }
       } else {
         if (stripped === '---' && inFrontMatter === null) {
           inFrontMatter = true
         } else {
-          metadata.body = lines.slice(index).join('\n')
+          body.markdown = lines.slice(index).join('\n')
           break
         }
       }
       index += 1
     }
 
-    const html = marked(metadata.body)
-    const text = striptags(html)
-    const body = {
-      html,
-      markdown: metadata.body,
-      text
-    }
+    body.html = marked(body.markdown)
+    body.text = striptags(body.html as string)
 
-    super(
-      metadata.title,
-      sourcePath,
-      new Date(metadata.datetime),
-      metadata.summary,
-      metadata.image,
-      metadata.draft === 'true',
-      metadata.index === 'true',
-      metadata.pinned === 'true',
-      metadata.tags,
-      body
-    )
+    return result
   }
 }

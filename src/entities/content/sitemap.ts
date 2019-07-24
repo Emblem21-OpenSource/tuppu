@@ -1,7 +1,10 @@
 import SitemapWebpackPlugin from 'sitemap-webpack-plugin'
 import moment from 'moment'
 
-import { Content, JsonContent } from '../content'
+import { Json } from './json'
+import { Markdown } from './json'
+import { Article } from './article'
+import { Html } from './html'
 
 interface SitemapSettings {
   path: string
@@ -12,10 +15,22 @@ interface SitemapSettings {
 
 const paths: SitemapSettings[] = []
 
-export const addSitemapPath = (path: string, content: Content | JsonContent) => { 
-  const lastMod = content instanceof Content
-    ? moment(content.html.datetime).format('YYYY/MM/DD')
-    : content.url.split('/').slice(0, 3).join('/')
+export const addSitemapPath = (path: string, content: Article | Markdown | Html | Json) => { 
+    let lastMod: string
+
+    if (content instanceof Markdown) {
+      // Markdown
+      lastMod = moment(content.html.datetime).format('YYYY/MM/DD')
+    } else if (content instanceof Html) {
+      // Html
+      lastMod = moment(content.datetime).format('YYYY/MM/DD')
+    } else if (content.datetime) {
+      // Json
+      lastMod = content.url.split('/').slice(0, 3).join('/')
+    } else {
+      // Article
+      lastMod = moment(content.html.datetime).format('YYYY/MM/DD')
+    }
 
   paths.push({
     path,

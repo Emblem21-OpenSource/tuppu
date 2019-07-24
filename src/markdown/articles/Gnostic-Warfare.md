@@ -2,7 +2,6 @@
 title: Gnostic Warfare
 date: 2018-06-02 14:50:09
 author: Patrick Ryan
-description: The future of AI Conflict
 contact: mailto:patrick.ryan@emblem21.com
 tags: ai warfare, training
 summary: Gnostic warfare focuses on outsmarting Kurzweilian singularities, neurochimera, and machine learning ecosystems.
