@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "cross-env NODE_ENV=development webpack --mode development --display=minimal",
-    "build:rc": "cross-env NODE_ENV=production webpack --mode production",
+    "build-dev": "cross-env NODE_ENV=development webpack --mode development --display=minimal",
+    "build-rc": "cross-env NODE_ENV=production webpack --mode production",
     "start": "nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0",
     "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0",
     "deploy-staging": "./node_modules/.bin/surge dist --domain https://cultstate.surge.sh",
     "push-staging": "npm run build:rc && npm run deploy-staging",
-    "build-typescrit": "./node_modules/.bin/tsc -p . && node src/entities/index.js"
+    "build-typescript": "./node_modules/.bin/tsc -p ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Patrick Ryan <patrick.ryan@codeotter.com>",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",

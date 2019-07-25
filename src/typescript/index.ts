@@ -17,8 +17,7 @@ const sections: string[] = [
   'contact',
 ]
 
-
-export const generateTemplates = (): any[] => {
+export const getWebpackTemplates = (): any[] => {
   const webpackPlugins: any[] = []
 
   const contents = getContent()
@@ -101,7 +100,6 @@ const buildPages = (contents: Collection<Markdown>): any[] => {
 
 /**
  * [buildApi description]
- * @type {[type]}
  */
 const buildApi = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
@@ -110,9 +108,10 @@ const buildApi = (contents: Collection<Markdown>): any[] => {
 
 /**
  * [buildStatic description]
- * @type {[type]}
  */
 const buildStatic = (): any[] => {
   const plugins: any[] = []
   return plugins
 }
+
+getWebpackTemplates()

@@ -11,12 +11,13 @@
     "lib": [ "esnext.asynciterable" ],
     "moduleResolution": "node",
     "module": "commonjs",
-    "noEmit": true,
+    "noEmit": false,
     "strict": true,
     "noUnusedLocals": true,
     "removeComments": true,
     "sourceMap": true,
     "target": "es6",
+    "outDir": "src/webpack",
     "typeRoots": [
       "./src/types",
       "./node_modules/@types"
@@ -25,7 +26,7 @@
       { "name": "typescript-tslint-plugin" }
     ]
   },
-  "files": [ "src/entities/index.ts" ],
+  "files": [ "src/typescript/index.ts" ],
   "include": [ "**/*.ts" ],
   "exclude": [ "node_modules" ]
 }
