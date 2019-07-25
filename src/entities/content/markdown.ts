@@ -2,8 +2,9 @@
  * A file appears!
  */
 import fs from 'fs'
-import marked from 'marked'
 import striptags from 'striptags'
+
+import { Marked } from '../utils/markdown'
 
 import { Html } from './html'
 import { Article, ArticleBody } from './article'
@@ -15,7 +16,9 @@ export class Markdown {
 
   id: number
   sourcePath: string
-  article: Article
+  article: Article = {
+    body: {}
+  }
   html: Html
 
   constructor(sourcePath: string, sectionName: string) {
@@ -118,7 +121,7 @@ export class Markdown {
       index += 1
     }
 
-    body.html = marked(body.markdown)
+    body.html = Marked(body.markdown)
     body.text = striptags(body.html as string)
 
     return result

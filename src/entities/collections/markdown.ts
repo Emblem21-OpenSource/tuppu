@@ -15,7 +15,7 @@ export class MarkdownCollection extends Collection<Markdown> {
     }
 
     this.internalSort((a, b) => {
-      return b.date.getTime() - a.date.getTime()
+      return (b.article.date as Date).getTime() - (a.article.date as Date).getTime()
     })
   }
 }

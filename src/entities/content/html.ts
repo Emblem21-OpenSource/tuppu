@@ -27,6 +27,14 @@ export interface HtmlParameters {
 }
 
 export class Html {
+  static getSlugTitle(title: string) {
+    return title
+      .trim()
+      .replace(badChars, '')
+      .replace(nonHumanChars, '-')
+      .replace(doubleDash, '-')
+  }
+
   title: string
   slugTitle: string
   datetime: string
@@ -45,11 +53,7 @@ export class Html {
     this.summary = summary || 'You are more than your identity'
     this.image = image || 'open_graph.jpg'
 
-    this.slugTitle = title
-      .trim()
-      .replace(badChars, '')
-      .replace(nonHumanChars, '-')
-      .replace(doubleDash, '-')
+    this.slugTitle = Html.getSlugTitle(title)
 
     this.url = `${moment(this.datetime).format('YYYY/MM/DD')}/${this.slugTitle}/`
     this.keywords = this.getKeywords(text).join(', ')

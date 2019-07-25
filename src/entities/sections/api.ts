@@ -3,44 +3,49 @@
  */
 import WriteJsonPlugin from 'write-json-webpack-plugin'
 
+import { Html } from '../content/html'
 import { Json } from '../content/json'
-import { Markdown } from '../content/markdown'
-import { ArticleBody } from '../content/article'
 import { addSitemapPath } from '../content/sitemap'
 
 import { Section } from '.'
 
 interface ApiSettings {
-  object: JsonContent
+  object: Json
   path: 'api'
   filename: string
   pretty: true
 }
 
 export class ApiSection extends Section {
-  constructor (title: string, date: Date, summary: string, image: string, perPage: number) {
-    super(title, date, summary, image, perPage)
+  json: Json
+  constructor (json: Json, perPage: number) {
+    super(
+      json.title,
+      new Date(json.datetime),
+      json.summary,
+      json.image,
+      perPage
+    )
+    this.json = json
   }
 
-  getWebpackPlugin(content: string | Markdown): any {
-    let json: Json
-    let filename: string
+  getWebpackPlugin(filename?: string): any {
+    let path: string
 
-    if (typeof content === 'string') {
-      json = require(`../../src/api/${content}`)
-      filename = content
+    if (filename) {
+      this.json = require(`../../src/api/${filename}`)
+      path = filename
     } else {
-      const body = content.article.body as ArticleBody
-      json = body.json as Json
-      filename = `${content.html.slugTitle}.json`
+      const slugTitle = Html.getSlugTitle(this.json.title)
+      path = `${slugTitle}.json`
     }
 
-    addSitemapPath(filename, json)
+    addSitemapPath(path, this.json)
 
     const settings: ApiSettings = {
-      object: json,
+      object: this.json,
       path: 'api',
-      filename,
+      filename: path,
       pretty: true
     }
     

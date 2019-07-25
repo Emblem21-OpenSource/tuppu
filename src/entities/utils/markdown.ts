@@ -84,7 +84,7 @@ renderer.paragraph = (text) => {
 
     let result = ''
 
-    for (var i = 0; i < cells.length;) {
+    for (let i = 0; i < cells.length;) {
       result += `<tr>
         <td>${cells[i] || ''}</td>
         <td>${cells[i + 1] || ''}</td>
@@ -159,4 +159,4 @@ marked.setOptions({
   xhtml: false
 })
 
-module.exports = marked
+export const Marked = marked

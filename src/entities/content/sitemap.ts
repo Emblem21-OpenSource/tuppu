@@ -2,7 +2,7 @@ import SitemapWebpackPlugin from 'sitemap-webpack-plugin'
 import moment from 'moment'
 
 import { Json } from './json'
-import { Markdown } from './json'
+import { Markdown } from './markdown'
 import { Article } from './article'
 import { Html } from './html'
 
@@ -15,7 +15,7 @@ interface SitemapSettings {
 
 const paths: SitemapSettings[] = []
 
-export const addSitemapPath = (path: string, content: Article | Markdown | Html | Json) => { 
+export const addSitemapPath = (path: string, content: Date | Article | Markdown | Html | Json) => { 
     let lastMod: string
 
     if (content instanceof Markdown) {
@@ -24,12 +24,15 @@ export const addSitemapPath = (path: string, content: Article | Markdown | Html 
     } else if (content instanceof Html) {
       // Html
       lastMod = moment(content.datetime).format('YYYY/MM/DD')
-    } else if (content.datetime) {
+    } else if ((content as Json).datetime) {
       // Json
-      lastMod = content.url.split('/').slice(0, 3).join('/')
+      lastMod = (content as Json).url.split('/').slice(0, 3).join('/')
+    } else if (content instanceof Date) {
+      // Date
+      lastMod = moment(content).format('YYYY/MM/DD')
     } else {
       // Article
-      lastMod = moment(content.html.datetime).format('YYYY/MM/DD')
+      lastMod = moment((content as Article).date).format('YYYY/MM/DD')
     }
 
   paths.push({

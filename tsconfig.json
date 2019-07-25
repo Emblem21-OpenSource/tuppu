@@ -18,12 +18,14 @@
     "sourceMap": true,
     "target": "es6",
     "typeRoots": [
-      "./types",
+      "./src/types",
       "./node_modules/@types"
     ],
     "plugins": [
       { "name": "typescript-tslint-plugin" }
     ]
   },
-  "exclude": [ "node_modules", "babel.config.js" ]
+  "files": [ "src/entities/index.ts" ],
+  "include": [ "**/*.ts" ],
+  "exclude": [ "node_modules" ]
 }

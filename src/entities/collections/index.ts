@@ -1,5 +1,3 @@
-import { Markdown } from '../content/markdown'
-
 type iterator<T> = (item: T, index: number, array: T[]) => T
 
 type booleanIterator<T> = (item: T, index: number, array: T[]) => string | null | undefined | boolean
@@ -29,7 +27,7 @@ interface CollectionExtraction<T> {
 /**
  * A file appears!
  */
-export class Collection<ContentType extends Markdown> {
+export class Collection<ContentType> {
   content: ContentType[] = []
 
   get length (): number {

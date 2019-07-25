@@ -9,11 +9,12 @@
     "start": "nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0",
     "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0",
     "deploy-staging": "./node_modules/.bin/surge dist --domain https://cultstate.surge.sh",
-    "push-staging": "npm run build:rc && npm run deploy-staging"
+    "push-staging": "npm run build:rc && npm run deploy-staging",
+    "build-typescrit": "./node_modules/.bin/tsc -p . && node src/entities/index.js"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.5.1",
@@ -53,9 +54,7 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1",
     "webpack-merge": "^4.2.1",
-    "write-json-webpack-plugin": "^1.1.0"
-  },
-  "dependencies": {
+    "write-json-webpack-plugin": "^1.1.0",
     "marked": "^0.6.2",
     "moment": "^2.24.0",
     "stopword": "^0.3.1",

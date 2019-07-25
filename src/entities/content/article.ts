@@ -19,6 +19,6 @@ export interface Article {
   tags?: string[]
   frequentWords?: string[]
   section?: string
-  body?: ArticleBody
+  body: ArticleBody
 }
 

@@ -9,7 +9,12 @@
         {{> tags }}
         {{{articles}}}
       </div>
-      {{{pagination.previous}}} {{{pagination.next}}}
+      {{#if previous }}
+        <a class="pure-button button-navigation previous" href="{{previous}}">Previous</a>
+      {{/if}}
+      {{#if next }}
+        <a class="pure-button button-navigation next" href="{{next}}">Next</a>
+      {{/if}}
       {{> footer }}
     </div>
   </div>
