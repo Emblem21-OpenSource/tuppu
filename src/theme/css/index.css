@@ -51,11 +51,11 @@ h3 {
 
 .sidebar {
   background-image: url("~assets/images/art.jpg");
-  background-position: 0em -20em;
+  background-position: 0em -23em;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: all;
   color: #fff;
+  background-color: #000;
 }
 
 .blackbox {
@@ -77,6 +77,7 @@ h3 {
 }
 
 .brand-title {
+  color: #fff;
   font-size: 3em;
   text-transform: uppercase;
 }
@@ -207,7 +208,7 @@ h3 {
   }
 
   .sidebar {
-    background-position: -10em;
+    background-position: -17em;
     min-width: 225px;
     position: fixed;
     top: 0;

@@ -29,6 +29,7 @@ export const getWebpackTemplates = (): any[] => {
 
   const contents = getContent()
 
+  webpackPlugins = webpackPlugins.concat(buildIndex(contents))
   webpackPlugins = webpackPlugins.concat(buildArticles(contents))
   webpackPlugins = webpackPlugins.concat(buildPages(contents))
   webpackPlugins = webpackPlugins.concat(buildApi(contents))
@@ -49,6 +50,32 @@ const getContent = (): Collection<Markdown> => {
   }
 
   return new Collection<Markdown>().absorb(markdownCollections)
+}
+
+/**
+ * [buildIndex description]
+ */
+const buildIndex = (contents: Collection<Markdown>): any[] => {
+  const plugins: any[] = []
+
+  const sectionCollection = new Collection<Markdown>().fromArray(
+    contents.filter(content =>
+      content.article.section === 'articles'
+    )
+  )
+
+  const pages = Page.bulkCreate(sectionCollection, 'index', perPage)
+
+  for (const page of pages) {
+    plugins.push(new PageSection(
+      page,
+      perPage,
+      pages.length,
+      sectionCollection.length
+    ).getWebpackPlugin())
+  }
+
+  return plugins
 }
 
 /**
@@ -78,15 +105,13 @@ const buildPages = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
 
   for (const section of sections) {
-    const sectionName = section[0].toUpperCase() + section.substr(1)
-
     const sectionCollection = new Collection<Markdown>().fromArray(
       contents.filter(content =>
         content.article.section === section
       )
     )
 
-    const pages = Page.bulkCreate(sectionCollection, sectionName, perPage)
+    const pages = Page.bulkCreate(sectionCollection, section, perPage)
 
     for (const page of pages) {
       plugins.push(new PageSection(
