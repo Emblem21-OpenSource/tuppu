@@ -10,7 +10,8 @@
     "basic-start": "./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0",
     "deploy-staging": "./node_modules/.bin/surge dist --domain https://cultstate.surge.sh",
     "push-staging": "npm run build:rc && npm run deploy-staging",
-    "build-typescript": "./node_modules/.bin/tsc -p ."
+    "build-typescript": "./node_modules/.bin/tsc -p .",
+    "watch-typescript": "./node_modules/.bin/tsc -p . --watch"
   },
   "author": "Patrick Ryan <patrick.ryan@codeotter.com>",
   "license": "MIT",

@@ -58,20 +58,14 @@ const getContent = (): Collection<Markdown> => {
 const buildIndex = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
 
-  const sectionCollection = new Collection<Markdown>().fromArray(
-    contents.filter(content =>
-      content.article.section === 'articles'
-    )
-  )
-
-  const pages = Page.bulkCreate(sectionCollection, 'index', perPage)
+  const pages = Page.bulkCreate(contents, 'index', perPage)
 
   for (const page of pages) {
     plugins.push(new PageSection(
       page,
       perPage,
       pages.length,
-      sectionCollection.length
+      contents.length
     ).getWebpackPlugin())
   }
 

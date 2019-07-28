@@ -4,10 +4,12 @@
     <div>
       <div class="posts">
         <h1 class="content-subhead">
-          {{{head.title}}}
+          {{{title}}}
         </h1>
         {{> tags }}
-        {{{articles}}}
+        {{#each articles}}
+          {{this.article.body.html}}
+        {{/each}}
       </div>
       {{#if previous }}
         <a class="pure-button button-navigation previous" href="{{previous}}">Previous</a>
@@ -19,3 +21,13 @@
     </div>
   </div>
 </div>
+
+>>> [ 'title',
+ 'datetime',
+ 'readableDatetime',
+ 'shortDate',
+ 'summary',
+ 'image',
+ 'slugTitle',
+ 'url',
+ 'keywords' ]

@@ -57,7 +57,7 @@ export class PageSection extends Section {
         collapseWhitespace: false
       },
       filename,
-      template: 'src/theme/html/article.hbs',
+      template: 'src/theme/html/page.hbs',
       templateParameters: {
         ...this.html,
         articles,
