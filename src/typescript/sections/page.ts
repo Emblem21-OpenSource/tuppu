@@ -42,6 +42,11 @@ export class PageSection extends Section {
     this.page = page
     this.totalPages = totalPages
     this.totalArticles = totalArticles
+
+    if (page.section === 'Articles') {
+      // Overwrite because articles are special
+      this.html.slugTitle = 'index'
+    }
   }
 
   getWebpackPlugin(): any[] {

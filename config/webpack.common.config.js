@@ -3,10 +3,10 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-// const { getWebpackTemplates } = require('../src/webpack')
-const getContentTemplates = require('./templates')
+const { getWebpackTemplates } = require('../src/webpack')
+// const getContentTemplates = require('./templates')
 
-global.data = require('../src/data')
+// global.data = require('../src/data')
 
 module.exports = {
   entry: './src/index.js',
@@ -44,7 +44,7 @@ module.exports = {
       from: './src/robots.txt',
       to: 'robots.txt'
     }])
-  ].concat(getContentTemplates(global.data)),
+  ].concat(getWebpackTemplates()),
   module: {
     rules: [
       {

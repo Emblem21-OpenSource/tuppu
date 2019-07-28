@@ -1,3 +1,5 @@
+import 'source-map-support/register'
+
 import { Markdown } from './content/markdown'
 import { MarkdownCollection } from './collections/markdown'
 import { Collection } from './collections'
@@ -12,29 +14,26 @@ const sections: string[] = [
   'books',
   'code',
   'podcasts',
-  'training',
-  'bias',
-  'contact',
+  'training'
 ]
 
+/*
+const staticPages: string[] = [
+  'bias',
+  'contact'
+]
+*/
+
 export const getWebpackTemplates = (): any[] => {
-  const webpackPlugins: any[] = []
+  let webpackPlugins: any[] = []
 
   const contents = getContent()
 
-  buildArticles(contents)
-    .forEach(webpackPlugins.push)
+  webpackPlugins = webpackPlugins.concat(buildArticles(contents))
+  webpackPlugins = webpackPlugins.concat(buildPages(contents))
+  webpackPlugins = webpackPlugins.concat(buildApi(contents))
+  webpackPlugins = webpackPlugins.concat(buildStatic())
 
-  buildPages(contents)
-    .forEach(webpackPlugins.push)
-
-  buildApi(contents)
-    .forEach(webpackPlugins.push)
-
-  buildStatic()
-    .forEach(webpackPlugins.push)
-
-  global.console.log(webpackPlugins)
   return webpackPlugins
 }
 
@@ -59,8 +58,12 @@ const buildArticles = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
   contents.forEach(content => {
     const relatedArticles = contents.filter(
-      item => item.id !== content.id && (content.article.tags as string[]).find((item.article.tags as string[]).includes)
-     )
+      item => {
+        return item.id !== content.id && (content.article.tags as string[]).find(tag => {
+          return (item.article.tags as string[]).includes(tag)
+        })
+      }
+    )
 
     plugins.push(new MarkdownSection(content, 1).getWebpackPlugin(relatedArticles))
   })
@@ -75,7 +78,7 @@ const buildPages = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
 
   for (const section of sections) {
-    const sectionName = section[0].toUpperCase + section.substr(1)
+    const sectionName = section[0].toUpperCase() + section.substr(1)
 
     const sectionCollection = new Collection<Markdown>().fromArray(
       contents.filter(content =>
@@ -113,5 +116,3 @@ const buildStatic = (): any[] => {
   const plugins: any[] = []
   return plugins
 }
-
-getWebpackTemplates()

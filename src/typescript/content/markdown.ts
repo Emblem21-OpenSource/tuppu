@@ -1,6 +1,3 @@
-/**
- * A file appears!
- */
 import fs from 'fs'
 import striptags from 'striptags'
 
@@ -69,12 +66,13 @@ export class Markdown {
    */
   private load (): Article {
     const result: Article = {
-      body: {}
+      body: {},
+      tags: []
     }
     const body = result.body as ArticleBody
     const lines = fs.readFileSync(this.sourcePath).toString().split('\n')
 
-    let inFrontMatter = false
+    let inFrontMatter: boolean | null = null
     let index = 0
 
     for (const line of lines) {
@@ -88,17 +86,20 @@ export class Markdown {
           const colonIndex = line.indexOf(':')
 
           let property: string = line.substr(0, colonIndex).trim()
-          let value: string | string[] | Date = line.substr(colonIndex + 1).trim()
+          let value: string | string[] | Date | boolean = line.substr(colonIndex + 1).trim()
 
           switch (property) {
             case 'draft':
               property = 'isDraft'
+              value = value === 'true'
               break
             case 'pinned':
               property = 'isPinned'
+              value = value === 'true'
               break
             case 'index':
               property = 'isIndex'
+              value = value === 'true'
               break
             case 'tags':
               value = value.split(',').map(tag => tag.trim())
@@ -107,7 +108,6 @@ export class Markdown {
               value = new Date(value)
               break
           }
-
           result[property] = value
         }
       } else {
@@ -120,7 +120,6 @@ export class Markdown {
       }
       index += 1
     }
-
     body.html = Marked(body.markdown)
     body.text = striptags(body.html as string)
 

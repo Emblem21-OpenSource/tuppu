@@ -10,6 +10,7 @@ export interface ArticleBody {
 export interface Article {
   title?: string
   summary?: string 
+  author?: string 
   image?: string
   date?: Date
   contact?: string
