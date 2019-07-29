@@ -8,7 +8,7 @@
         </h1>
         {{> tags }}
         {{#each articles}}
-          {{this.article.body.html}}
+          {{> articleBody }}
         {{/each}}
       </div>
       {{#if previous }}
@@ -21,13 +21,3 @@
     </div>
   </div>
 </div>
-
->>> [ 'title',
- 'datetime',
- 'readableDatetime',
- 'shortDate',
- 'summary',
- 'image',
- 'slugTitle',
- 'url',
- 'keywords' ]

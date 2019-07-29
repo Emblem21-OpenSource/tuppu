@@ -10,8 +10,13 @@ export class MarkdownCollection extends Collection<Markdown> {
     super()
     const markdownSectionPath = path.resolve(__dirname, `../../markdown/${sectionName}`)
     const markdowns = fs.readdirSync(markdownSectionPath)
+    const now = new Date()
+
     for (const markdown of markdowns) {
-      this.push(new Markdown(`${markdownSectionPath}/${markdown}`, sectionName))
+      const content = new Markdown(`${markdownSectionPath}/${markdown}`, sectionName)
+      if (!content.article.isDraft && (content.article.date as Date) < now) {
+        this.push(content)
+      }
     }
 
     this.internalSort((a, b) => {

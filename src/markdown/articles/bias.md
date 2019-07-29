@@ -7,7 +7,7 @@ draft: true
 tags: bias
 summary: What is a "Cult State"?
 ---
---> What is a "[Cult State](2018/07/30/What-Is-A-Cult-State/)"?  To answer that, we have to explore complex beginnings before our time.
+--> What is a "[Cult State](/2018/07/30/What-Is-A-Cult-State/)"?  To answer that, we have to explore complex beginnings before our time.
 
 --> To say "*I am X*" is to also say "*I am not the opposite of X*".  This self-imposed limitation hinders the ability to adapt and survive in a chaotic universe. Therefore, to ensure the demise of entire civilizations, offer luxurious and exotic identities for members of a population to associate with.  By claiming to be a representative of an identity, the rest of the reality that offends or does not confirm to that identity is permanently shut off to hte adherent.  This is the contemporary Hegelian dialectic approach to self-destruction:
 

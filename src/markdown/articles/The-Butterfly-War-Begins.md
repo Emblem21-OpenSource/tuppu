@@ -7,9 +7,9 @@ tags: ai warfare, social justice, censorship, power
 summary: Asserting what Butterfly War means
 ---
 
---> In the [Butterfly War](http://cultstate.com/2017/10/13/The-Butterfly-War/), I detail how Silicon Valley uses cyber phrenology to violate civil rights legislation.
+--> In the [Butterfly War](/2017/10/13/The-Butterfly-War/), I detail how Silicon Valley uses cyber phrenology to violate civil rights legislation.
 
---> In The [Ravens Will Starve](http://cultstate.com/2017/12/04/The-Ravens-Will-Starve/), I detail how the [Chans have begun to utilize cyber phrenology tactics](https://archive.fo/XNuuN) to show that metadata can be used to violate civil rights.
+--> In The [Ravens Will Starve](/2017/12/04/The-Ravens-Will-Starve/), I detail how the [Chans have begun to utilize cyber phrenology tactics](https://archive.fo/XNuuN) to show that metadata can be used to violate civil rights.
 
 --> Last month, Chamath Palihapitiya, Facebook’s former vice president, was asked at a Stanford Graduate School of Business event about digital companies exploiting consumer behavior.  The New York Post revealed his response and I'd like to draw attention to a specific statement:
 

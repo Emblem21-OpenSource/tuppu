@@ -7,7 +7,7 @@ tags: power, geopolitics, robotic nationalism
 summary: How the world order can survive in a post-Icarus world
 ---
 
---> [As mentioned previously](http://cultstate.com/2018/07/30/What-Is-A-Cult-State/), I was going to provide insights into a methodology of world organization called **Robotic Nationalism**. Robotic Nationalism is the intended and final output of my company, Emblem 21.
+--> [As mentioned previously](/2018/07/30/What-Is-A-Cult-State/), I was going to provide insights into a methodology of world organization called **Robotic Nationalism**. Robotic Nationalism is the intended and final output of my company, Emblem 21.
 
 --> Most conversations about our inevitable future are explained within the narrow lens of political fantasy, as if the possibilities of the future have to be brutally squeezed through the tiny tube of collectivist deal-making.  On the left, they swoon at the possibility of robotics liberating us from the hardships of work to spend the rest of eternity in play-making, paid for entirely from the yield of our new robotic slave friends. Perhaps if the population was reduced to Georgia Stone numbers, this might be true. (This should give you insights to the inevitable goals of ecofascism)  On the right, robotics are a mechanism of high performance legal and culture enforcement while minimizing traditional political risk. Both approaches desperately imply robotics as something that should be smoothly bolted atop the current trajectory of economics and as such, both approaches are completely incorrect.
 

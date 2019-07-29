@@ -27,7 +27,7 @@ summary: Spoof the metadata of minorities to take down Google
 
 --> Let's start with a phrase: **Cyber Phrenology**.  This means using the volume and quality of meta data as a supposed indication of character and mental abilities.  Every major Silicon Valley corporation sells and legitimizes cyber phrenology for advertising, politics, militaries, and academics.  Moral supremacists think they can use these techniques to stop Nazis, the Alt-Right, and others who aren't Silicon Valley-sanctioned ideologies.  But what if there was a way to make those tools target morally cherished [protected classes](https://en.wikipedia.org/wiki/Protected_class) instead?  Would they see the problem with their efforts and stop their madness?  Would they try to find ways around it?  Would they lobby against Civil Rights?  I find it's best to steer the answer when you have multiple questions like this.
 
---> [In 2013, I was studying the communication differences between 4chan's /pol/ and Tumblr.](http://cultstate.com/2013/08/14/the-theory-of-fracturing-monocultures/)  I found that social media gamified  communication and created monocultures based on strategies that maximize attention economy efficiency.  I also found that anonymous forums had a unique ability to interfere with these games by leveraging what I call "*The Butterfly Attack*".  This attack is named after the Müller interpretation of the [mimetic polymorphism found in lepidoptera](https://en.wikipedia.org/wiki/Polymorphism_in_Lepidoptera), commonly known as butterflies.
+--> [In 2013, I was studying the communication differences between 4chan's /pol/ and Tumblr.](/2013/08/14/the-theory-of-fracturing-monocultures/)  I found that social media gamified  communication and created monocultures based on strategies that maximize attention economy efficiency.  I also found that anonymous forums had a unique ability to interfere with these games by leveraging what I call "*The Butterfly Attack*".  This attack is named after the Müller interpretation of the [mimetic polymorphism found in lepidoptera](https://en.wikipedia.org/wiki/Polymorphism_in_Lepidoptera), commonly known as butterflies.
 
 --> Darwin had a hard time explaining the variations of butterfly wing patterns.  Fritz Müller proposed a radical solution.  [Müller proposed that some butterflies tasted bad.  Predators learned to avoid butterflies that tasted bad based on their wing patterns](https://en.wikipedia.org/wiki/M%C3%BCllerian_mimicry)  The other butterflies, however, were eaten.  Those who survived ended up with wing patterns that looked like the bad tasting butterflies.  The predator, unable to tell the difference, avoided both.  Once you understand the concept, this part is key: "[Multiple species can join this protective cooperative, expanding the mimicry ring.](https://archive.fo/fChBD#selection-549.0-549.745)"
 
@@ -44,9 +44,9 @@ summary: Spoof the metadata of minorities to take down Google
 
 --> As I stated before, I documented the entire experiment.  In broad daylight.  I suffered a few DDoSes and reputation poison attacks for it.  Here were the results:
 
-* [The Theory of Fracturing Monocultures](http://cultstate.com/2013/08/14/the-theory-of-fracturing-monocultures/)
-* [The Experiments in Fracturing Monocultures](http://cultstate.com/2014/10/25/the-experiments-in-fracturing-monocultures/)
-* [The Psychology of Modern American Monocultures](http://cultstate.com/2015/01/31/the-psychology-of-modern-american-monocultures/)
+* [The Theory of Fracturing Monocultures](/2013/08/14/the-theory-of-fracturing-monocultures/)
+* [The Experiments in Fracturing Monocultures](/2014/10/25/the-experiments-in-fracturing-monocultures/)
+* [The Psychology of Modern American Monocultures](/2015/01/31/the-psychology-of-modern-american-monocultures/)
 
 --> The conclusion was astounding: *White feminists were so afraid of Civil Rights wing patterns, they feared retaliating against black feminist rage.*  (The hashtag was legit, btw.  White feminists cry about pixels.  Black feminists can't feed their kids.  I don't feel bad for what I did.)
 

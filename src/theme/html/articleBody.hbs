@@ -1,0 +1,22 @@
+<section class="post">
+  <header class="post-header">
+    {{#if html.url }}
+      <h2 class="post-title">
+        <a href="/{{html.url}}">{{html.title}}</a>
+      </h2>
+      <p class="post-meta">
+        By
+        <a class="post-author" href="{{article.contact}}">
+          {{article.author}}
+        </a>
+        on
+        <span class="post-date">
+          {{html.readableDatetime}}
+        </span>
+      </p>`
+    {{/if}}
+  </header>
+  <div class="post-description">
+    {{{article.body.html}}}
+  </div>
+</section>

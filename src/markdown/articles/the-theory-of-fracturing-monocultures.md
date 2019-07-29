@@ -7,11 +7,11 @@ tags: censorship, social justice, gamergate
 summary: How to destroy the attention economy
 ---
 
-**Preface**
+### Preface
 
 --> The Internet has allowed a person to decouple their information experience  from their physical characteristics. For example, a tall, white American male of heterosexual preference can legitimately create a persona of a short, black Nigerian female of homosexual preference and as long as he can explain what such an identity means to him, then others will be forced to accept that identity as valid because there are no other points of reference to utilize.  As a result of this, a tremendous explosion of identity-oriented relationships have compelled people to accept the self-identification of another, regardless of other contributing factors of identity. This has resulted in turning every single person on the internet into an identity extremist. In this case study, I will put forth a theory on how to fracture these self-forming monocultures of identity so that they become trapped in a state of diminishing returns.
 
-**Actors: /pol/**
+### Actors: /pol/
 
 --> First, we shall examine an identity known as /pol/. /pol/ is a political board on 4chan. People who self-identify as European nationalist (and related identities) as well as those who oppose such views tend to congregate there. The structure of the communication is just as important as the communication itself. It is anonymous by default. There are no user accounts and no history of usage as contributions to the board ultimately get deleted after a short time. Any identity criteria are voluntary and can be changed on a per post basis. The structure of communication allows for an extremely flexible expression of self-identification, and ironically, the mass amount of participants of the board rarely deviate from a European nationalist identity.
 
@@ -21,7 +21,7 @@ summary: How to destroy the attention economy
 
 --> In short, in order for someone to embrace a self-identification that the entirety of western civilization has spent the last 70 years actively demonizing and, in most cases, have made illegal, there must be excessively compelling reasons for one to participate that go beyond the typical polemics and knee-jerk assumptions third-party observers are trained to repeat.
 
-**Actors: Pixel-based Feminism**
+### Actors: Pixel-based Feminism
 
 --> In addition to allowing illegal and morally reprehensible self-identifications, the Internet also contains politically-sponsored and morally righteous self-identifications as well. Pixel-based Feminism is a self-identification where one engages in the expressions of female supremacy through electronic mediums. (Supremacy in relation to their current socioeconomic position, not in the absolutist sense) It has a massive social support network spanning high-traffic blog sites, content propagators, and forums that are highly identity-oriented. The structure of communication is based largely on point systems for social status. Views, followers, upvotes, comments, downloads, retweets, favorites, and many other arbitrary metrics are used isolate and deeply quantify the value of one person over another.
 
@@ -31,7 +31,7 @@ summary: How to destroy the attention economy
 
 --> In short, as long as one subscribes to the idea that a quantifiable status system helps  propagate emotional expressions, an individual will orient their self-identify in the interests of identity consolidation instead of one rooted in personal conclusions. Conflict is frequently avoided and constantly self-corrected. Foreign ideas have zero impact on the community as a whole.
 
-**The Theory**
+### The Theory
 
 --> As a result of the difference in these communication structures, /pol/ is under constant criticism from feminist efforts (and affiliated identities they have collected over the century). Feminists, however, are very successful at protecting their monoculture through a layered approach:
 
