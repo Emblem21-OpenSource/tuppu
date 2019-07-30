@@ -18,8 +18,11 @@ export interface PageSettings {
   }
   filename: string
   template: string
-  templateParameters: HtmlParameters & {
+  templateParameters: {
+    html: HtmlParameters
     articles: Markdown[]
+    pinnedArticles: Markdown[]
+    hasPinnedArticles: boolean
     showTagHeader: boolean
     next: string
     previous: string
@@ -37,7 +40,8 @@ export class PageSection extends Section {
       new Date(),
       page.section,
       '',
-      perPage
+      perPage,
+      page.contents
     )
     this.page = page
     this.totalPages = totalPages
@@ -45,8 +49,15 @@ export class PageSection extends Section {
   }
 
   getWebpackPlugin(): any[] {
-    const { filename, next, previous } = this.getPagination()
-    const articles = this.page.contents.map(content => content)
+    const pathName = this.html.slugTitle.toLowerCase()
+    const { filename, next, previous } = this.getPagination(pathName)
+    const articles: Markdown[] = this.page.contents.map(content => content)
+    
+    const pinnedArticles = this.page.pageNumber === 0
+      ? this.pinned
+      : []
+
+    const hasPinnedArticles = this.page.pageNumber === 0 && this.pinned.length > 0
 
     addSitemapPath(filename, new Date())
 
@@ -57,9 +68,11 @@ export class PageSection extends Section {
         collapseWhitespace: false
       },
       filename,
-      template: 'src/theme/html/page.hbs',
+      template: `src/theme/sections/${pathName}.hbs`,
       templateParameters: {
-        ...this.html,
+        html: this.html,
+        pinnedArticles,
+        hasPinnedArticles,
         articles,
         showTagHeader: true,
         next,
@@ -67,37 +80,41 @@ export class PageSection extends Section {
       }
     }
     
+    if (this.page.section === 'index') {
+      settings.templateParameters.html.title = 'News'
+    }
+
     return new HtmlWebpackPlugin(settings)
   }
 
-  getPagination (): { filename: string, next: string, previous: string } {
+  getPagination (pathName: string): { filename: string, next: string, previous: string } {
     let previous: string
     let next: string
 
     const currentPage: number = this.page.pageNumber
 
     const filename = currentPage === 0
-      ? `${this.html.slugTitle}.html`
-      : this.html.slugTitle === 'index'
+      ? `${pathName}.html`
+      : pathName === 'index'
         ? `page/${(currentPage + 1)}/index.html`
-        : `${this.html.slugTitle}/page/${(currentPage + 1)}/index.html`
+        : `${pathName}/page/${(currentPage + 1)}/index.html`
 
-    if (currentPage === 0 && this.totalArticles >= (this.perPage - 1)) {
+    if (currentPage === 0) {
       previous = ''
     } else {
       previous = currentPage === 1
-        ? `/${this.html.slugTitle}.html`
-        : this.html.slugTitle === 'index'
+        ? `/${pathName}.html`
+        : pathName === 'index'
           ? `/page/${(currentPage)}/index.html`
-          : `/${this.html.slugTitle}/page/${(currentPage)}/index.html`
+          : `/${pathName}/page/${(currentPage)}/index.html`
       }
 
     if (currentPage >= (this.totalPages - 1)) {
       next = ''
     } else {
-      next = this.html.slugTitle === 'index'
+      next = pathName === 'index'
         ? `/page/${(currentPage + 2)}/index.html`
-        : `/${this.html.slugTitle}/page/${(currentPage + 2)}/index.html`
+        : `/${pathName}/page/${(currentPage + 2)}/index.html`
     }
 
     return { filename, previous, next }

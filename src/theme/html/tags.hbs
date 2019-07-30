@@ -7,14 +7,14 @@
       <div class="relatedArticle">
         <div class="relatedHeader">
           <span class="relatedLink">
-            <a href="/{{this.slug}}">{{this.title}}</a>
+            <a href="/{{this.html.url}}">{{this.html.title}}</a>
           </span>
           <span class="relatedDatetime">
-            ({{this.shortDate}})
+            ({{this.html.shortDate}})
           </span>
         </div>
         <div class="relatedSummary">
-          {{this.summary}}
+          {{this.article.summary}}
         </div>
       </div>
     {{/each}}

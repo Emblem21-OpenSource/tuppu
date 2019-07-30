@@ -10,11 +10,11 @@ import { Page } from './page'
 const perPage = 3
 
 const sections: string[] = [
-  'articles',
-  'books',
-  'code',
-  'podcasts',
-  'training'
+  'Articles',
+  'Books',
+  'Code',
+  'Podcasts',
+  'Training'
 ]
 
 /*
@@ -49,7 +49,13 @@ const getContent = (): Collection<Markdown> => {
     markdownCollections.push(collection)
   }
 
-  return new Collection<Markdown>().absorb(markdownCollections)
+  const content = new Collection<Markdown>().absorb(markdownCollections)
+
+  content.internalSort((a, b) => {
+    return (b.article.date as Date).getTime() - (a.article.date as Date).getTime()
+  })
+
+  return content
 }
 
 /**
@@ -77,6 +83,7 @@ const buildIndex = (contents: Collection<Markdown>): any[] => {
  */
 const buildArticles = (contents: Collection<Markdown>): any[] => {
   const plugins: any[] = []
+
   contents.forEach(content => {
     const relatedArticles = contents.filter(
       item => {

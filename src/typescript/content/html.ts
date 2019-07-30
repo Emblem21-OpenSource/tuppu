@@ -75,6 +75,7 @@ export class Html {
 
   private getKeywords (content: string): string[] {
     const candidates: KeywordCandidate[] = []
+
     const strippedContent = striptags(content)
       .replace(stripRegex, ' ')
       .split(' ')
@@ -95,7 +96,7 @@ export class Html {
   
       candidate.count += 1
     })
-  
+
     return candidates
       .sort((a, b) => b.count - a.count)
       .slice(0, 25) // @TODO make constant

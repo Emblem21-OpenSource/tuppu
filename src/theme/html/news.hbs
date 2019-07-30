@@ -2,13 +2,26 @@
   {{> sidebar }}
   <div class="content pure-u-1 pure-u-md-3-5">
     <div>
-      {{{pinned}}}
+      {{#if hasPinnedArticles }}
+        {{#each pinnedArticles}}
+          {{> articleBody }}
+        {{/each}}
+      {{/if}}
       <div class="posts">
-        <h1 class="content-subhead">Recent Posts</h1>
-        {{{articles}}}
+        <h1 class="content-subhead">
+          {{{html.title}}}
+        </h1>
+        {{> tags }}
+        {{#each articles}}
+          {{> articleBody }}
+        {{/each}}
       </div>
-      {{{previous}}} {{{next}}}
+      {{#if previous }}
+        <a class="pure-button button-navigation previous" href="{{previous}}">Previous</a>
+      {{/if}}
+      {{#if next }}
+        <a class="pure-button button-navigation next" href="{{next}}">Next</a>
+      {{/if}}
       {{> footer }}
-    </div>
   </div>
 </div>

@@ -3,6 +3,7 @@
  */
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
+import { Collection } from '../collections'
 import { Article } from '../content/article'
 import { Markdown } from '../content/markdown'
 import { addSitemapPath } from '../content/sitemap'
@@ -18,7 +19,8 @@ export interface MarkdownSettings {
   }
   filename: string
   template: string
-  templateParameters: HtmlParameters & {
+  templateParameters: {
+    html: HtmlParameters
     article: Article,
     relatedArticles: Markdown[]
     showTagHeader: boolean
@@ -34,7 +36,8 @@ export class MarkdownSection extends Section {
       markdown.article.date as Date,
       markdown.html.summary,
       markdown.html.image,
-      perPage
+      perPage,
+      new Collection<Markdown>().fromArray([markdown])
     )
     this.markdown = markdown
   }
@@ -53,7 +56,7 @@ export class MarkdownSection extends Section {
       filename,
       template: 'src/theme/html/article.hbs',
       templateParameters: {
-        ...this.html,
+        html: this.html,
         article: this.markdown.article,
         showTagHeader: true,
         relatedArticles
