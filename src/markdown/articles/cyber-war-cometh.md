@@ -15,4 +15,4 @@ summary: Julian Assange isn't messing around.
 
 --> If Assange dies, the whole thing is unleashed.  If additional automated tripwires are hit, further precommitment will be automatically unleashed.  If Assange even feels threatened, additional precommitments will be unleashed.  The powers that be will, literally, have to shut off the entire internet for the whole planet for a few days if they want to kill Assange... and even then, that's no guarantee.
 
---> Fortunate for them, President Obama is [drumming up "cyber war"](https://archive.is/WP5IP as the reason for such a widespread internet blackout to do exactly that.
+--> Fortunate for them, President Obama is [drumming up "cyber war"](https://archive.is/WP5IP) as the reason for such a widespread internet blackout to do exactly that.

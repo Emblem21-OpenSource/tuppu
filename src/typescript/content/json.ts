@@ -3,6 +3,8 @@ export interface Json {
   datetime: string
   summary: string
   image: string
+  author: string 
+  contact: string
   isDraft: boolean
   isIndex: boolean
   isPinned: boolean

@@ -12,7 +12,9 @@ interface StaticSettings {
   }
   filename: string
   template: string
-  templateParameters: HtmlParameters
+  templateParameters: {
+    html: HtmlParameters
+  }
 }
 
 
@@ -22,15 +24,19 @@ export class StaticSection extends Section {
   }
 
   getWebpackPlugin(): any {
+    const pathName = this.html.slugTitle.toLowerCase()
+
     const settings: StaticSettings = {
       inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: false
       },
-      filename: `${this.html.slugTitle}.html`,
-      template: `src/theme/sections/${this.html.slugTitle}.hbs`,
-      templateParameters: this.html
+      filename: `${pathName}.html`,
+      template: `src/theme/sections/${pathName}.hbs`,
+      templateParameters: {
+        html: this.html
+      }
     }
     
     return new HtmlWebpackPlugin(settings)

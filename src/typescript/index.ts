@@ -3,9 +3,13 @@ import 'source-map-support/register'
 import { Markdown } from './content/markdown'
 import { MarkdownCollection } from './collections/markdown'
 import { Collection } from './collections'
-import { MarkdownSection } from './sections/markdown'
-import { PageSection } from './sections/page'
-import { Page } from './page'
+
+import { buildIndex } from './builders/index'
+import { buildArticles } from './builders/articles'
+import { buildPages } from './builders/pages'
+import { buildApi } from './builders/api'
+import { buildStatic } from './builders/static'
+
 
 const perPage = 3
 
@@ -17,23 +21,23 @@ const sections: string[] = [
   'Training'
 ]
 
-/*
-const staticPages: string[] = [
-  'bias',
-  'contact'
+
+const staticSections: string[] = [
+  'Bias',
+  'Contact'
 ]
-*/
+
 
 export const getWebpackTemplates = (): any[] => {
   let webpackPlugins: any[] = []
 
   const contents = getContent()
 
-  webpackPlugins = webpackPlugins.concat(buildIndex(contents))
+  webpackPlugins = webpackPlugins.concat(buildIndex(contents, perPage))
   webpackPlugins = webpackPlugins.concat(buildArticles(contents))
-  webpackPlugins = webpackPlugins.concat(buildPages(contents))
-  webpackPlugins = webpackPlugins.concat(buildApi(contents))
-  webpackPlugins = webpackPlugins.concat(buildStatic())
+  webpackPlugins = webpackPlugins.concat(buildPages(contents, sections, perPage))
+  webpackPlugins = webpackPlugins.concat(buildApi(contents, sections, 25))
+  webpackPlugins = webpackPlugins.concat(buildStatic(staticSections))
 
   return webpackPlugins
 }
@@ -56,89 +60,4 @@ const getContent = (): Collection<Markdown> => {
   })
 
   return content
-}
-
-/**
- * [buildIndex description]
- */
-const buildIndex = (contents: Collection<Markdown>): any[] => {
-  const plugins: any[] = []
-
-  const pages = Page.bulkCreate(contents, 'index', perPage)
-
-  for (const page of pages) {
-    plugins.push(new PageSection(
-      page,
-      perPage,
-      pages.length,
-      contents.length
-    ).getWebpackPlugin())
-  }
-
-  return plugins
-}
-
-/**
- * [buildArticles description]
- */
-const buildArticles = (contents: Collection<Markdown>): any[] => {
-  const plugins: any[] = []
-
-  contents.forEach(content => {
-    const relatedArticles = contents.filter(
-      item => {
-        return item.id !== content.id && (content.article.tags as string[]).find(tag => {
-          return (item.article.tags as string[]).includes(tag)
-        })
-      }
-    )
-
-    plugins.push(new MarkdownSection(content, 1).getWebpackPlugin(relatedArticles))
-  })
-
-  return plugins
-}
-
-/**
- * [buildPages description]
- */
-const buildPages = (contents: Collection<Markdown>): any[] => {
-  const plugins: any[] = []
-
-  for (const section of sections) {
-    const sectionCollection = new Collection<Markdown>().fromArray(
-      contents.filter(content =>
-        content.article.section === section
-      )
-    )
-
-    const pages = Page.bulkCreate(sectionCollection, section, perPage)
-
-    for (const page of pages) {
-      plugins.push(new PageSection(
-        page,
-        perPage,
-        pages.length,
-        sectionCollection.length
-      ).getWebpackPlugin())
-    }
-  }
-
-  return plugins
-}
-
-/**
- * [buildApi description]
- */
-const buildApi = (contents: Collection<Markdown>): any[] => {
-  const plugins: any[] = []
-  return plugins
-}
-
-/**
- * [buildStatic description]
- */
-const buildStatic = (): any[] => {
-  const plugins: any[] = []
-  return plugins
 }

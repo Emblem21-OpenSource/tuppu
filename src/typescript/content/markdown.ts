@@ -1,5 +1,6 @@
 import fs from 'fs'
 import striptags from 'striptags'
+import { AllHtmlEntities } from 'html-entities'
 
 import { Marked } from '../utils/markdown'
 
@@ -38,6 +39,8 @@ export class Markdown {
     body.json = {
       title: this.html.summary,
       datetime: this.html.datetime,
+      author: this.article.author as string,
+      contact: this.article.contact as string,
       summary: this.html.summary,
       image: this.html.image,
       isDraft: this.article.isDraft as boolean,
@@ -121,7 +124,7 @@ export class Markdown {
       index += 1
     }
     body.html = Marked(body.markdown)
-    body.text = striptags(body.html as string)
+    body.text = AllHtmlEntities.decode(striptags(body.html as string))
 
     return result
   }
