@@ -24,7 +24,7 @@ export const buildPages = (contents: Collection<Markdown>, sections: string[], p
         perPage,
         pages.length,
         sectionCollection.length
-      ).getWebpackPlugin())
+      ).getWebpackPlugin(sectionCollection))
     }
   }
 

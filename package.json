@@ -6,8 +6,8 @@
   "scripts": {
     "watch-typescript": "./node_modules/.bin/tsc -p . --watch",
     "build-typescript": "./node_modules/.bin/tsc -p .",
-    "build-prerelease": "cross-env NODE_ENV=development npm run build-typescript && cross-env NODE_ENV=development webpack --mode development --display=minimal",
-    "build-release": "npm run build-typescript && cross-env NODE_ENV=production webpack --mode production",
+    "build-prerelease": "npm run build-typescript && webpack --mode development --display=minimal",
+    "build-release": "npm run build-typescript && webpack --mode production",
     "push-staging": "./node_modules/.bin/surge dist --domain https://cultstate.surge.sh",
     "release-staging": "cross-env NODE_ENV=development npm run build-release && npm run push-staging",
     "push-production": "./node_modules/.bin/surge dist --domain https://cultstate.com",

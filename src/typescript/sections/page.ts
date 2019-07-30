@@ -6,6 +6,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import { Markdown } from '../content/markdown'
 import { HtmlParameters } from '../content/html'
 import { Page } from '../page'
+import { Collection } from '../collections'
 import { addSitemapPath } from '../content/sitemap'
 
 import { Section } from '.'
@@ -21,6 +22,7 @@ export interface PageSettings {
   templateParameters: {
     html: HtmlParameters
     articles: Markdown[]
+    relatedArticles: Markdown[]
     pinnedArticles: Markdown[]
     hasPinnedArticles: boolean
     showTagHeader: boolean
@@ -48,10 +50,15 @@ export class PageSection extends Section {
     this.totalArticles = totalArticles
   }
 
-  getWebpackPlugin(): any[] {
+  getWebpackPlugin(sectionArticles?: Collection<Markdown>): any[] {
     const pathName = this.html.slugTitle.toLowerCase()
     const { filename, next, previous } = this.getPagination(pathName)
     const articles: Markdown[] = this.page.contents.map(content => content)
+    let relatedArticles: Markdown[] = []
+
+    if (sectionArticles && this.page.pageNumber === 0) {
+      relatedArticles = sectionArticles.content.map(content => content)
+    }
     
     const pinnedArticles = this.page.pageNumber === 0
       ? this.pinned
@@ -71,10 +78,11 @@ export class PageSection extends Section {
       template: `src/theme/sections/${pathName}.hbs`,
       templateParameters: {
         html: this.html,
+        relatedArticles,
         pinnedArticles,
         hasPinnedArticles,
         articles,
-        showTagHeader: true,
+        showTagHeader: false,
         next,
         previous
       }
