@@ -1,5 +1,3 @@
-import 'source-map-support/register'
-
 import { Markdown } from '../content/markdown'
 import { Collection } from '../collections'
 import { MarkdownSection } from '../sections/markdown'

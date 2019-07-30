@@ -1,6 +1,8 @@
 import SitemapWebpackPlugin from 'sitemap-webpack-plugin'
 import moment from 'moment'
 
+import { getHost } from '../config'
+
 import { Json } from './json'
 import { Markdown } from './markdown'
 import { Article } from './article'
@@ -43,6 +45,6 @@ export const addSitemapPath = (path: string, content: Date | Article | Markdown 
   })
 }
 
-exports.getWebpackPlugin = () => {
-  return new SitemapWebpackPlugin('https://cultstate.com', paths)
+export const getWebpackPlugin = () => {
+  return new SitemapWebpackPlugin(getHost(), paths)
 }

@@ -1,17 +1,25 @@
 import 'source-map-support/register'
+import { config } from 'dotenv'
 
+import { getArticlesPerPage, getEntriesPerApiPage } from './config'
 import { Markdown } from './content/markdown'
 import { MarkdownCollection } from './collections/markdown'
 import { Collection } from './collections'
-
 import { buildIndex } from './builders/index'
 import { buildArticles } from './builders/articles'
 import { buildPages } from './builders/pages'
 import { buildApi } from './builders/api'
 import { buildStatic } from './builders/static'
+import { buildSitemap } from './builders/sitemap'
 
+const dotenv = config()
 
-const perPage = 3
+if (dotenv.error) {
+  throw dotenv.error
+}
+
+const articlesPerPage = getArticlesPerPage()
+const entriesPerApiPage = getEntriesPerApiPage()
 
 const sections: string[] = [
   'Articles',
@@ -21,23 +29,22 @@ const sections: string[] = [
   'Training'
 ]
 
-
 const staticSections: string[] = [
   'Bias',
   'Contact'
 ]
-
 
 export const getWebpackTemplates = (): any[] => {
   let webpackPlugins: any[] = []
 
   const contents = getContent()
 
-  webpackPlugins = webpackPlugins.concat(buildIndex(contents, perPage))
+  webpackPlugins = webpackPlugins.concat(buildIndex(contents, articlesPerPage))
   webpackPlugins = webpackPlugins.concat(buildArticles(contents))
-  webpackPlugins = webpackPlugins.concat(buildPages(contents, sections, perPage))
-  webpackPlugins = webpackPlugins.concat(buildApi(contents, sections, 25))
+  webpackPlugins = webpackPlugins.concat(buildPages(contents, sections, articlesPerPage))
+  webpackPlugins = webpackPlugins.concat(buildApi(contents, sections, entriesPerApiPage))
   webpackPlugins = webpackPlugins.concat(buildStatic(staticSections))
+  webpackPlugins = webpackPlugins.concat(buildSitemap())
 
   return webpackPlugins
 }

@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { getWebpackTemplates } = require('../src/webpack')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/theme/index.js',
   output: {
     filename: 'app.[chunkhash].js',
     publicPath: ''

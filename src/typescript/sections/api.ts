@@ -99,7 +99,7 @@ export class ApiSection extends Section {
 
     const jsonPage: JsonApiPage = {
       links: {
-        self: filename,
+        self: `api/${filename}`,
         next,
         last: previous
       },
@@ -107,17 +107,23 @@ export class ApiSection extends Section {
     }
 
     this.page.contents.forEach(json => {
+      const url = `/${json.url}`
+
       const jsonData: JsonApiData = {
         type: this.page.section,
-        id: json.url,
-        attributes: json,
+        id: url,
+        attributes: { ...json },
         relationships: {
           data: []
         }
       }
 
+      jsonData.attributes.url = url
+
       const authorExists = jsonPage.data.find(data =>
         data.relationships.data.find(author => author.links.self !== json.contact)
+        // @TODO extract urls too
+        // @TODO extract images too
       )
 
       if (!authorExists) {

@@ -12,7 +12,7 @@ const nonHumanChars = /[^a-zA-Z0-9_]/g
 const doubleDash = /--/g
 const stripRegex = /[^A-Za-z-]+/g
 
-const ignoreWords = ['quot', 'emsp', 'http', 'https', '--', '-', 'fo', 'archive', 'not', 'means', 'com', 'will', 'when', 'one', 'png', 'jpg', 'jpeg']
+const ignoreWords = ['quot', 'emsp', 'http', 'https', '--', '-', 'fo', 'its', 'mr', 've', 're', 'didn', 'so', 'ed', 'th', 'archive', 'mar', 'dec', 'not', 'means', 'com', 'will', 'when', 'one', 'png', 'jpg', 'jpeg']
 
 export interface HtmlParameters {
   title: string

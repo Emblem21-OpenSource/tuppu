@@ -1,0 +1,2 @@
+start "" "C:\Program Files\Git\bin\bash.exe" --login -i -c "cd ~/Desktop/Development/Projects/new-cultstate && npm run watch-typescript"
+start "" "C:\Program Files\Git\bin\bash.exe" --login -i -c "cd ~/Desktop/Development/Projects/new-cultstate && npm run start-webpack"
