@@ -36,7 +36,7 @@ tags: gnostic warfare
 * Iteratively confirm efficacy of training for students.
 * Identify shortcomings in training material gathering, distribution, and retention against the production of intelligence assets.
 
-# Organizational Overview 
+## Organizational Overview 
 
 * Determine organizational partitioning and unit composition for a variety of ratios calculated from operational effectiveness, security surface defensibility, intelligence generation, discovery costs, conversion costs, training costs, and attrition rates.  (Discord, amazingly, has all of this data)
 * Test operational cohesion, fidelity, discipline, and resilience of organizational tiers against adversaries along the following timelines: **Reactionary (one day to a week), ideological (one week to two years), rival (perpetual low-intensity opportunism), and institutional timelines (Perpetual high-intensity opportunism)**

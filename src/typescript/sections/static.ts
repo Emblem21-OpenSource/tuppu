@@ -32,7 +32,7 @@ export class StaticSection extends Section {
         removeComments: true,
         collapseWhitespace: false
       },
-      filename: `${pathName}.html`,
+      filename: `${pathName}/index.html`,
       template: `src/theme/sections/${pathName}.hbs`,
       templateParameters: {
         html: this.html

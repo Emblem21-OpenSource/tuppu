@@ -43,7 +43,7 @@ module.exports = {
       to: 'icons'
     }]),
     new CopyWebpackPlugin([{
-      from: './src/robots.txt',
+      from: `./src/robots-${process.env.NODE_ENV}.txt`,
       to: 'robots.txt'
     }])
   ].concat(getWebpackTemplates()),

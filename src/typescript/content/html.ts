@@ -2,6 +2,8 @@ import moment from 'moment'
 import stopword from 'stopword'
 import striptags from 'striptags'
 
+import { getHost } from '../config'
+
 interface KeywordCandidate {
   word: string
   count: number
@@ -15,6 +17,7 @@ const stripRegex = /[^A-Za-z-]+/g
 const ignoreWords = ['quot', 'emsp', 'http', 'https', '--', '-', 'fo', 'its', 'mr', 've', 're', 'didn', 'so', 'ed', 'th', 'archive', 'mar', 'dec', 'not', 'means', 'com', 'will', 'when', 'one', 'png', 'jpg', 'jpeg']
 
 export interface HtmlParameters {
+  host: string
   title: string
   slugTitle: string
   datetime: string
@@ -35,6 +38,7 @@ export class Html {
       .replace(doubleDash, '-')
   }
 
+  host: string
   title: string
   slugTitle: string
   datetime: string
@@ -46,6 +50,7 @@ export class Html {
   keywords: string
 
   constructor(title: string, date: Date, summary: string, image: string, text: string) {
+    this.host = getHost()
     this.title = title
     this.datetime = date.toISOString()
     this.readableDatetime = moment(this.datetime).format('LLLL')
@@ -61,6 +66,7 @@ export class Html {
 
   getParameters (): HtmlParameters {
     return {
+      host: getHost(),
       title: this.title,
       slugTitle: this.slugTitle,
       datetime: this.datetime,

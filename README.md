@@ -71,7 +71,12 @@ To push to a release candidate to production, run `npm run release-production`
 
 ## Feature Requests
 
-* https://search.google.com/test/mobile-friendly
+* https://app.neilpatel.com/en/seo_analyzer/site_audit?domain=https%3A%2F%2Fcultstate.surge.sh&submit=Analyze+Website
+* https://seositecheckup.com/seo-audit/cultstate.surge.sh
+* https://suite.seotesteronline.com/seo-checker/aHR0cHM6Ly9jdWx0c3RhdGUuc3VyZ2Uuc2g=/
+* https://www.woorank.com/en/www/cultstate.surge.sh
+* https://www.seoptimer.com/cultstate.surge.sh
+* http://www.seowebpageanalyzer.com/
 * https://backlinko.com/actionable-seo-tips
 * JSON API should show links and image in `relationships`
 * Add HTML Microdata specifications

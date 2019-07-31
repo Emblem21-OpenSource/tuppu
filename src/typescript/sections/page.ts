@@ -89,7 +89,8 @@ export class PageSection extends Section {
     }
     
     if (this.page.section === 'index') {
-      settings.templateParameters.html.title = 'News'
+      settings.templateParameters.html.title = 'You are more than your identity'
+      settings.templateParameters.html.summary = 'You are more than your identity'
     }
 
     return new HtmlWebpackPlugin(settings)
@@ -102,7 +103,9 @@ export class PageSection extends Section {
     const currentPage: number = this.page.pageNumber
 
     const filename = currentPage === 0
-      ? `${pathName}.html`
+      ? pathName === 'index'
+        ? `index.html`
+        : `${pathName}/index.html`
       : pathName === 'index'
         ? `page/${(currentPage + 1)}/index.html`
         : `${pathName}/page/${(currentPage + 1)}/index.html`
