@@ -22,6 +22,37 @@ git clone git@github.com:Emblem21-OpenSource/tuppu.git tuppu
 npm install
 ```
 
+### Ngnix Setup
+
+```
+# Local machine
+scp -r nginx.conf root@cultstate.com:/etc/nginx/sites-available/site.com
+ssh root@cultstate.com
+
+# Firewall
+sudo apt-get install ufw
+sudo ufw allow 'Nginx Full'
+sudo ufw reload
+
+# Nginx setup
+sudo apt-get update
+sudo apt-get install nginx
+sudo mkdir /var/www/cultstate.com
+sudo mkdir sites-availible/cultstate.com
+ln -s /etc/nginx/sites-available/cultstate.com /etc/nginx/sites-enabled/cultstate.com
+
+# SSH Setup
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
+sudo certbot --nginx certonly
+
+sudo crontab -e
+# 17 7 * * * certbot renew --post-hook "systemctl reload nginx"
+sudo systemctl restart nginx
+```
+
 ## Development
 
 ### Unix

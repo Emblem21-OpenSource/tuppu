@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
+const TerserJSPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { getWebpackTemplates } = require('../src/webpack')
@@ -17,6 +19,9 @@ module.exports = {
       'root': path.resolve(__dirname, '../')
     },
     extensions: [ '.tsx', '.ts', '.js' ]
+  },
+  optimization: {
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
