@@ -26,8 +26,8 @@ npm install
 
 ```
 # Local machine
-scp -r nginx.conf root@cultstate.com:/etc/nginx/sites-available/site.com
-ssh root@cultstate.com
+scp -r nginx.conf root@cultstate.com:/etc/nginx/sites-available/cultstate.com
+ssh cultstate@deploy.cultstate.com
 
 # Firewall
 sudo apt-get install ufw
@@ -38,8 +38,8 @@ sudo ufw reload
 sudo apt-get update
 sudo apt-get install nginx
 sudo mkdir /var/www/cultstate.com
-sudo mkdir sites-availible/cultstate.com
-ln -s /etc/nginx/sites-available/cultstate.com /etc/nginx/sites-enabled/cultstate.com
+sudo touch /etc/nginx/sites-available/cultstate.com
+sudo ln -s /etc/nginx/sites-available/cultstate.com /etc/nginx/sites-enabled/cultstate.com
 
 # SSH Setup
 sudo apt-get install software-properties-common
@@ -50,7 +50,8 @@ sudo certbot --nginx certonly
 
 sudo crontab -e
 # 17 7 * * * certbot renew --post-hook "systemctl reload nginx"
-sudo systemctl restart nginx
+sudo service nginx restart
+nginx -c /etc/nginx/sites-available/cultstate.com/nginx.conf -t
 ```
 
 ## Development
