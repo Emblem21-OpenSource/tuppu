@@ -104,7 +104,7 @@ export class PageSection extends Section {
 
     const filename = currentPage === 0
       ? pathName === 'index'
-        ? `index.html`
+        ? 'index.html'
         : `${pathName}/index.html`
       : pathName === 'index'
         ? `page/${(currentPage + 1)}/index.html`

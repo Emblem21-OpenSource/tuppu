@@ -68,6 +68,7 @@
     "write-json-webpack-plugin": "^1.1.0"
   },
   "devDependencies": {
-    "source-map-support": "^0.5.12"
+    "source-map-support": "^0.5.12",
+    "xml-webpack-plugin": "^1.0.0"
   }
 }

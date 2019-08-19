@@ -27,7 +27,7 @@ export const addSitemapPath = (path: string, content: Date | Article | Markdown 
       // Html
       lastMod = moment(content.datetime).format('YYYY/MM/DD')
     } else if ((content as Json).datetime) {
-      // Json
+      // Json or RSS
       lastMod = (content as Json).url.split('/').slice(0, 3).join('/')
     } else if (content instanceof Date) {
       // Date

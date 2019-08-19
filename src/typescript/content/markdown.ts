@@ -52,6 +52,17 @@ export class Markdown {
       tags: this.article.tags as string[]
     }
 
+    body.rss = {
+      title: this.html.summary,
+      datetime: this.html.datetime,
+      author: this.article.author as string,
+      contact: this.article.contact as string,
+      summary: this.html.summary,
+      image: this.html.image,
+      text: body.text as string,
+      url: this.html.url
+    }
+
     this.id = nextId
     nextId += 1
   }
