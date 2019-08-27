@@ -9,7 +9,7 @@ import { buildIndex } from './builders/index'
 import { buildArticles } from './builders/articles'
 import { buildPages } from './builders/pages'
 import { buildApi } from './builders/api'
-import { buildRss } from './builders/rss'
+// import { buildRss } from './builders/rss'
 import { buildStatic } from './builders/static'
 import { buildSitemap } from './builders/sitemap'
 
@@ -44,7 +44,7 @@ export const getWebpackTemplates = (): any[] => {
   webpackPlugins = webpackPlugins.concat(buildArticles(contents))
   webpackPlugins = webpackPlugins.concat(buildPages(contents, sections, articlesPerPage))
   webpackPlugins = webpackPlugins.concat(buildApi(contents, sections, entriesPerApiPage))
-  webpackPlugins = webpackPlugins.concat(buildRss(contents, sections, entriesPerApiPage))
+  // webpackPlugins = webpackPlugins.concat(buildRss(contents, sections, entriesPerApiPage))
   webpackPlugins = webpackPlugins.concat(buildStatic(staticSections))
   webpackPlugins = webpackPlugins.concat(buildSitemap())
 

@@ -1,6 +1,7 @@
 /**
  * A file appears!
  */
+/*
 import XMLWebpackPlugin from 'xml-webpack-plugin'
 
 import { Rss } from '../content/rss'
@@ -155,4 +156,4 @@ export class RssSection extends Section {
     return { filename, previous, next }
   }
 }
-
+*/

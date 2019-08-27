@@ -1,12 +1,10 @@
+/*
 import { Rss } from '../content/rss'
 import { Markdown } from '../content/markdown'
 import { Collection } from '../collections'
 import { RssSection } from '../sections/rss'
 import { Page } from '../page'
 
-/**
- * [buildRss description]
- */
 export const buildRss = (contents: Collection<Markdown>, sections: string[], perPage: number): any[] => {
   const plugins: any[] = []
 
@@ -39,3 +37,4 @@ export const buildRss = (contents: Collection<Markdown>, sections: string[], per
 
   return plugins
 }
+*/

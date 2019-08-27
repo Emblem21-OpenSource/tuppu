@@ -10,7 +10,7 @@
     "build-release": "npm run build-typescript && webpack --mode production",
     "push-staging": "./node_modules/.bin/surge dist --domain https://cultstate.surge.sh",
     "release-staging": "cross-env NODE_ENV=development npm run build-release && npm run push-staging",
-    "push-production": "ssh deploy.cultstate.com 'rm -fr /var/www/cultstate.com/*' && scp -Cpr dist deploy.cultstate.com:/var/www/cultstate.com && ssh deploy.cultstate.com 'mv /var/www/cultstate.com/dist/* /var/www/cultstate.com/ && rmdir /var/www/cultstate.com/dist'",
+    "push-production": "ssh deploy.cultstate.com 'rm -fr /var/www/cultstate.com/*' && scp -Cpr dist deploy.cultstate.com:/var/www/cultstate.com && ssh deploy.cultstate.com 'mv /var/www/cultstate.com/dist/* /var/www/cultstate.com/'",
     "release-production": "cross-env NODE_ENV=production npm run build-release && npm run push-production",
     "start-webpack": "cross-env NODE_ENV=development nodemon -e md,js,html,css,hbs --watch config/* --watch src/**/* --exec webpack-dev-server --mode development --host 0.0.0.0",
     "start-webpack-unix": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --mode development --host 0.0.0.0"
