@@ -14,8 +14,7 @@ tags: podcast, mob
 
 <> [Periscope](https://www.pscp.tv/w/1BdxYejZmboxX?t=22s)
 <> [Twitter](https://twitter.com/stranahan/status/1166329708272709633)
-<> [SoundCloud](https://soundcloud.com/12dcode/stranahan-the-overstock-ceos-background-dealing-with-the-mob-w-patrick-ryan)
-<> [Download](https://transfer.sh/Smk31/stranahan%20-%20The%20Overstock%20CEO%27s%20Background%20Dealing%20with%20the%20Mob%20w_%20Patrick%20Ryan%20@Emblem21CEO.mp3)
+<> [Download](https://mega.nz/#!jt0CzYhT!KQ1V6QbGK6OXHj-X97uw6gt006ZvI7N_lt2hJIBPG9g)
 
 ### Credits
 

@@ -14,8 +14,7 @@ tags: podcast, google, isaac kappy, zach vorhies
 
 <> [YouTube](https://www.youtube.com/watch?v=cZzJIudDGHI)
 <> [Twitter](https://twitter.com/TRUreporting/status/1171987358297800704)
-<> [SoundCloud](https://soundcloud.com/12dcode/trureporting-with-zach-vorhies)
-<> [Download](https://gofile.io/?c=khHieZ)
+<> [Download](https://mega.nz/#!mt1ByIrQ!qjb_pwZ89w8-Q5_G0Z46iYQ3IM9fJul1ZIcdADeJHRU)
 
 ### Credits
 

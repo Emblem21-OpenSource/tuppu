@@ -11,6 +11,7 @@ tags: podcast, marxism
 ### Listen
 
 <> [LibSyn](http://teloscast.libsyn.com/website/rawlings-marxism-credit-seeking-eternity-and-mythical-time)
+<> [Download](https://mega.nz/#!z9ci2abL!h_aOnaiK-APL21y8hXow_2nCDf5orI62AcDQU7Y6psU)
 
 ### Credits
 

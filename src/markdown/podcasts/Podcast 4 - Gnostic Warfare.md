@@ -13,6 +13,7 @@ tags: podcast, ai warfare
 <> [Facebook](https://www.facebook.com/simulationseries/videos/444207459734304)
 <> [YouTube](https://youtu.be/V4PnkaJVxBg?t=86)
 <> [Discussion](https://8ch.net/gnosticwarfare/res/605.html)
+<> [Download](https://mega.nz/#!mt1ByIrQ!qjb_pwZ89w8-Q5_G0Z46iYQ3IM9fJul1ZIcdADeJHRU)
 
 ### Credits
 
