@@ -18,7 +18,11 @@ I got tired of having lame blogging tools, so I wrote my own using Webpack and T
 ## Install
 
 ```
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+source ~/.bashrc
+nvm install v12.13.0
 git clone git@github.com:Emblem21-OpenSource/tuppu.git tuppu
+cd tuppu
 npm install
 ```
 
@@ -58,11 +62,13 @@ nginx -c /etc/nginx/sites-available/cultstate.com/nginx.conf -t
 
 ### Unix
 
-Open two terminals.  Run `npm run start-webpack-unix` in one and `npm run watch-typescript` in the other.
+Open two terminals.  Run :
+* `npm run watch-typescript`
+* `npm run start-webpack-unix` 
 
 ### Windows
 
-Run `start-tuppu.bat`.  (Requires [Git Bash for Windows](https://git-scm.com/download/win))
+Install [Git Bash](https://git-scm.com/download/win) and run `start-tuppu.bat`.  (Requires [Git Bash for Windows](https://git-scm.com/download/win))
 
 ## Deployment
 

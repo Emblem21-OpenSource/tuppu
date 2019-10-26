@@ -8,7 +8,7 @@ import { Collection } from '.'
 export class MarkdownCollection extends Collection<Markdown> {
   constructor (sectionName: string) {
     super()
-    const markdownSectionPath = path.resolve(__dirname, `../../markdown/${sectionName}`)
+    const markdownSectionPath = path.resolve(__dirname, `../../markdown/${sectionName.toLowerCase()}`)
     const markdowns = fs.readdirSync(markdownSectionPath)
     const now = new Date()
 
