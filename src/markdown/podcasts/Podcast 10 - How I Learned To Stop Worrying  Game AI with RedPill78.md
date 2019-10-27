@@ -1,5 +1,5 @@
 ---
-title: Podcast 10 - How I Learned To Stop Worrying  Game AI with RedPill78
+title: Podcast 10 - How I Learned To Stop Worrying And Game AI with RedPill78
 author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 10/4/2019

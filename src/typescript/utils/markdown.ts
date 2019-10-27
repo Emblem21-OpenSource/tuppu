@@ -43,11 +43,13 @@ renderer.code = (code, infostring, escaped) => {
 renderer.blockquote = function (quote) {
   return ``
 }
+*/
 
-renderer.html = function (html) {
-  return ``
+renderer.html = (html) => {
+  return html
 }
 
+/*
 renderer.heading = function (text, level, raw, slugger) {
   return ``
 }
