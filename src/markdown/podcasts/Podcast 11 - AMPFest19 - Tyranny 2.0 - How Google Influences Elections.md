@@ -21,8 +21,7 @@ tags: google, whistle blower, whistleblower, butterfly war
   * [Website](https://projectveritas.com)
   * [Email](mailto:veritastips@protonmail.com)
 * Connie Elliot
-  * [Twitter](https://twitter.com/redpill78)
-  * [YouTube](https://www.youtube.com/c/RedPill78)
+  * [Email](mailto:Connieelliott@protonmail.com)
 * Zach Vorhies
   * [Twitter](https://twitter.com/perpetualmaniac)
   * [YouTube](https://www.youtube.com/channel/UCiuTGTCkYrjVknhvMAICFjA)
