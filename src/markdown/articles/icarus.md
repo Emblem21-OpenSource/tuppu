@@ -47,7 +47,7 @@ summary: It is time to solve the riddle.
 * In 2015, [Gawker releases Epstein's little black book, containing the names of everyone who has ever flown on Jeffrey Epstein's Lolita Express.](https://gawker.com/here-is-pedophile-billionaire-jeffrey-epsteins-little-b-1681383992)
 * In 2016, Associated Press, New York Times, BuzzFeed News implement SecureDrop.
 * In 2006, [Harold T. Martin III is arrested for leaking tools, information, and materials to Shadow Brokers.](https://en.wikipedia.org/wiki/Harold_T._Martin_III#Alleged_espionage)
-* in 2016, [Defense Secretary Ash Carter and DNI Director James Clapper recommend splitting the NSA from U.S. Cyber Command.](https://www.nbcnews.com/news/us-news/top-officials-want-split-cyber-command-nsa-n645581)
+* in 2016, [Defense Secretary Ash Carter and DNI Director James Clapper (former Booz Allen Hamilton employee) recommend splitting the NSA from U.S. Cyber Command.](https://www.nbcnews.com/news/us-news/top-officials-want-split-cyber-command-nsa-n645581)
 * In 2016, [Clapper and Carter successfully lobby Obama to remove Rogers from his positions.](https://www.washingtonpost.com/world/national-security/pentagon-and-intelligence-community-chiefs-have-urged-obama-to-remove-the-head-of-the-nsa/2016/11/19/44de6ea6-adff-11e6-977a-1030f822fc35_story.html)
 * In 2016, [the Shadow Broker begin leaking NSA-derived zero days to the public.](https://www.theatlantic.com/technology/archive/2017/05/shadow-brokers/527778/)
 * On February 14th, 2017, [Snowden, president of the Freedom of the Press Foundation, announced his support for SecureDrop as a safe means of safely communicating with journalists.](https://www.cnet.com/news/edward-snowdens-new-gig-helps-protect-journalists-and-whistleblowers/)
