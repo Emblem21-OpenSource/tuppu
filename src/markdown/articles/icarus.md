@@ -48,9 +48,9 @@ summary: It is time to solve the riddle.
 * In 2016, [Clapper and Carter successfully lobby Obama to remove Rogers from his positions.](https://www.washingtonpost.com/world/national-security/pentagon-and-intelligence-community-chiefs-have-urged-obama-to-remove-the-head-of-the-nsa/2016/11/19/44de6ea6-adff-11e6-977a-1030f822fc35_story.html)
 * In 2016, [the Shadow Broker begin leaking NSA-derived zero days to the public.](https://www.theatlantic.com/technology/archive/2017/05/shadow-brokers/527778/)
 * On February 14th, 2017, [Snowden begins announcing his support for SecureDrop as a safe means of safely communicating with journalists.](https://www.cnet.com/news/edward-snowdens-new-gig-helps-protect-journalists-and-whistleblowers/)
+* On December 27th, 2017, SecureDrop co-founder and lead maintainer, James Dolan, was found in his apartment, dead by hanging.
 * On February 7th, 2018, at age 70, Barlow dies in his sleep.
 * On February 18th, 2018, ???
-* On December 27th, 2017, SecureDrop co-founder and lead maintainer, James Dolan, was found in his apartment, dead by hanging.
 * In 2019, [Martin is sentenced to nine years in prison for is thefts.](https://www.nextgov.com/cybersecurity/2019/07/ex-nsa-contractor-serve-9-years-hoarding-classified-information/158564/)
 * In 2019, [Jeffrey Epstein was arrested for sex tarfficking of minors.](https://www.thedailybeast.com/jeffrey-epstein-arrested-for-sex-trafficking-of-minors-source)
 * On September 7th, 2019, [Joi Ito steps dwon from Directory of MIT Media lab after being exposed for taking funds from Jeffrey Epstein.](https://www.npr.org/2019/09/07/758658194/mit-media-lab-director-resigns-over-reported-epstein-ties)
