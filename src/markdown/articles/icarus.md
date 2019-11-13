@@ -29,7 +29,7 @@ summary: It is time to solve the riddle.
 * In 2011, [Joi Ito becomes director of the MIT Media Lab.](https://www.wired.co.uk/article/open-university)
 * In 2011, [Joi Ito moves to reclassify Swartz's theft as an internal matter to handle outside of police jurisdiction, but fails.](https://www.bizjournals.com/boston/blog/bottom_line/2013/07/mit-swartz-report.html)
 * In 2012, Barlow, EFF, Edward Snowden, and several others create the Freedom of the Press Foundation.
-* In 2012, [Jeffrey Epstein donates millions to MIT Media Lab.](https://www.theguardian.com/education/2019/sep/12/mit-jeffrey-epstein-rafael-reif-donation)
+* In 2012, [Jeffrey Epstein donates millions to MIT Media Lab with approval from both Joi Ito and Nicholas Negroponte.](https://www.theguardian.com/education/2019/sep/12/mit-jeffrey-epstein-rafael-reif-donation)
 * In 2013, Swartz and the Freedom of the Press Foundation create SecureDrop, an anonymizing file transfer methodology that relies on Tor for journalists to receive and exchange tips and comrpomising material.
 * In April of 2013, [Snowden, while under contract of Booz Allen Hamilton, contacts Glenn Greenwald and begins to disclose his leaks about the NSA.](https://en.wikipedia.org/wiki/Edward_Snowden#Release_of_NSA_documents)
 * In 2013, Swartz declined a plea bargin for the MIT charges, and two days later, was found in his room dead from hanging.
