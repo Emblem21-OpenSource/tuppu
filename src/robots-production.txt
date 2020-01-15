@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /icons
-Disallow: /images
 Sitemap: https://cultstate.com/sitemap.xml

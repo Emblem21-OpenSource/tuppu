@@ -14,6 +14,7 @@ export class MarkdownCollection extends Collection<Markdown> {
 
     for (const markdown of markdowns) {
       const content = new Markdown(`${markdownSectionPath}/${markdown}`, sectionName)
+
       if (!content.article.isDraft && (content.article.date as Date) < now) {
         this.push(content)
       }

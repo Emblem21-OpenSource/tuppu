@@ -4,6 +4,7 @@ author: Patrick Ryan
 contact: mailto:patrick.ryan@emblem21.com
 date: 11/11/2019
 summary: It is time to solve the riddle.
+draft: true
 ---
 
 --> Timeline

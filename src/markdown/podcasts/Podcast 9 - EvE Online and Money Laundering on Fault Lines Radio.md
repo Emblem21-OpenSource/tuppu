@@ -18,7 +18,7 @@ tags: podcast, brock pierce, ukraine, gamergate, eve online, bannon
 
 * Lee Stranahan
   * [Twitter](https://twitter.com/stranahan/)
-  * [Citizen Journalism School](https://t.co/ZfP9vp3Dn8)
+  * [Citizen Journalism School](https://citizenjournalismschool.com/)
   * [Populist.tv](https://thepopulist.us/)
   * [Periscope](https://www.pscp.tv/stranahan/1ypKdBbqlyYJW)
 * Garland Nixon
