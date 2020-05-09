@@ -60,6 +60,8 @@ nginx -c /etc/nginx/sites-available/cultstate.com/nginx.conf -t
 
 ## Development
 
+`cp .env.example .env`
+
 ### Unix
 
 Open two terminals.  Run :

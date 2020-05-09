@@ -6,7 +6,7 @@ import { Page } from '../page'
 
 /**
  * [buildApi description]
- */
+ */ 
 export const buildApi = (contents: Collection<Markdown>, sections: string[], perPage: number): any[] => {
   const plugins: any[] = []
 
